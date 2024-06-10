@@ -5,22 +5,23 @@ import NavBar from "@/components/Common/NavBar";
 import React, { useState } from "react";
 import { IoStar, IoStarOutline, IoStarHalf } from "react-icons/io5";
 import QuantityInput from "@/components/VendorCommon/QuantityInput";
-const renderStars = () => {
-  const [rating, setRating] = useState(4);
 
-  const stars = [];
-  for (let i = 1; i <= 5; i++) {
-    if (i <= Math.floor(rating)) {
-      stars.push(<IoStar key={i} className="text-gray-400 w-4 h-4" />);
-    } else if (i === Math.ceil(rating) && !Number.isInteger(rating)) {
-      stars.push(<IoStarHalf key={i} className="text-gray-400 w-4 h-4" />);
-    } else {
-      stars.push(<IoStarOutline key={i} className="text-gray-400 w-4 h-4" />);
-    }
-  }
-  return stars;
-};
 const ProductDetails = () => {
+  const renderStars = () => {
+    const [rating, setRating] = useState(4);
+
+    const stars = [];
+    for (let i = 1; i <= 5; i++) {
+      if (i <= Math.floor(rating)) {
+        stars.push(<IoStar key={i} className="text-gray-400 w-4 h-4" />);
+      } else if (i === Math.ceil(rating) && !Number.isInteger(rating)) {
+        stars.push(<IoStarHalf key={i} className="text-gray-400 w-4 h-4" />);
+      } else {
+        stars.push(<IoStarOutline key={i} className="text-gray-400 w-4 h-4" />);
+      }
+    }
+    return stars;
+  };
   return (
     <>
       <NavBar />
