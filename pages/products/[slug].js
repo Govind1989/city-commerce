@@ -7,9 +7,8 @@ import { IoStar, IoStarOutline, IoStarHalf } from "react-icons/io5";
 import QuantityInput from "@/components/VendorCommon/QuantityInput";
 
 const ProductDetails = () => {
+  const [rating, setRating] = useState(4);
   const renderStars = () => {
-    const [rating, setRating] = useState(4);
-
     const stars = [];
     for (let i = 1; i <= 5; i++) {
       if (i <= Math.floor(rating)) {
