@@ -214,8 +214,9 @@ const ProductAccordion = () => {
               </div>
 
               <p class="text-sm text-gray-400 mb-2 font-light">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+                &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.&quot;
               </p>
             </div>
             <div className="border-b border-gray-200">
@@ -229,8 +230,9 @@ const ProductAccordion = () => {
               </div>
 
               <p class="text-sm text-gray-400 mb-2 font-light">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+                &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.&quot;
               </p>
             </div>
           </div>
