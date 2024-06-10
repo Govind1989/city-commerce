@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import { MdOutlineShoppingBag, MdStorefront } from "react-icons/md";
 import CategoryProducts from "@/components/Common/CategoryProducts";
 import FilterVendors from "@/components/Common/FilterVendors";
+import Link from "next/link";
 
 const CategoryPage = () => {
   const [showProducts, setShowProducts] = useState(true);
@@ -28,9 +29,9 @@ const CategoryPage = () => {
               <div className="absolute inset-0 -bottom-14 flex flex-col px-12 justify-center text-white">
                 <h3 className="text-lg font-bold">New Trending</h3>
                 <p className="text-md">Urban Legal</p>
-                <a href="#" className="text-sm underline mt-2">
+                <Link href="#" className="text-sm underline mt-2">
                   Shop Now
-                </a>
+                </Link>
               </div>
             </div>
             <div
@@ -44,9 +45,9 @@ const CategoryPage = () => {
               <div className="absolute inset-0 -bottom-14 flex flex-col px-12 justify-center text-white">
                 <h3 className="text-lg font-bold">Best Selling</h3>
                 <p className="text-md">Urban Legal</p>
-                <a href="#" className="text-sm underline mt-2">
+                <Link href="#" className="text-sm underline mt-2">
                   Shop Now
-                </a>
+                </Link>
               </div>
             </div>
             <div
@@ -60,9 +61,9 @@ const CategoryPage = () => {
               <div className="absolute inset-0 -bottom-14 flex flex-col px-12 justify-center text-white">
                 <h3 className="text-lg font-bold">Discount and Sales</h3>
                 <p className="text-md">Urban Legal</p>
-                <a href="#" className="text-sm underline mt-2">
+                <Link href="#" className="text-sm underline mt-2">
                   Shop Now
-                </a>
+                </Link>
               </div>
             </div>
           </div>
