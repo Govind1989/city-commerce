@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import AccountSettings from "./AccountSettings";
 import ShopCMS from "./ShopCMS";
 import Suppliers from "./Suppliers";
-
+import Link from "next/link";
 const Settings = () => {
   const [activeComponent, setActiveComponent] = useState("Account");
   useEffect(() => {
@@ -25,7 +25,7 @@ const Settings = () => {
     <div className="mx-auto h-screen max-w-full px-4 py-2 sm:px-8">
       <div className="bg-white py-2 px-3">
         <nav className="flex flex-wrap gap-4">
-          <a
+          <Link
             href="#"
             className={`inline-flex whitespace-nowrap border-b-2 py-2 px-3 text-sm font-semibold transition-all duration-200 ease-in-out ${
               activeComponent === "Account"
@@ -35,9 +35,9 @@ const Settings = () => {
             onClick={() => setActiveComponent("Account")}
           >
             Account
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="#"
             className={`inline-flex whitespace-nowrap border-b-2 py-2 px-3 text-sm font-medium transition-all duration-200 ease-in-out ${
               activeComponent === "ShopCMS"
@@ -47,9 +47,9 @@ const Settings = () => {
             onClick={() => setActiveComponent("ShopCMS")}
           >
             Shop CMS
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="#"
             className={`inline-flex whitespace-nowrap border-b-2 py-2 px-3 text-sm font-medium transition-all duration-200 ease-in-out ${
               activeComponent === "Suppliers"
@@ -59,7 +59,7 @@ const Settings = () => {
             onClick={() => setActiveComponent("Suppliers")}
           >
             Suppliers
-          </a>
+          </Link>
         </nav>
       </div>
       <div className="p-0">{renderComponent()}</div>

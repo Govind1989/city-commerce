@@ -28,7 +28,7 @@ const NavBar = () => {
             <div className="p-2 hidden sm:block ">
               <MdOutlineArrowBack className="w-4 h-auto " />
             </div>
-            <a
+            <Link
               className="flex  tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl "
               href="#"
             >
@@ -42,7 +42,7 @@ const NavBar = () => {
                 <path d="M5,22h14c1.103,0,2-0.897,2-2V9c0-0.553-0.447-1-1-1h-3V7c0-2.757-2.243-5-5-5S7,4.243,7,7v1H4C3.447,8,3,8.447,3,9v11 C3,21.103,3.897,22,5,22z M9,7c0-1.654,1.346-3,3-3s3,1.346,3,3v1H9V7z M5,10h2v2h2v-2h6v2h2v-2h2l0.002,10H5V10z" />
               </svg>
               <div className="mt-0 ">City Commerce</div>
-            </a>
+            </Link>
           </div>
 
           <div className="order-1 md:order-2">
@@ -127,21 +127,21 @@ const NavBar = () => {
                       onClick={() => setIsLanguage(false)}
                       className="absolute right-0 z-20 w-28 py-0 mt-0 origin-top-right bg-white rounded-md shadow-xl dark:bg-gray-800 transition transform ease-out duration-100 scale-90"
                     >
-                      <a
+                      <Link
                         href="#"
                         className="block px-8 py-2 text-sm text-gray-600 transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
                       >
                         English
-                      </a>
+                      </Link>
 
                       <hr className="border-gray-200 dark:border-gray-700" />
 
-                      <a
+                      <Link
                         href="#"
                         className="block px-8 py-2 text-sm text-gray-600 transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
                       >
                         नेपाली
-                      </a>
+                      </Link>
                     </div>
                   )}
                 </div>

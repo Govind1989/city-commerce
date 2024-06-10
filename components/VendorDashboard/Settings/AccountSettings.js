@@ -61,12 +61,12 @@ const AccountSettings = () => {
         </div>
         <p className="mt-2">
           Can&apos;t remember your current password.{" "}
-          <a
+          <Link
             className="text-sm font-semibold text-blue-600 underline decoration-2"
             href="#"
           >
             Recover Account
-          </a>
+          </Link>
         </p>
         <button className="mt-4 rounded-lg bg-blue-600 px-4 py-2 text-white">
           Save Password

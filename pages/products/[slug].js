@@ -118,12 +118,9 @@ const ProductDetails = () => {
         <div className="container mx-auto items-center  pt-4 sm:pt-12 px-4 ">
           <nav id="store" className="w-full z-30 top-0 px-6 py-1">
             <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
-              <a
-                className="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl"
-                href="#"
-              >
+              <div className="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl">
                 Similar Products
-              </a>
+              </div>
             </div>
           </nav>
           <RelatedProducts />

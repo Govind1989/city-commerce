@@ -336,20 +336,20 @@ const VendorRegistrationForm = () => {
                 </div>
                 <hr className="mb-1 border-t" />
                 <div className="text-center">
-                  <a
+                  <Link
                     className="inline-block text-sm text-blue-500 dark:text-blue-500 align-baseline hover:text-blue-800"
                     href="#"
                   >
                     Forgot Password?
-                  </a>
+                  </Link>
                 </div>
                 <div className="text-center">
-                  <a
+                  <Link
                     className="inline-block text-sm text-blue-500 dark:text-blue-500 align-baseline hover:text-blue-800"
                     href="./index.html"
                   >
                     Already have an account? Login!
-                  </a>
+                  </Link>
                 </div>
               </form>
             </div>

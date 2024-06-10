@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link";
 const Dashboard = () => {
   return (
     <div className="pt-6 px-4 mb-24 min-h-screen ">
@@ -126,12 +126,12 @@ const Dashboard = () => {
               </span>
             </div>
             <div className="flex-shrink-0">
-              <a
+              <Link
                 href="#"
                 className="text-sm font-medium text-cyan-600 hover:bg-gray-100 rounded-lg p-2"
               >
                 View all
-              </a>
+              </Link>
             </div>
           </div>
           <div className="flex flex-col mt-8">
@@ -261,12 +261,12 @@ const Dashboard = () => {
             <h3 className="text-xl font-bold leading-none text-gray-900">
               Latest Customers
             </h3>
-            <a
+            <Link
               href="#"
               className="text-sm font-medium text-cyan-600 hover:bg-gray-100 rounded-lg inline-flex items-center p-2"
             >
               View all
-            </a>
+            </Link>
           </div>
           <div className="flow-root">
             <ul role="list" className="divide-y divide-gray-200">
@@ -284,13 +284,13 @@ const Dashboard = () => {
                       Neil Sims
                     </p>
                     <p className="text-sm text-gray-500 truncate">
-                      <a
+                      <Link
                         href="/cdn-cgi/l/email-protection"
                         className="__cf_email__"
                         data-cfemail="17727a767e7b57607e7973646372653974787a"
                       >
                         [email&#160;protected]
-                      </a>
+                      </Link>
                     </p>
                   </div>
                   <div className="inline-flex items-center text-base font-semibold text-gray-900">
@@ -312,13 +312,13 @@ const Dashboard = () => {
                       Bonnie Green
                     </p>
                     <p className="text-sm text-gray-500 truncate">
-                      <a
+                      <Link
                         href="/cdn-cgi/l/email-protection"
                         className="__cf_email__"
                         data-cfemail="d4b1b9b5bdb894a3bdbab0a7a0b1a6fab7bbb9"
                       >
                         [email&#160;protected]
-                      </a>
+                      </Link>
                     </p>
                   </div>
                   <div className="inline-flex items-center text-base font-semibold text-gray-900">
@@ -340,13 +340,13 @@ const Dashboard = () => {
                       Michael Gough
                     </p>
                     <p className="text-sm text-gray-500 truncate">
-                      <a
+                      <Link
                         href="/cdn-cgi/l/email-protection"
                         className="__cf_email__"
                         data-cfemail="57323a363e3b17203e3933242332257934383a"
                       >
                         [email&#160;protected]
-                      </a>
+                      </Link>
                     </p>
                   </div>
                   <div className="inline-flex items-center text-base font-semibold text-gray-900">
@@ -368,13 +368,13 @@ const Dashboard = () => {
                       Thomes Lean
                     </p>
                     <p className="text-sm text-gray-500 truncate">
-                      <a
+                      <Link
                         href="/cdn-cgi/l/email-protection"
                         className="__cf_email__"
                         data-cfemail="284d45494144685f41464c5b5c4d5a064b4745"
                       >
                         [email&#160;protected]
-                      </a>
+                      </Link>
                     </p>
                   </div>
                   <div className="inline-flex items-center text-base font-semibold text-gray-900">
@@ -396,13 +396,13 @@ const Dashboard = () => {
                       Lana Byrd
                     </p>
                     <p className="text-sm text-gray-500 truncate">
-                      <a
+                      <Link
                         href="/cdn-cgi/l/email-protection"
                         className="__cf_email__"
                         data-cfemail="a2c7cfc3cbcee2d5cbccc6d1d6c7d08cc1cdcf"
                       >
                         [email&#160;protected]
-                      </a>
+                      </Link>
                     </p>
                   </div>
                   <div className="inline-flex items-center text-base font-semibold text-gray-900">

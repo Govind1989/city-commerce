@@ -3,53 +3,6 @@ import React from "react";
 const Orders = () => {
   return (
     <>
-      <div className="mx-auto  max-w-full px-4 py-2 sm:px-8">
-        {/* <h2 className="font-semibold text-gray-700">Order Management</h2> */}
-
-        {/* <div className="bg-white py-2 px-3">
-          <nav className="flex flex-wrap gap-4">
-            <a
-              href="#"
-              className="inline-flex whitespace-nowrap border-b-2 border-transparent py-2 px-3 text-sm font-medium text-gray-600 transition-all duration-200 ease-in-out hover:border-b-purple-600 hover:text-purple-600"
-            >
-              {" "}
-              Account{" "}
-            </a>
-
-            <a
-              href="#"
-              className="inline-flex whitespace-nowrap border-b-2 border-transparent py-2 px-3 text-sm font-medium text-gray-600 transition-all duration-200 ease-in-out hover:border-b-purple-600 hover:text-purple-600"
-            >
-              {" "}
-              Settings{" "}
-            </a>
-
-            <a
-              href="#"
-              className="inline-flex whitespace-nowrap border-b-2 border-transparent border-b-purple-600 py-2 px-3 text-sm font-semibold text-purple-600 transition-all duration-200 ease-in-out"
-            >
-              {" "}
-              Orders{" "}
-            </a>
-
-            <a
-              href="#"
-              className="inline-flex whitespace-nowrap border-b-2 border-transparent py-2 px-3 text-sm font-medium text-gray-600 transition-all duration-200 ease-in-out hover:border-b-purple-600 hover:text-purple-600"
-            >
-              {" "}
-              Sales{" "}
-            </a>
-
-            <a
-              href="#"
-              className="inline-flex whitespace-nowrap border-b-2 border-transparent py-2 px-3 text-sm font-medium text-gray-600 transition-all duration-200 ease-in-out hover:border-b-purple-600 hover:text-purple-600"
-            >
-              {" "}
-              Suppliers{" "}
-            </a>
-          </nav>
-        </div> */}
-      </div>
       <div className="bg-white px-8 min-h-screen">
         <div className="mx-auto max-w-full px-2 py-0">
           <div className="mt-4 w-full">
