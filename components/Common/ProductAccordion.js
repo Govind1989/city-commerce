@@ -3,6 +3,12 @@ import { IoStar, IoStarOutline, IoStarHalf } from "react-icons/io5";
 import { MdOutlineAddHome, MdOutlinePhone } from "react-icons/md";
 
 const ProductAccordion = () => {
+  const [openSection, setOpenSection] = useState(1);
+
+  const toggleSection = (section) => {
+    setOpenSection(openSection === section ? null : section);
+  };
+
   const renderStars = () => {
     const [rating, setRating] = useState(4);
 
@@ -17,11 +23,6 @@ const ProductAccordion = () => {
       }
     }
     return stars;
-  };
-  const [openSection, setOpenSection] = useState(1);
-
-  const toggleSection = (section) => {
-    setOpenSection(openSection === section ? null : section);
   };
 
   return (
