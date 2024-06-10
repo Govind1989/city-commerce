@@ -4,14 +4,13 @@ import { MdOutlineAddHome, MdOutlinePhone } from "react-icons/md";
 
 const ProductAccordion = () => {
   const [openSection, setOpenSection] = useState(1);
+  const [rating, setRating] = useState(4);
 
   const toggleSection = (section) => {
     setOpenSection(openSection === section ? null : section);
   };
 
   const renderStars = () => {
-    const [rating, setRating] = useState(4);
-
     const stars = [];
     for (let i = 1; i <= 5; i++) {
       if (i <= Math.floor(rating)) {
