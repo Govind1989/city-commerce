@@ -15,7 +15,7 @@ const CardCarousel = () => {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3,
+      items: 4,
     },
     tablet: {
       breakpoint: { max: 1023, min: 464 },
@@ -23,16 +23,16 @@ const CardCarousel = () => {
     },
     mobile: {
       breakpoint: { max: 767, min: 0 },
-      items: 1,
+      items: 2,
     },
   };
   return (
     <div className="container mx-auto  ">
-      <div className="px-4">
+      <div className="px-1 ">
         <Carousel
           responsive={responsive}
-          containerClass="-mx-[10px]"
-          itemClass="px-[10px]"
+          containerClass=""
+          itemClass="px-[2px]"
         >
           {/* {products?.data?.map((product) => ( */}
           <Card />

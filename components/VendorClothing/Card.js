@@ -36,7 +36,7 @@ const Card = ({ Discount }) => {
   };
   return (
     <>
-      <div className="w-full md:p-6 flex flex-wrap px-4 relative">
+      <div className="w-full md:p-6 flex flex-wrap sm:px-4 relative mb-4 sm:mb-4">
         {/* <div className="w-full md:w-1/3 xl:w-1/4 md:p-6 flex px-4 relative"> */}
         <Link href={`/products/product1`}>
           <img
@@ -49,29 +49,29 @@ const Card = ({ Discount }) => {
             </div>
           )}
 
-          <div className="pt-3 flex items-center justify-between">
-            <p>Product Name</p>
-            <div className="flex gap-2">
+          <div className="pt-3 flex items-center justify-between mr-3 sm:mr-3 ">
+            <p className="text-sm sm:text-lg">Product Name</p>
+            <div className="flex sm:gap-2 gap-1">
               <div onClick={toggleWishState} className="cursor-pointer">
                 {addToWishlist ? (
-                  <IoHeartSharp className="w-6 h-auto" />
+                  <IoHeartSharp className="sm:w-6 w-4 h-auto" />
                 ) : (
-                  <IoHeartOutline className="w-6 h-auto" />
+                  <IoHeartOutline className="sm:w-6 w-4 h-auto" />
                 )}
               </div>
 
               <div onClick={toggleBagState} className="cursor-pointer">
                 {addtoCart ? (
-                  <IoBag className="w-6 h-auto" />
+                  <IoBag className="sm:w-6 w-4 h-auto" />
                 ) : (
-                  <IoBagOutline className="w-6 h-auto" />
+                  <IoBagOutline className="sm:w-6 w-4 h-auto" />
                 )}
               </div>
             </div>
           </div>
-          <div className="flex justify-between">
+          <div className="flex justify-between flex-col sm:flex-row">
             <p className="pt-1">
-              <span className="text-2xl font-bold text-slate-600 mr-2">
+              <span className="sm:text-2xl text-md font-bold text-slate-600 mr-2">
                 Rs. 799
               </span>
               <span className="text-xs text-slate-400 line-through">

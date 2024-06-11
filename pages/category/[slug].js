@@ -17,9 +17,9 @@ const CategoryPage = () => {
       <NavBar />
       <div className="bg-white py-8">
         <div className="container mx-auto pt-4 px-8  ">
-          <div className="flex gap-2">
+          <div className="flex gap-2 flex-col sm:flex-row">
             <div
-              className="relative h-56 rounded-b-lg bg-cover bg-center bg-no-repeat shadow-lg flex-grow-0 flex-shrink-0 w-1/3"
+              className="relative h-56 rounded-b-lg bg-cover bg-center bg-no-repeat shadow-lg flex-grow-0 flex-shrink-0 w-full sm:w-1/3"
               style={{
                 backgroundImage:
                   "url(https://images.unsplash.com/photo-1462392246754-28dfa2df8e6b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGZhc2hpb258ZW58MHwwfDB8fHww)",
@@ -35,7 +35,7 @@ const CategoryPage = () => {
               </div>
             </div>
             <div
-              className="relative h-56 rounded-b-lg bg-cover bg-center bg-no-repeat shadow-lg flex-grow-0 flex-shrink-0 w-1/3"
+              className="relative w-full h-56 rounded-b-lg bg-cover bg-center bg-no-repeat shadow-lg flex-grow-0 flex-shrink-0 sm:w-1/3"
               style={{
                 backgroundImage:
                   "url(https://images.unsplash.com/photo-1462392246754-28dfa2df8e6b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGZhc2hpb258ZW58MHwwfDB8fHww)",
@@ -51,7 +51,7 @@ const CategoryPage = () => {
               </div>
             </div>
             <div
-              className="relative h-56 rounded-b-lg bg-cover bg-center bg-no-repeat shadow-lg flex-grow-0 flex-shrink-0 w-1/3"
+              className="relative h-56 rounded-b-lg bg-cover bg-center bg-no-repeat shadow-lg flex-grow-0 flex-shrink-0 sm:w-1/3 w-full"
               style={{
                 backgroundImage:
                   "url(https://images.unsplash.com/photo-1462392246754-28dfa2df8e6b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGZhc2hpb258ZW58MHwwfDB8fHww)",
@@ -68,8 +68,8 @@ const CategoryPage = () => {
             </div>
           </div>
 
-          <div className=" flex flex-col items-start justify-center space-y-4 py-8 px-4 sm:flex-row sm:space-y-0 md:justify-between lg:px-0">
-            <div className="max-w-lg">
+          <div className=" flex flex-col items-start justify-center space-y-4 py-2 sm:py-8 sm:px-4 sm:flex-row sm:space-y-0 md:justify-between lg:px-0">
+            <div className="container mx-auto">
               <h1 className="text-2xl font-bold text-gray-800">{slug}</h1>
               <p className="mt-2 text-gray-600">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.

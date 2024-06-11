@@ -7,8 +7,8 @@ const CategoryProducts = () => {
       {/* most ordered */}
       <div className="bg-white  ">
         <div className="container mx-auto flex items-center flex-wrap pt-4 ">
-          <div id="store" className="w-full  top-0  py-1">
-            <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
+          <div id="store" className="w-full  top-0  sm:py-1">
+            <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 sm:px-2 py-3">
               <Link
                 className="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl"
                 href="#"
@@ -48,42 +48,41 @@ const CategoryProducts = () => {
             </div>
           </div>
 
-          <div className="container flex items-center justify-center flex-wrap pb-0"></div>
           {/* <div className="w-full  md:p-6 flex flex-row px-4 relative"> */}
-          <div className="w-full md:w-1/3 xl:w-1/4">
+          <div className="w-1/2 md:w-1/3 xl:w-1/4">
             <Card Discount={false} />
           </div>
-          <div className="w-full md:w-1/3 xl:w-1/4">
+          <div className="w-1/2 md:w-1/3 xl:w-1/4">
             <Card Discount={false} />
           </div>
-          <div className="w-full md:w-1/3 xl:w-1/4">
+          <div className="w-1/2 md:w-1/3 xl:w-1/4">
             <Card Discount={false} />
           </div>
-          <div className="w-full md:w-1/3 xl:w-1/4">
+          <div className="w-1/2 md:w-1/3 xl:w-1/4">
             <Card Discount={false} />
           </div>
-          <div className="w-full md:w-1/3 xl:w-1/4">
+          <div className="w-1/2 md:w-1/3 xl:w-1/4">
             <Card Discount={false} />
           </div>
-          <div className="w-full md:w-1/3 xl:w-1/4">
+          <div className="w-1/2 md:w-1/3 xl:w-1/4">
             <Card Discount={false} />
           </div>
-          <div className="w-full md:w-1/3 xl:w-1/4">
+          <div className="w-1/2 md:w-1/3 xl:w-1/4">
             <Card Discount={false} />
           </div>
-          <div className="w-full md:w-1/3 xl:w-1/4">
+          <div className="w-1/2 md:w-1/3 xl:w-1/4">
             <Card Discount={false} />
           </div>
-          <div className="w-full md:w-1/3 xl:w-1/4">
+          <div className="w-1/2 md:w-1/3 xl:w-1/4">
             <Card Discount={false} />
           </div>
-          <div className="w-full md:w-1/3 xl:w-1/4">
+          <div className="w-1/2 md:w-1/3 xl:w-1/4">
             <Card Discount={false} />
           </div>
-          <div className="w-full md:w-1/3 xl:w-1/4">
+          <div className="w-1/2 md:w-1/3 xl:w-1/4">
             <Card Discount={false} />
           </div>
-          <div className="w-full md:w-1/3 xl:w-1/4">
+          <div className="w-1/2 md:w-1/3 xl:w-1/4">
             <Card Discount={false} />
           </div>
           {/* </div> */}

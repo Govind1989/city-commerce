@@ -309,12 +309,12 @@ const Restaurants = ({ shopName }) => {
       </div>
 
       {/* products */}
-      <div className="bg-white py-8">
+      <div className="bg-white py-8 px-2">
         <div className="container mx-auto flex items-center flex-wrap pt-4 ">
-          <div id="store" className="w-full top-0 md:px-0 px-4 px py-1">
+          <div id="store" className="w-full top-0 sm:px-4 sm:py-1">
             <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
               <div
-                className="uppercase border-b-2 border-gray-400 tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl"
+                className="uppercase  tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl"
                 href="#"
               >
                 Menu Categories
@@ -494,12 +494,12 @@ const Restaurants = ({ shopName }) => {
       </div>
 
       {/* Home Specials */}
-      <div className="bg-white py-8">
+      <div className="bg-white py-8 px-2">
         <div className="container mx-auto flex items-center flex-wrap pt-4 ">
-          <div id="store" className="w-full  top-0 px-6 py-1">
+          <div id="store" className="w-full top-0 sm:px-4 sm:py-1">
             <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
               <div
-                className="uppercase border-b-2 border-gray-400 tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl"
+                className="uppercase  tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl"
                 href="#"
               >
                 Home Specials
@@ -542,12 +542,12 @@ const Restaurants = ({ shopName }) => {
       </div>
 
       {/* Campaigns */}
-      <div className="bg-white py-8">
+      <div className="bg-white py-8 px-2">
         <div className="container mx-auto flex items-center flex-wrap pt-4 ">
-          <div id="store" className="w-full top-0 px-6 py-1">
+          <div id="store" className="w-full top-0 sm:px-4 sm:py-1">
             <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
               <div
-                className="uppercase border-b-2 border-gray-400 tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl"
+                className="uppercase  tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl"
                 href="#"
               >
                 Campaigns
@@ -636,12 +636,12 @@ const Restaurants = ({ shopName }) => {
         </div>
       </div>
       {/* sales and offers */}
-      <div className="bg-white py-8">
+      <div className="bg-white py-8 px-2">
         <div className="container mx-auto flex items-center flex-wrap pt-4 pb-4">
-          <div id="store" className="w-full top-0 px-6 py-1">
+          <div id="store" className="w-full top-0 sm:px-4 sm:py-1">
             <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
               <div
-                className="uppercase border-b-2 border-gray-400 tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl"
+                className="uppercase  tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl"
                 href="#"
               >
                 Discounts and Sales
@@ -715,12 +715,12 @@ const Restaurants = ({ shopName }) => {
       </div>
 
       {/* about */}
-      <div id="about" className="bg-white py-8">
+      <div id="about" className="bg-white py-8 px-2">
         <div className="container mx-auto flex items-center flex-wrap pt-4 ">
-          <div id="store" className="w-full top-0 px-6 py-1">
+          <div id="store" className="w-full top-0 sm:px-4 sm:py-1">
             <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
               <div
-                className="uppercase border-b-2 border-gray-400 tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl"
+                className="uppercase  tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl"
                 href="#"
               >
                 About

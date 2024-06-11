@@ -17,6 +17,7 @@ import Card from "./Card.js";
 import CampaignCard from "../VendorCommon/CampaignCard.js";
 import CardCarousel from "../VendorCommon/CardCarousel.js";
 import { SubCategories } from "./SubCategories.js";
+import { MdSkipPrevious } from "react-icons/md";
 const ProductsClothing = ({ shopName }) => {
   const [item, setItem] = useState(1);
   const [active, setActive] = useState(0);
@@ -282,9 +283,9 @@ const ProductsClothing = ({ shopName }) => {
       </div>
 
       {/* products */}
-      <div className="bg-white py-8">
+      <div className="bg-white py-8 px-2">
         <div className="container mx-auto flex items-center flex-wrap pt-4 ">
-          <div id="store" className="w-full top-0 px-6 py-1">
+          <div id="store" className="w-full top-0 sm:px-6 py-1">
             <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
               <div
                 className="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl"
@@ -333,7 +334,7 @@ const ProductsClothing = ({ shopName }) => {
                   <span className="absolute bottom-0 left-0 w-full h-[0.5px] bg-gray-700 transform -translate-y-1/2"></span>
                 </h2>
               </div>
-              <div className="">
+              <div className="px-1 sm:px-0">
                 <ul className="flex flex-wrap justify-evenly items-center w-full">
                   {clothingShopCategory.map((item, index) => {
                     return (
@@ -368,41 +369,41 @@ const ProductsClothing = ({ shopName }) => {
               </div>
             </nav>
           </div>
-          {/* <div className="w-full  md:p-6 flex flex-row px-4 relative"> */}
-          <div className="w-full md:w-1/3 xl:w-1/4">
+          {/* <div className="px-2"> */}
+          <div className="w-1/2 md:w-1/3 xl:w-1/4">
             <Card Discount={false} />
           </div>
-          <div className="w-full md:w-1/3 xl:w-1/4">
+          <div className="w-1/2 md:w-1/3 xl:w-1/4">
             <Card Discount={false} />
           </div>
-          <div className="w-full md:w-1/3 xl:w-1/4">
+          <div className="w-1/2 md:w-1/3 xl:w-1/4">
             <Card Discount={false} />
           </div>
-          <div className="w-full md:w-1/3 xl:w-1/4">
+          <div className="w-1/2 md:w-1/3 xl:w-1/4">
             <Card Discount={false} />
           </div>
-          <div className="w-full md:w-1/3 xl:w-1/4">
+          <div className="w-1/2 md:w-1/3 xl:w-1/4">
             <Card Discount={false} />
           </div>
-          <div className="w-full md:w-1/3 xl:w-1/4">
+          <div className="w-1/2 md:w-1/3 xl:w-1/4">
             <Card Discount={false} />
           </div>
-          <div className="w-full md:w-1/3 xl:w-1/4">
+          <div className="w-1/2 md:w-1/3 xl:w-1/4">
             <Card Discount={false} />
           </div>
-          <div className="w-full md:w-1/3 xl:w-1/4">
+          <div className="w-1/2 md:w-1/3 xl:w-1/4">
             <Card Discount={false} />
           </div>
-          <div className="w-full md:w-1/3 xl:w-1/4">
+          <div className="w-1/2 md:w-1/3 xl:w-1/4">
             <Card Discount={false} />
           </div>
-          <div className="w-full md:w-1/3 xl:w-1/4">
+          <div className="w-1/2 md:w-1/3 xl:w-1/4">
             <Card Discount={false} />
           </div>
-          <div className="w-full md:w-1/3 xl:w-1/4">
+          <div className="w-1/2 md:w-1/3 xl:w-1/4">
             <Card Discount={false} />
           </div>
-          <div className="w-full md:w-1/3 xl:w-1/4">
+          <div className="w-1/2 md:w-1/3 xl:w-1/4">
             <Card Discount={false} />
           </div>
           {/* </div> */}
@@ -410,9 +411,9 @@ const ProductsClothing = ({ shopName }) => {
       </div>
 
       {/* best sellers */}
-      <div className="bg-white py-8">
+      <div className="bg-white py-8 px-2">
         <div className="container mx-auto flex items-center flex-wrap pt-4 ">
-          <div id="store" className="w-full top-0 px-6 py-1">
+          <div id="store" className="w-full top-0 sm:px-4 py-1">
             <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
               <div
                 className="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl"
@@ -424,8 +425,8 @@ const ProductsClothing = ({ shopName }) => {
                 className="flex items-center text-gray-400  gap-8"
                 id="store-nav-content"
               >
-                <GrPrevious className="w-4 h-auto cursor-pointer" />
-                <GrNext className="w-4 h-auto cursor-pointer" />
+                <MdSkipPrevious className="w-4 h-auto cursor-pointer" />
+                <MdSkipPrevious className="w-4 h-auto cursor-pointer" />
               </div> */}
             </div>
           </div>
@@ -465,9 +466,9 @@ const ProductsClothing = ({ shopName }) => {
       </div>
 
       {/* Campaigns */}
-      <div className="bg-white py-8">
+      <div className="bg-white py-8 px-2">
         <div className="container mx-auto flex items-center flex-wrap pt-4 ">
-          <div id="store" className="w-full top-0 px-6 py-1">
+          <div id="store" className="w-full top-0 sm:px-4 py-1">
             <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
               <div
                 className="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl"
@@ -559,9 +560,9 @@ const ProductsClothing = ({ shopName }) => {
         </div>
       </div>
       {/* sales and offers */}
-      <div className="bg-white py-8">
+      <div className="bg-white py-8 px-2">
         <div className="container mx-auto flex items-center flex-wrap pt-4 pb-4">
-          <div id="store" className="w-full top-0 px-6 py-1">
+          <div id="store" className="w-full top-0 sm:px-4 py-1">
             <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
               <div
                 className="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl"
@@ -638,7 +639,7 @@ const ProductsClothing = ({ shopName }) => {
       </div>
 
       {/* about */}
-      <div className="bg-white py-8">
+      <div className="bg-white py-8 px-2">
         <div className="container mx-auto flex items-center flex-wrap pt-4 ">
           <div id="store" className="w-full top-0 px-6 py-1">
             <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
