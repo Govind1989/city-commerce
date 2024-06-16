@@ -57,7 +57,7 @@ const CountDownTimer = () => {
 
   return (
     <div className="flex items-center space-x-2 text-red-600 text-md">
-      {timerComponents.length ? timerComponents : <span>Time's up!</span>}
+      {timerComponents.length ? timerComponents : <span>Time up!</span>}
     </div>
   );
 };
