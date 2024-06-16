@@ -490,34 +490,47 @@ export const shopDiscounts = [
   },
 ];
 
-export const otherData = [
+export const productsTag = [
   {
-    id: 1,
-    name: "Sample Data 1",
-    description: "This is a sample data entry for other purposes.",
-    createdAt: "2024-05-24T10:00:00Z",
-    tags: ["sample", "data", "test"],
+    name: "Tshirts For Men",
   },
   {
-    id: 2,
-    name: "Sample Data 2",
-    description: "This is another sample data entry.",
-    createdAt: "2024-05-24T11:00:00Z",
-    tags: ["example", "mock", "demo"],
-  },
-];
-
-export const userData = [
-  {
-    username: "john_doe",
-    email: "john.doe@example.com",
-    roles: ["admin", "user"],
-    createdAt: "2024-01-15T09:30:00Z",
+    name: "Saree For Women",
   },
   {
-    username: "jane_smith",
-    email: "jane.smith@example.com",
-    roles: ["user"],
-    createdAt: "2024-02-20T14:45:00Z",
+    name: "Winter Collection",
+  },
+  {
+    name: "Summer Collection",
+  },
+  {
+    name: "Ethnic Wear for Women",
+  },
+  {
+    name: "Formal Wear For Men",
+  },
+  {
+    name: "SuperHero Wear for Kids",
+  },
+  {
+    name: "Outerwear and Jackets",
+  },
+  {
+    name: "Swimwear Collection",
+  },
+  {
+    name: "Fitness and Activewear",
+  },
+  {
+    name: "Party Wear Collection",
+  },
+  {
+    name: "Vintage Collection",
+  },
+  {
+    name: "Footwear Collection",
+  },
+  {
+    name: "Accessories and Jewelry",
   },
 ];

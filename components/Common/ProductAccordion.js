@@ -67,10 +67,10 @@ const ProductAccordion = () => {
         aria-labelledby="accordion-flush-heading-1"
       >
         <div className="py-2 border-b border-gray-200 dark:border-gray-700">
-          <div class="px-2">
+          <div className="px-2">
             <div className="">
-              <div class="flex justify-between items-start mb-2">
-                <span class="text-sm font-medium text-gray-400">
+              <div className="flex justify-between items-start mb-2">
+                <span className="text-sm font-medium text-gray-400">
                   Elegant Clothing
                 </span>
                 <div className="flex gap-1 items-center">{renderStars()}</div>
@@ -202,34 +202,34 @@ const ProductAccordion = () => {
         aria-labelledby="accordion-flush-heading-3"
       >
         <div className="py-2 border-b border-gray-200 dark:border-gray-700">
-          <div class="h-[20vh] overflow-y-scroll bg-white px-2 custom-hr-scroll">
+          <div className="h-[20vh] overflow-y-scroll bg-white px-2 custom-hr-scroll">
             <div className="border-b border-gray-200">
-              <div class="flex justify-between items-start mb-2">
-                <span class="text-sm font-medium text-gray-400">
+              <div className="flex justify-between items-start mb-2">
+                <span className="text-sm font-medium text-gray-400">
                   Manish Dhungel
                 </span>
-                <span class="text-xs font-medium text-gray-400">
+                <span className="text-xs font-medium text-gray-400">
                   one month ago..
                 </span>
               </div>
 
-              <p class="text-sm text-gray-400 mb-2 font-light">
+              <p className="text-sm text-gray-400 mb-2 font-light">
                 &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua.&quot;
               </p>
             </div>
             <div className="border-b border-gray-200">
-              <div class="pt-2 flex justify-between items-start mb-2">
-                <span class="text-sm font-medium text-gray-400">
+              <div className="pt-2 flex justify-between items-start mb-2">
+                <span className="text-sm font-medium text-gray-400">
                   Ranjan Panthi
                 </span>
-                <span class="text-xs font-medium text-gray-400">
+                <span className="text-xs font-medium text-gray-400">
                   12 Feb, 2022
                 </span>
               </div>
 
-              <p class="text-sm text-gray-400 mb-2 font-light">
+              <p className="text-sm text-gray-400 mb-2 font-light">
                 &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua.&quot;

@@ -36,7 +36,7 @@ const Card = ({ Discount }) => {
   };
   return (
     <>
-      <div className="w-full md:p-6 flex flex-wrap sm:px-4 relative mb-4 sm:mb-4">
+      <div className="w-full  flex flex-wrap sm:px-4 relative mb-4 sm:mb-4">
         {/* <div className="w-full md:w-1/3 xl:w-1/4 md:p-6 flex px-4 relative"> */}
         <Link href={`/products/product1`}>
           <img
@@ -44,8 +44,8 @@ const Card = ({ Discount }) => {
             src="https://images.unsplash.com/photo-1562135291-7728cc647783?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjJ8fHQlMjBzaGlydHxlbnwwfHwwfHx8MA%3D%3D"
           />
           {Discount && (
-            <div className="absolute top-6 right-4 bg-gray-800 text-white py-1 px-2 rounded-tr-md rounded-bl-md font-bold">
-              20% off
+            <div className="absolute top-0 right-0 bg-gray-600 text-xs text-white py-1 px-2 rounded-tr-md rounded-bl-md font-bold">
+              20%
             </div>
           )}
 

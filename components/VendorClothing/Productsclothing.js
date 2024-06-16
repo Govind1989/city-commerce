@@ -17,7 +17,8 @@ import Card from "./Card.js";
 import CampaignCard from "../VendorCommon/CampaignCard.js";
 import CardCarousel from "../VendorCommon/CardCarousel.js";
 import { SubCategories } from "./SubCategories.js";
-import { MdSkipPrevious } from "react-icons/md";
+
+import NavBar from "../Common/NavBar.js";
 const ProductsClothing = ({ shopName }) => {
   const [item, setItem] = useState(1);
   const [active, setActive] = useState(0);
@@ -47,7 +48,7 @@ const ProductsClothing = ({ shopName }) => {
   };
   return (
     <div>
-      <nav id="header" className="bg-white sticky w-full z-30 top-0 py-1">
+      {/* <nav id="header" className="bg-white sticky w-full z-30 top-0 py-1">
         <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6 py-3">
           <label for="menu-toggle" className="cursor-pointer md:hidden block">
             <svg
@@ -145,7 +146,8 @@ const ProductsClothing = ({ shopName }) => {
             </Link>
           </div>
         </div>
-      </nav>
+      </nav> */}
+      <NavBar shopName={shopName} />
       {/* carousel */}
       <div
         className="carousel relative container mx-auto"
