@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const VendorCard = ({ slug }) => {
   return (
-    <div className="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl">
+    <div className="rounded-xl bg-white py-3 px-2 mb-4 sm:mb-0 shadow-lg hover:shadow-xl">
       <Link href={`/elegant-apparel`}>
         <div className="relative flex items-end overflow-hidden rounded-xl">
           <img

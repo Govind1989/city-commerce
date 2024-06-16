@@ -617,8 +617,8 @@ const CategoryProducts = () => {
         </div>
         {/* banners */}
         <div className="container mx-auto  pt-4 ">
-          <div className="sm:flex flex-wrap">
-            <div className="w-full sm:w-3/12 sm:pr-2 mb-4 sm:mb-0">
+          <div className="sm:flex flex-wrap ">
+            <div className="w-full sm:w-3/12 px-2 mb-4 sm:mb-0">
               <div className="flex flex-col-reverse lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between px-8 py-6 bg-gray-200">
                 <div>
                   <h3 className="text-lg leading-4 mb-2 text-[#FD3D57]">
@@ -644,7 +644,7 @@ const CategoryProducts = () => {
               </div>
             </div>
 
-            <div className="w-full sm:w-6/12 sm:pl-2">
+            <div className="w-full sm:w-6/12 px-2 mb-4">
               <div className="flex flex-col-reverse lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between px-8 py-6 bg-gray-200">
                 <div>
                   <h3 className="text-lg leading-4 mb-2 text-[#FD3D57]">
@@ -669,7 +669,7 @@ const CategoryProducts = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full sm:w-3/12 sm:pl-2">
+            <div className="w-full sm:w-3/12 px-2 ">
               <div className="flex flex-col-reverse lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between px-8 py-6 bg-gray-200">
                 <div>
                   <h3 className="text-lg leading-4 mb-2 text-[#FD3D57]">
@@ -997,26 +997,26 @@ const CategoryProducts = () => {
               </li>
             </ul>
           </div>
-          <div className="w-screen sm:py-4 flex gap-4 relative mb-4 sm:mb-4 overflow-x-scroll custom-hr-scroll">
-            <div className="flex-shrink-0 w-1/2 md:w-1/3 xl:w-1/4">
+          <div className="w-screen sm:py-4 flex gap-2 relative mb-4 sm:mb-4 overflow-x-scroll custom-hr-scroll">
+            <div className="flex-shrink-0 w-full md:w-1/2 xl:w-1/4">
               <VendorCard />
             </div>
-            <div className="flex-shrink-0 w-1/2 md:w-1/3 xl:w-1/4">
+            <div className="flex-shrink-0 w-full md:w-1/2 xl:w-1/4">
               <VendorCard />
             </div>
-            <div className="flex-shrink-0 w-1/2 md:w-1/3 xl:w-1/4">
+            <div className="flex-shrink-0 w-full md:w-1/2 xl:w-1/4">
               <VendorCard />
             </div>
-            <div className="flex-shrink-0 w-1/2 md:w-1/3 xl:w-1/4">
+            <div className="flex-shrink-0 w-full md:w-1/2 xl:w-1/4">
               <VendorCard />
             </div>
-            <div className="flex-shrink-0 w-1/2 md:w-1/3 xl:w-1/4">
+            <div className="flex-shrink-0 w-full md:w-1/2 xl:w-1/4">
               <VendorCard />
             </div>
-            <div className="flex-shrink-0 w-1/2 md:w-1/3 xl:w-1/4">
+            <div className="flex-shrink-0 w-full md:w-1/2 xl:w-1/4">
               <VendorCard />
             </div>
-            <div className="flex-shrink-0 w-1/2 md:w-1/3 xl:w-1/4">
+            <div className="flex-shrink-0 w-full md:w-1/2 xl:w-1/4">
               <VendorCard />
             </div>
           </div>
