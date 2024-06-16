@@ -203,7 +203,7 @@ const NavBar = ({ shopName }) => {
             )}
 
             <Link
-              className="flex  tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl "
+              className="flex gap-2  tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl "
               href="#"
             >
               <svg

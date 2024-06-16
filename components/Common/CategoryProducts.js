@@ -11,6 +11,7 @@ import {
 } from "react-icons/md";
 // import { GiAlarmClock } from "react-icons/gi";
 import CountDownTimer from "./CountDownTimer";
+import CallToAction from "./CallToAction";
 const CategoryProducts = () => {
   const [price, setPrice] = useState(500);
   // const [active, setActive] = useState(1);
@@ -618,7 +619,7 @@ const CategoryProducts = () => {
         {/* banners */}
         <div className="container mx-auto  pt-4 ">
           <div className="sm:flex flex-wrap ">
-            <div className="w-full sm:w-3/12 px-2 mb-4 sm:mb-0">
+            <div className="w-full sm:w-3/12 sm:px-2 mb-4 sm:mb-0">
               <div className="flex flex-col-reverse lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between px-8 py-6 bg-gray-200">
                 <div>
                   <h3 className="text-lg leading-4 mb-2 text-[#FD3D57]">
@@ -644,7 +645,7 @@ const CategoryProducts = () => {
               </div>
             </div>
 
-            <div className="w-full sm:w-6/12 px-2 mb-4">
+            <div className="w-full sm:w-6/12 sm:px-2 mb-4">
               <div className="flex flex-col-reverse lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between px-8 py-6 bg-gray-200">
                 <div>
                   <h3 className="text-lg leading-4 mb-2 text-[#FD3D57]">
@@ -669,7 +670,7 @@ const CategoryProducts = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full sm:w-3/12 px-2 ">
+            <div className="w-full sm:w-3/12 sm:px-2 ">
               <div className="flex flex-col-reverse lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between px-8 py-6 bg-gray-200">
                 <div>
                   <h3 className="text-lg leading-4 mb-2 text-[#FD3D57]">
@@ -806,6 +807,10 @@ const CategoryProducts = () => {
               <Card Discount={true} />
             </div>
           </div>
+        </div>
+        {/* CTA */}
+        <div className="container mx-auto flex items-center flex-wrap sm:pt-4 ">
+          <CallToAction />
         </div>
         {/* most ordered */}
         <div className="container mx-auto flex items-center flex-wrap sm:pt-4 ">

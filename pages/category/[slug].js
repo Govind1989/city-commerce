@@ -18,8 +18,8 @@ const CategoryPage = () => {
       <div className="bg-white py-8">
         <div className="container mx-auto  px-8  ">
           <div className="-mx-6 flex flex-wrap">
-            <div className="w-full px-4 lg:w-8/12">
-              <div className="relative mb-8 h-[370px] md:h-[462px]">
+            <div className="w-full px-2 sm:px-4 lg:w-8/12">
+              <div className="relative mb-4 sm:mb-8 h-[370px] md:h-[462px]">
                 <img
                   src="https://demo.tailgrids.com/templates/planet/build/src/assets/ecom-images/headers/header-04/image-01.jpg"
                   alt="product"
