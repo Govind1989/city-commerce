@@ -8,8 +8,8 @@ import FilterVendors from "@/components/Common/FilterVendors";
 import Link from "next/link";
 
 const CategoryPage = () => {
-  const [showProducts, setShowProducts] = useState(true);
-  const [showVendors, setShowVendors] = useState(false);
+  // const [showProducts, setShowProducts] = useState(true);
+  // const [showVendors, setShowVendors] = useState(false);
   const router = useRouter();
   const { slug } = router.query;
   return (
