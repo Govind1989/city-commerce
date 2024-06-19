@@ -46,12 +46,12 @@ const HomeCarousel = () => {
               <p className="text-2xl mb-10 leading-none">
                 Prepare this summer for Beautiful you . .
               </p>
-              <a
+              <Link
                 href="#"
                 className="bg-gray-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800"
               >
                 Shop now
-              </a>
+              </Link>
             </div>
           </div>
           <br />
@@ -74,12 +74,12 @@ const HomeCarousel = () => {
             <p className="text-2xl mb-10 leading-none">
               Get Comfortable with Formal Elegance
             </p>
-            <a
+            <Link
               href="#"
               className="bg-gray-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800"
             >
               Shop Now
-            </a>
+            </Link>
           </div>
           <br />
         </div>

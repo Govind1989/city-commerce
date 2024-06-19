@@ -304,12 +304,12 @@ const Products = ({ shopName }) => {
         <div className="container mx-auto flex items-center flex-wrap pt-4 ">
           <div id="store" className="w-full top-0 sm:px-4 sm:py-1">
             <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
-              <a
+              <p
                 className="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl"
                 href="#"
               >
                 Featured
-              </a>
+              </p>
               {/* <div
                 className="flex items-center text-gray-400  gap-8"
                 id="store-nav-content"

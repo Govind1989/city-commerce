@@ -53,23 +53,20 @@ const Index = () => {
                 <div className="absolute left-0 top-0 flex h-full w-full items-center px-8 md:px-12">
                   <div className=" text-gray-200 max-w-[420px] w-[200px] sm:w-full">
                     <h3>
-                      <a
-                        href="javascript:void(0)"
-                        className="mb-5 block text-2xl font-bold  hover:text-primary sm:text-4xl"
-                      >
+                      <p className="mb-5 block text-2xl font-bold  hover:text-primary sm:text-4xl">
                         Ultimate Home Appliance Sale
-                      </a>
+                      </p>
                     </h3>
                     <p className="mb-9 text-base text-body-color">
                       Upgrade your home with our latest appliances. Quality and
                       efficiency guaranteed.
                     </p>
-                    <a
+                    <Link
                       href="javascript:void(0)"
                       className="inline-flex items-center justify-center rounded-md bg-primary px-0 py-[13px] text-center text-base font-medium text-gray-200 "
                     >
                       #Home Appliances
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -86,19 +83,16 @@ const Index = () => {
                     <div className="absolute left-0 top-0 flex h-full w-full items-center justify-start p-6 sm:p-9">
                       <div className="max-w-[180px] text-right">
                         <h3>
-                          <a
-                            href="javascript:void(0)"
-                            className="mb-3 block text-xl font-bold text-dark hover:text-primary xl:text-2xl"
-                          >
+                          <p className="mb-3 block text-xl font-bold text-dark hover:text-primary xl:text-2xl">
                             Modern Office Essentials
-                          </a>
+                          </p>
                         </h3>
-                        <a
+                        <Link
                           href="javascript:void(0)"
                           className="text-base font-medium text-dark hover:text-primary"
                         >
                           #Office Appliances
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -113,19 +107,16 @@ const Index = () => {
                     <div className="absolute left-0 top-0 flex h-full w-full items-center justify-start p-6 sm:p-9">
                       <div className="max-w-[180px] text-right">
                         <h3>
-                          <a
-                            href="javascript:void(0)"
-                            className="mb-3 block text-xl font-bold text-dark hover:text-primary xl:text-2xl"
-                          >
+                          <p className="mb-3 block text-xl font-bold text-dark hover:text-primary xl:text-2xl">
                             Latest Gadgets Collection
-                          </a>
+                          </p>
                         </h3>
-                        <a
+                        <Link
                           href="javascript:void(0)"
                           className="text-base font-medium text-dark hover:text-primary"
                         >
                           #Gadgets & More
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
