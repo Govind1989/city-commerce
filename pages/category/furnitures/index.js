@@ -160,18 +160,18 @@ const Index = () => {
                     </h3>
 
                     <div className="mt-2 flex flex-row  md:flex-col md:overflow-hidden overflow-scroll gap-2 md:gap-2  custom-scrollbar">
-                      <label className="group flex items-center text-heading text-sm cursor-pointer">
+                      <label className="group flex items-center whitespace-nowrap text-heading text-sm cursor-pointer">
                         <input
                           type="checkbox"
                           className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading active"
                           name="woman"
                           value="woman"
                         />
-                        <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
+                        <span className="ms-2 sm:ms-4 -mt-0.5  text-gray-600">
                           Bedroom Furnitures
                         </span>
                       </label>
-                      <label className="group flex items-center text-heading text-sm cursor-pointer">
+                      <label className="group flex items-center whitespace-nowrap text-heading text-sm cursor-pointer">
                         <input
                           type="checkbox"
                           className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -182,7 +182,7 @@ const Index = () => {
                           Lounges and Sofa
                         </span>
                       </label>
-                      <label className="group flex items-center text-heading text-sm cursor-pointer">
+                      <label className="group flex items-center whitespace-nowrap text-heading text-sm cursor-pointer">
                         <input
                           type="checkbox"
                           className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -193,7 +193,7 @@ const Index = () => {
                           Living & Dining
                         </span>
                       </label>
-                      <label className="group flex items-center text-heading text-sm cursor-pointer">
+                      <label className="group flex items-center whitespace-nowrap text-heading text-sm cursor-pointer">
                         <input
                           type="checkbox"
                           className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -204,7 +204,7 @@ const Index = () => {
                           Office Furnitures
                         </span>
                       </label>
-                      <label className="group flex items-center text-heading text-sm cursor-pointer">
+                      <label className="group flex items-center whitespace-nowrap text-heading text-sm cursor-pointer">
                         <input
                           type="checkbox"
                           className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -215,7 +215,7 @@ const Index = () => {
                           Outdoor Furnitures
                         </span>
                       </label>
-                      <label className="group flex items-center text-heading text-sm cursor-pointer">
+                      <label className="group flex items-center whitespace-nowrap text-heading text-sm cursor-pointer">
                         <input
                           type="checkbox"
                           className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -226,7 +226,7 @@ const Index = () => {
                           Kitchen Furnitures
                         </span>
                       </label>
-                      <label className="group flex items-center text-heading text-sm cursor-pointer">
+                      <label className="group flex items-center whitespace-nowrap text-heading text-sm cursor-pointer">
                         <input
                           type="checkbox"
                           className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -237,7 +237,7 @@ const Index = () => {
                           Kids&apos;Furniture
                         </span>
                       </label>
-                      <label className="group flex items-center text-heading text-sm cursor-pointer">
+                      <label className="group flex items-center whitespace-nowrap text-heading text-sm cursor-pointer">
                         <input
                           type="checkbox"
                           className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -258,7 +258,7 @@ const Index = () => {
                     </h3>
 
                     <div className="mt-2 flex flex-row  md:flex-col md:overflow-hidden overflow-scroll gap-2 md:gap-2  custom-scrollbar">
-                      <label className="group flex items-center text-heading text-sm cursor-pointer">
+                      <label className="group flex items-center whitespace-nowrap text-heading text-sm cursor-pointer">
                         <input
                           type="checkbox"
                           className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading active"
@@ -269,7 +269,7 @@ const Index = () => {
                           Furniture Bazar
                         </span>
                       </label>
-                      <label className="group flex items-center text-heading text-sm cursor-pointer">
+                      <label className="group flex items-center whitespace-nowrap text-heading text-sm cursor-pointer">
                         <input
                           type="checkbox"
                           className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -280,7 +280,7 @@ const Index = () => {
                           Akon Furniture
                         </span>
                       </label>
-                      <label className="group flex items-center text-heading text-sm cursor-pointer">
+                      <label className="group flex items-center whitespace-nowrap text-heading text-sm cursor-pointer">
                         <input
                           type="checkbox"
                           className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -291,7 +291,7 @@ const Index = () => {
                           Carvings Furniture
                         </span>
                       </label>
-                      <label className="group flex items-center text-heading text-sm cursor-pointer">
+                      <label className="group flex items-center whitespace-nowrap text-heading text-sm cursor-pointer">
                         <input
                           type="checkbox"
                           className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -302,7 +302,7 @@ const Index = () => {
                           WoodDeals Furnitures
                         </span>
                       </label>
-                      <label className="group flex items-center text-heading text-sm cursor-pointer">
+                      <label className="group flex items-center whitespace-nowrap text-heading text-sm cursor-pointer">
                         <input
                           type="checkbox"
                           className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -323,7 +323,7 @@ const Index = () => {
                     </h3>
 
                     <div className="mt-2 flex flex-row sm:grid sm:grid-cols-2 md:flex-col md:overflow-hidden overflow-scroll gap-2 md:gap-2  custom-scrollbar">
-                      <label className="group flex items-center text-heading text-sm cursor-pointer">
+                      <label className="group flex items-center whitespace-nowrap text-heading text-sm cursor-pointer">
                         <input
                           type="checkbox"
                           className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -334,7 +334,7 @@ const Index = () => {
                           EVOK
                         </span>
                       </label>
-                      <label className="group flex items-center text-heading text-sm cursor-pointer">
+                      <label className="group flex items-center whitespace-nowrap text-heading text-sm cursor-pointer">
                         <input
                           type="checkbox"
                           className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -345,7 +345,7 @@ const Index = () => {
                           Ikea
                         </span>
                       </label>
-                      <label className="group flex items-center text-heading text-sm cursor-pointer">
+                      <label className="group flex items-center whitespace-nowrap text-heading text-sm cursor-pointer">
                         <input
                           type="checkbox"
                           className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -356,7 +356,7 @@ const Index = () => {
                           H&M
                         </span>
                       </label>
-                      <label className="group flex items-center text-heading text-sm cursor-pointer">
+                      <label className="group flex items-center whitespace-nowrap text-heading text-sm cursor-pointer">
                         <input
                           type="checkbox"
                           className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -473,8 +473,8 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="w-full py-2  px-4 sm:py-0">
-              <div className="flex  justify-between">
+            <div className="w-full sm:px-4 px-0 sm:py-0">
+              <div className="flex  py-4 justify-between">
                 <form className="sm:px-6 flex w-full items-center">
                   <div className="relative w-full">
                     <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
@@ -565,31 +565,31 @@ const Index = () => {
                 </div>
               </div>
               <div className="w-full py-0 flex flex-wrap  relative pb-0 sm:mb-4">
-                <div className="w-1/2 md:w-1/3 xl:w-1/3">
+                <div className="w-1/2 md:w-1/3 xl:w-1/3  mb-4">
                   <CardL Discount={false} />
                 </div>
-                <div className="w-1/2 md:w-1/3 xl:w-1/3">
+                <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
                   <CardL Discount={false} />
                 </div>
-                <div className="w-1/2 md:w-1/3 xl:w-1/3">
+                <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
                   <CardL Discount={false} />
                 </div>
-                <div className="w-1/2 md:w-1/3 xl:w-1/3">
+                <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
                   <CardL Discount={false} />
                 </div>
-                <div className="w-1/2 md:w-1/3 xl:w-1/3">
+                <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
                   <CardL Discount={false} />
                 </div>
-                <div className="w-1/2 md:w-1/3 xl:w-1/3">
+                <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
                   <CardL Discount={false} />
                 </div>
-                <div className="w-1/2 md:w-1/3 xl:w-1/3">
+                <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
                   <CardL Discount={false} />
                 </div>
-                <div className="w-1/2 md:w-1/3 xl:w-1/3">
+                <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
                   <CardL Discount={false} />
                 </div>
-                <div className="w-1/2 md:w-1/3 xl:w-1/3">
+                <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
                   <CardL Discount={false} />
                 </div>
 
@@ -728,7 +728,7 @@ const Index = () => {
               </div>
             </div>
           </div>
-          {/* Featured */}
+          {/* Curated */}
           <div className=" items-center pt-4 h-auto">
             <div id="store" className="w-full top-0 sm:px-4 sm:py-1">
               <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
@@ -759,7 +759,7 @@ const Index = () => {
                       <button
                         key={index}
                         onClick={(e) => handleCuratedCategoryChange(e, index)}
-                        className={`capitalize py-3 px-4 rounded-md text-sm font-medium shadow-md transition-transform transform hover:scale-105 ${
+                        className={`capitalize py-3 px-4 rounded-md text-sm  font-medium whitespace-nowrap shadow-md transition-transform transform hover:scale-105 ${
                           activeIndex === index
                             ? "bg-gray-800 text-white"
                             : "bg-white text-gray-800"
@@ -781,7 +781,7 @@ const Index = () => {
           <div className="-mx-2 flex flex-wrap mt-8 ">
             <div className="w-full px-2 sm:px-4 lg:w-8/12">
               <div className="w-full md:flex gap-4">
-                <div className="w-full md:w-1/2 flex-1 relative mb-4 mr-2 sm:mb-8 h-[370px] md:h-[462px]">
+                <div className="w-full md:w-1/2 flex-1 relative mb-4 md:mr-2 sm:mb-8 h-[370px] md:h-[462px]">
                   <img
                     src="https://themes.rslahmed.dev/rafcart-tailwind/assets/images/banner-1.jpg"
                     alt="Furniture-one"
@@ -813,7 +813,7 @@ const Index = () => {
                     </div>
                   </div>
                 </div>
-                <div className="w-full md:w-1/2 flex-1 relative mb-4 ml-2 sm:mb-8 h-[370px] md:h-[462px]">
+                <div className="w-full md:w-1/2 flex-1 relative mb-4 md:ml-2 sm:mb-8 h-[370px] md:h-[462px]">
                   <img
                     src="https://themes.rslahmed.dev/rafcart-tailwind/assets/images/banner-1.jpg"
                     alt="Furniture-one"
@@ -953,10 +953,10 @@ const Index = () => {
                 </div>
               </div>
               <ul
-                className="px-2 flex  gap-2 sm:gap-8 justify-start overflow-x-scroll custom-scrollbar pb-2"
+                className="px-2 flex  gap-6 sm:gap-8 whitespace-nowrap justify-start overflow-x-scroll custom-scrollbar pb-2"
                 id="myproTab"
               >
-                <li className="inline-block align-top text-[14px] text-gray-800 uppercase p-[0] cursor-pointer font-medium transition-all duration-[0.3s] ease delay-[0s] leading-[20px] tracking-[0.7px] ">
+                <li className="inline-block align-top  text-[14px] text-gray-800 uppercase p-[0] cursor-pointer font-medium transition-all duration-[0.3s] ease delay-[0s] leading-[20px] tracking-[0.7px] ">
                   <Link
                     className="nav-link relative font-medium p-[0] max-[480px]:text-[13px] max-[480px]:leading-[28px]"
                     href="#all"

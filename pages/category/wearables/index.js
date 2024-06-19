@@ -13,10 +13,24 @@ import {
 
 import CountDownTimer from "../../../components/Common/CountDownTimer.js";
 import CallToAction from "../../../components/Common/CallToAction.js";
+import CardCarouselCurated from "@/components/VendorCommon/CardCarouselCurated.js";
 
 const Index = () => {
   const [price, setPrice] = useState(500);
   const [isSortMenu, setIsSortMenu] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const curatedCategories = [
+    "Most Selling",
+    "New Arrivals",
+    "Highly Rated",
+    "On Sale",
+  ];
+
+  const handleCuratedCategoryChange = (e, curatedCategory, index) => {
+    e.preventDefault();
+    setActiveIndex(index);
+  };
   const toggleSortMenu = (e) => {
     e.preventDefault();
     setIsSortMenu(!isSortMenu);
@@ -156,7 +170,7 @@ const Index = () => {
                           </h3>
 
                           <div className="mt-2 flex flex-row  md:flex-col md:overflow-hidden overflow-scroll gap-2 md:gap-2  custom-scrollbar">
-                            <label className="group flex items-center text-heading text-sm cursor-pointer">
+                            <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
                               <input
                                 type="checkbox"
                                 className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading active"
@@ -167,7 +181,7 @@ const Index = () => {
                                 Woman
                               </span>
                             </label>
-                            <label className="group flex items-center text-heading text-sm cursor-pointer">
+                            <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
                               <input
                                 type="checkbox"
                                 className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -178,7 +192,7 @@ const Index = () => {
                                 Man
                               </span>
                             </label>
-                            <label className="group flex items-center text-heading text-sm cursor-pointer">
+                            <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
                               <input
                                 type="checkbox"
                                 className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -189,7 +203,7 @@ const Index = () => {
                                 Watch
                               </span>
                             </label>
-                            <label className="group flex items-center text-heading text-sm cursor-pointer">
+                            <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
                               <input
                                 type="checkbox"
                                 className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -200,7 +214,7 @@ const Index = () => {
                                 Kids
                               </span>
                             </label>
-                            <label className="group flex items-center text-heading text-sm cursor-pointer">
+                            <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
                               <input
                                 type="checkbox"
                                 className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -211,7 +225,7 @@ const Index = () => {
                                 Sports
                               </span>
                             </label>
-                            <label className="group flex items-center text-heading text-sm cursor-pointer">
+                            <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
                               <input
                                 type="checkbox"
                                 className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -222,7 +236,7 @@ const Index = () => {
                                 Sunglass
                               </span>
                             </label>
-                            <label className="group flex items-center text-heading text-sm cursor-pointer">
+                            <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
                               <input
                                 type="checkbox"
                                 className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -233,7 +247,7 @@ const Index = () => {
                                 Bags
                               </span>
                             </label>
-                            <label className="group flex items-center text-heading text-sm cursor-pointer">
+                            <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
                               <input
                                 type="checkbox"
                                 className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -254,7 +268,7 @@ const Index = () => {
                           </h3>
 
                           <div className="mt-2 flex flex-row  md:flex-col md:overflow-hidden overflow-scroll gap-2 md:gap-2  custom-scrollbar">
-                            <label className="group flex items-center text-heading text-sm cursor-pointer">
+                            <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
                               <input
                                 type="checkbox"
                                 className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading active"
@@ -265,7 +279,7 @@ const Index = () => {
                                 Nike
                               </span>
                             </label>
-                            <label className="group flex items-center text-heading text-sm cursor-pointer">
+                            <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
                               <input
                                 type="checkbox"
                                 className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -276,7 +290,7 @@ const Index = () => {
                                 Adidas
                               </span>
                             </label>
-                            <label className="group flex items-center text-heading text-sm cursor-pointer">
+                            <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
                               <input
                                 type="checkbox"
                                 className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -287,7 +301,7 @@ const Index = () => {
                                 H&M
                               </span>
                             </label>
-                            <label className="group flex items-center text-heading text-sm cursor-pointer">
+                            <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
                               <input
                                 type="checkbox"
                                 className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -298,7 +312,7 @@ const Index = () => {
                                 Easy
                               </span>
                             </label>
-                            <label className="group flex items-center text-heading text-sm cursor-pointer">
+                            <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
                               <input
                                 type="checkbox"
                                 className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -309,7 +323,7 @@ const Index = () => {
                                 Under Armor
                               </span>
                             </label>
-                            <label className="group flex items-center text-heading text-sm cursor-pointer">
+                            <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
                               <input
                                 type="checkbox"
                                 className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -497,7 +511,7 @@ const Index = () => {
                     </div>
                   </div>
 
-                  <div className="w-full py-2 sm:py-0 px-4">
+                  <div className="w-full py-2 sm:py-0 sm:px-4 px-0">
                     <div className="flex  justify-between">
                       <form className="sm:px-6 flex w-full items-center">
                         <div className="relative w-full">
@@ -589,31 +603,31 @@ const Index = () => {
                       </div>
                     </div>
                     <div className="w-full py-3 flex flex-wrap  relative pb-0 sm:mb-4">
-                      <div className="w-1/2 md:w-1/3 xl:w-1/3">
+                      <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
                         <Card Discount={false} />
                       </div>
-                      <div className="w-1/2 md:w-1/3 xl:w-1/3">
+                      <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
                         <Card Discount={false} />
                       </div>
-                      <div className="w-1/2 md:w-1/3 xl:w-1/3">
+                      <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
                         <Card Discount={false} />
                       </div>
-                      <div className="w-1/2 md:w-1/3 xl:w-1/3">
+                      <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
                         <Card Discount={false} />
                       </div>
-                      <div className="w-1/2 md:w-1/3 xl:w-1/3">
+                      <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
                         <Card Discount={false} />
                       </div>
-                      <div className="w-1/2 md:w-1/3 xl:w-1/3">
+                      <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
                         <Card Discount={false} />
                       </div>
-                      <div className="w-1/2 md:w-1/3 xl:w-1/3">
+                      <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
                         <Card Discount={false} />
                       </div>
-                      <div className="w-1/2 md:w-1/3 xl:w-1/3">
+                      <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
                         <Card Discount={false} />
                       </div>
-                      <div className="w-1/2 md:w-1/3 xl:w-1/3">
+                      <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
                         <Card Discount={false} />
                       </div>
 
@@ -953,7 +967,7 @@ const Index = () => {
                 <CallToAction />
               </div>
               {/* most ordered */}
-              <div className="container mx-auto flex items-center flex-wrap sm:pt-4 ">
+              {/* <div className="container mx-auto flex items-center flex-wrap sm:pt-4 ">
                 <div id="store" className="w-full  top-0  sm:py-1">
                   <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 sm:px-2 py-3">
                     <div className="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl">
@@ -991,7 +1005,7 @@ const Index = () => {
                     </div>
                   </div>
                   <ul
-                    className="px-2 flex  gap-2 sm:gap-8 justify-start overflow-x-scroll custom-scrollbar pb-2"
+                    className="px-2 flex  gap-6 sm:gap-8 justify-start overflow-x-scroll custom-scrollbar pb-2"
                     id="myproTab"
                   >
                     <li className="inline-block align-top text-[14px] text-gray-800 uppercase p-[0] cursor-pointer font-medium transition-all duration-[0.3s] ease delay-[0s] leading-[20px] tracking-[0.7px] ">
@@ -1060,6 +1074,57 @@ const Index = () => {
                     <Card Discount={false} />
                   </div>
                 </div>
+              </div> */}
+              {/* Curated */}
+              <div className=" items-center pt-4 h-auto">
+                <div id="store" className="w-full top-0 sm:px-4 sm:py-1">
+                  <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
+                    <div
+                      className="uppercase  tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl"
+                      href="#"
+                    >
+                      Curated For You
+                    </div>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-6 gap-4">
+                  <div className="md:col-span-2 col-span-6 py-0 md:order-first ">
+                    <div className="md:p-8 md:bg-gray-100 rounded-xl">
+                      <div className="hidden md:block mb-4">
+                        <h1 className="text-sm font-bold text-gray-400 ">
+                          #Explore
+                        </h1>
+                        <p className="text-gray-700">
+                          Donec vitae odio quis nisl dapibus malesuada. Nullam
+                          ac aliquet velit. Aliquam vulputate velit imperdiet
+                          dolor tempor tristique.
+                        </p>
+                      </div>
+                      <div className="flex flex-row md:flex-col md:overflow-hidden overflow-scroll gap-4 mx-5 custom-scrollbar">
+                        {curatedCategories.map((category, index) => (
+                          <button
+                            key={index}
+                            onClick={(e) =>
+                              handleCuratedCategoryChange(e, index)
+                            }
+                            className={`capitalize py-3 px-4 rounded-md text-sm font-medium whitespace-nowrap shadow-md transition-transform transform hover:scale-105 ${
+                              activeIndex === index
+                                ? "bg-gray-800 text-white"
+                                : "bg-white text-gray-800"
+                            }`}
+                          >
+                            {category}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                    <hr className="w-full h-1 mt-4 text-gray-400 block md:hidden" />
+                  </div>
+                  <div className="md:col-span-4 col-span-6 md:order-last">
+                    <CardCarouselCurated />
+                  </div>
+                </div>
               </div>
 
               {/* vendors*/}
@@ -1103,7 +1168,7 @@ const Index = () => {
                     </div>
                   </div>
                   <ul
-                    className="px-2 flex  gap-2 sm:gap-8 justify-start overflow-x-scroll custom-scrollbar pb-2"
+                    className="px-2 flex  gap-6 sm:gap-8 whitespace-nowrap justify-start overflow-x-scroll custom-scrollbar pb-2"
                     id="myproTab"
                   >
                     <li className="inline-block align-top text-[14px] text-gray-800 uppercase p-[0] cursor-pointer font-medium transition-all duration-[0.3s] ease delay-[0s] leading-[20px] tracking-[0.7px] ">
