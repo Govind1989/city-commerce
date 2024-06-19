@@ -13,7 +13,7 @@ import { FaPhone, FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa6";
 import Link from "next/link";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Card from "./Card.js";
+import CardM from "../Common/CardM.js";
 import CampaignCard from "../VendorCommon/CampaignCard.js";
 import CardCarousel from "../VendorCommon/CardCarousel.js";
 import { SubCategories } from "./SubCategories.js";
@@ -373,40 +373,40 @@ const ProductsClothing = ({ shopName }) => {
           </div>
           {/* <div className="px-2"> */}
           <div className="w-1/2 md:w-1/3 xl:w-1/4">
-            <Card Discount={false} />
+            <CardM Discount={false} />
           </div>
           <div className="w-1/2 md:w-1/3 xl:w-1/4">
-            <Card Discount={false} />
+            <CardM Discount={false} />
           </div>
           <div className="w-1/2 md:w-1/3 xl:w-1/4">
-            <Card Discount={false} />
+            <CardM Discount={false} />
           </div>
           <div className="w-1/2 md:w-1/3 xl:w-1/4">
-            <Card Discount={false} />
+            <CardM Discount={false} />
           </div>
           <div className="w-1/2 md:w-1/3 xl:w-1/4">
-            <Card Discount={false} />
+            <CardM Discount={false} />
           </div>
           <div className="w-1/2 md:w-1/3 xl:w-1/4">
-            <Card Discount={false} />
+            <CardM Discount={false} />
           </div>
           <div className="w-1/2 md:w-1/3 xl:w-1/4">
-            <Card Discount={false} />
+            <CardM Discount={false} />
           </div>
           <div className="w-1/2 md:w-1/3 xl:w-1/4">
-            <Card Discount={false} />
+            <CardM Discount={false} />
           </div>
           <div className="w-1/2 md:w-1/3 xl:w-1/4">
-            <Card Discount={false} />
+            <CardM Discount={false} />
           </div>
           <div className="w-1/2 md:w-1/3 xl:w-1/4">
-            <Card Discount={false} />
+            <CardM Discount={false} />
           </div>
           <div className="w-1/2 md:w-1/3 xl:w-1/4">
-            <Card Discount={false} />
+            <CardM Discount={false} />
           </div>
           <div className="w-1/2 md:w-1/3 xl:w-1/4">
-            <Card Discount={false} />
+            <CardM Discount={false} />
           </div>
           {/* </div> */}
         </div>
@@ -462,8 +462,9 @@ const ProductsClothing = ({ shopName }) => {
               </div>
             </nav>
           </div>
-
+          {/* <div className="mt-4"> */}
           <CardCarousel />
+          {/* </div> */}
         </div>
       </div>
 

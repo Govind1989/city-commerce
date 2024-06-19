@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Card from "@/components/VendorClothing/Card";
+import Card from "@/components/Common/CardM";
 import Link from "next/link";
 // import { productsTag } from "@/data";
 import VendorCard from "./VendorCard";

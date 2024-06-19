@@ -2,7 +2,7 @@ import React from "react";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Card from "../VendorShop/Card";
+import Card from "../Common/CardL";
 const RelatedProducts = () => {
   const responsive = {
     desktop: {

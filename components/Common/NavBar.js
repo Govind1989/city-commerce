@@ -44,24 +44,24 @@ const NavBar = ({ shopName }) => {
                     <h3 className="text-gray-600 font-bold">
                       Delivered to You
                     </h3>
-                    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4  sm:px-8 py-2 text-sm border-b text-gray-600 dark:text-gray-300">
+                    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4  sm:px-4 py-2 text-sm border-b text-gray-600 dark:text-gray-300">
                       <div className="block sm:px-8 px-2 sm:py-2 py-0 text-sm dark:text-gray-300">
                         <h3 className="text-gray-500 font-bold">Wearables</h3>
                         <div className="flex flex-col gap-2  py-2">
                           <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-                            Clothing
+                            Men&apos;s Clothing
+                          </p>
+                          <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                            Women&apos;s Clothing
+                          </p>
+                          <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                            Kids&apos;s Clothing
                           </p>
                           <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
                             Footwear
                           </p>
                           <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-                            Bags
-                          </p>
-                          <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-                            Watches
-                          </p>
-                          <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-                            Specs
+                            Accessories
                           </p>
                         </div>
                       </div>
@@ -111,12 +111,15 @@ const NavBar = ({ shopName }) => {
                           <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
                             Gadgets
                           </p>
+                          <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                            Accessories
+                          </p>
                         </div>
                       </div>
 
                       <div className="block sm:px-8 px-2 sm:py-2 py-0 text-sm text-gray-600 dark:text-gray-300">
                         <h3 className="text-gray-500 font-bold">
-                          Computers & Parts
+                          Computers & Accessories
                         </h3>
                         <div className="flex flex-col gap-2 py-2">
                           <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
@@ -133,6 +136,23 @@ const NavBar = ({ shopName }) => {
                           </p>
                         </div>
                       </div>
+                      <div className="block sm:px-8 px-2 sm:py-2 py-0 text-sm text-gray-600 dark:text-gray-300">
+                        <h3 className="text-gray-500 font-bold">
+                          Mobile & Accessories
+                        </h3>
+                        <div className="flex flex-col gap-2 py-2">
+                          <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                            Mobile Phones
+                          </p>
+
+                          <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                            Accessories
+                          </p>
+                          <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                            Maintainence
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
@@ -142,9 +162,7 @@ const NavBar = ({ shopName }) => {
                     </h3>
                     <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4  sm:px-8 py-2 text-sm border-b text-gray-600 dark:text-gray-300">
                       <div className="block sm:px-8 px-2 sm:py-2 py-0 text-sm  text-gray-600 dark:text-gray-300">
-                        <h3 className="text-gray-500 font-bold">
-                          Service Bookings
-                        </h3>
+                        <h3 className="text-gray-500 font-bold">Bookings</h3>
                         <div className="flex flex-col gap-2  py-2">
                           <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
                             Electronics Maintainence
@@ -159,18 +177,16 @@ const NavBar = ({ shopName }) => {
                       </div>
 
                       <div className="block sm:px-8 px-2 sm:py-2 py-0 text-sm  text-gray-600 dark:text-gray-300">
-                        <h3 className="text-gray-500 font-bold">
-                          Venue Bookings
-                        </h3>
+                        <h3 className="text-gray-500 font-bold">Holidays</h3>
                         <div className="flex flex-col gap-2  py-2">
+                          <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                            Ticketing
+                          </p>
                           <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
                             Hotels
                           </p>
                           <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-                            Banquets
-                          </p>
-                          <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-                            Cleaning
+                            Travels & Tours
                           </p>
                         </div>
                       </div>
@@ -232,9 +248,9 @@ const NavBar = ({ shopName }) => {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                   ></path>
                 </svg>
               </div>

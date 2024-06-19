@@ -22,7 +22,7 @@ import CampaignCard from "../VendorCommon/CampaignCard.js";
 import CardCarousel from "../VendorCommon/CardCarousel.js";
 
 import { MdDelete } from "react-icons/md";
-import MenuCard from "./MenuCard.js";
+import MenuCard from "../Common/CardS.js";
 import NavBar from "../Common/NavBar.js";
 const Restaurants = ({ shopName }) => {
   const [item, setItem] = useState("Appetizer");
@@ -410,7 +410,7 @@ const Restaurants = ({ shopName }) => {
                 className="uppercase  tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl"
                 href="#"
               >
-                Home Specials
+                Our Cuisine
               </div>
             </div>
           </div>

@@ -13,9 +13,9 @@ import { GrNext, GrPrevious } from "react-icons/gr";
 import Link from "next/link";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Card from "./Card";
+import Card from "../Common/CardL.js";
 import CampaignCard from "../VendorCommon/CampaignCard.js";
-import CardCarousel from "../VendorCommon/CardCarousel.js";
+import CardCarouselLarge from "../VendorCommon/CardCarouselLarge.js";
 import NavBar from "../Common/NavBar.js";
 const Products = ({ shopName }) => {
   const [item, setItem] = useState(0);
@@ -350,7 +350,7 @@ const Products = ({ shopName }) => {
             </nav>
           </div>
 
-          <CardCarousel />
+          <CardCarouselLarge />
         </div>
       </div>
 
@@ -518,7 +518,7 @@ const Products = ({ shopName }) => {
           </nav>
         </div>
 
-        <CardCarousel />
+        <CardCarouselLarge />
       </div>
 
       {/* about */}

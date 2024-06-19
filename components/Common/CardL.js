@@ -9,7 +9,9 @@ import {
   IoStarHalf,
 } from "react-icons/io5";
 import Link from "next/link";
-const Card = ({ Discount }) => {
+import { FaShop } from "react-icons/fa6";
+import { FaPlusSquare } from "react-icons/fa";
+const CardL = ({ Discount, vendor }) => {
   const [addtoCart, setIAddToCart] = useState(false);
   const [addToWishlist, setAddToWishlist] = useState(false);
   const [rating, setRating] = useState(4);
@@ -62,9 +64,9 @@ const Card = ({ Discount }) => {
 
               <div onClick={toggleBagState} className="cursor-pointer">
                 {addtoCart ? (
-                  <IoBag className="sm:w-6 w-4 h-auto" />
+                  <FaPlusSquare className="w-6 h-6 text-gray-400" />
                 ) : (
-                  <IoBagOutline className="sm:w-6 w-4 h-auto" />
+                  <FaPlusSquare className="w-6 h-6 text-gray-400" />
                 )}
               </div>
             </div>
@@ -80,10 +82,18 @@ const Card = ({ Discount }) => {
             </p>
             <div className="flex gap-1 items-center">{renderStars()}</div>
           </div>
+          {vendor && (
+            <div className="flex gap-2 items-center">
+              <FaShop className="text-gray-600" />
+              <div className="text-gray-600 text-sm sm:text-md font-normal">
+                Urban Furnishings
+              </div>
+            </div>
+          )}
         </Link>
       </div>
     </>
   );
 };
 
-export default Card;
+export default CardL;

@@ -32,23 +32,25 @@ const HomeCarousel = () => {
           }`}
         >
           <div
-            className="bg-cover bg-center h-auto text-white py-24 px-10 object-fill"
+            className="bg-cover bg-center h-auto text-gray-400 py-24 px-10 object-fill"
             style={{
               backgroundImage:
-                "url(https://images.unsplash.com/photo-1544427920-c49ccfb85579?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1422&q=80)",
+                "url(https://elyssi.redpixelthemes.com/assets/img/unlicensed/hero-slide-04.jpg)",
             }}
           >
             <div className="md:w-1/2">
-              <p className="font-bold text-sm uppercase">Services</p>
-              <p className="text-3xl font-bold">Hello world</p>
+              <p className="font-bold text-sm uppercase">
+                #Women&apos;s Clothing
+              </p>
+              <p className="text-3xl font-bold">Summer Collections</p>
               <p className="text-2xl mb-10 leading-none">
-                Carousel with TailwindCSS and jQuery
+                Prepare this summer for Beautiful you . .
               </p>
               <a
                 href="#"
-                className="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800"
+                className="bg-gray-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800"
               >
-                Contact us
+                Shop now
               </a>
             </div>
           </div>
@@ -61,22 +63,22 @@ const HomeCarousel = () => {
           }`}
         >
           <div
-            className="bg-cover bg-top h-auto text-white py-24 px-10 object-fill"
+            className="bg-cover bg-top h-auto text-gray-400 py-24 px-10 object-fill"
             style={{
               backgroundImage:
                 "url(https://elyssi.redpixelthemes.com/assets/img/unlicensed/hero-slide-01.jpg)",
             }}
           >
-            <p className="font-bold text-sm uppercase">Services</p>
-            <p className="text-3xl font-bold">Hello world</p>
+            <p className="font-bold text-sm uppercase">#Men&apos;s Clothing</p>
+            <p className="text-3xl font-bold">Formal Wear</p>
             <p className="text-2xl mb-10 leading-none">
-              Carousel with TailwindCSS and jQuery
+              Get Comfortable with Formal Elegance
             </p>
             <a
               href="#"
-              className="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800"
+              className="bg-gray-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800"
             >
-              Contact us
+              Shop Now
             </a>
           </div>
           <br />

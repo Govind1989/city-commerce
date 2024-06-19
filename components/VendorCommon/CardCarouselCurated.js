@@ -1,22 +1,13 @@
 import React from "react";
-// import {
-//   CarouselProvider,
-//   Slider,
-//   Slide,
-//   ButtonBack,
-//   ButtonNext,
-// } from "pure-react-carousel";
-// import "pure-react-carousel/dist/react-carousel.es.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-// import CardM from "../Common/CardM.js";
-import CardM from "../Common/CardM";
+import CardL from "../Common/CardL.js";
 
-const CardCarousel = () => {
+const CardCarouselCurated = () => {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 4,
+      items: 3,
     },
     tablet: {
       breakpoint: { max: 1023, min: 464 },
@@ -36,11 +27,11 @@ const CardCarousel = () => {
           itemClass="px-[2px]"
         >
           {/* {products?.data?.map((product) => ( */}
-          <CardM />
-          <CardM />
-          <CardM />
-          <CardM />
-          <CardM />
+          <CardL />
+          <CardL />
+          <CardL />
+          <CardL />
+          <CardL />
           {/* ))} */}
         </Carousel>
       </div>
@@ -48,4 +39,4 @@ const CardCarousel = () => {
   );
 };
 
-export default CardCarousel;
+export default CardCarouselCurated;
