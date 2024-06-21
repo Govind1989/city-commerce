@@ -564,36 +564,38 @@ const Index = () => {
                   )}
                 </div>
               </div>
-              <div className="w-full py-0 flex flex-wrap  relative pb-0 sm:mb-4">
-                <div className="w-1/2 md:w-1/3 xl:w-1/3  mb-4">
-                  <CardL Discount={false} />
-                </div>
-                <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
-                  <CardL Discount={false} />
-                </div>
-                <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
-                  <CardL Discount={false} />
-                </div>
-                <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
-                  <CardL Discount={false} />
-                </div>
-                <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
-                  <CardL Discount={false} />
-                </div>
-                <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
-                  <CardL Discount={false} />
-                </div>
-                <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
-                  <CardL Discount={false} />
-                </div>
-                <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
-                  <CardL Discount={false} />
-                </div>
-                <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
-                  <CardL Discount={false} />
+              <div className="w-full py-0 relative pb-0 sm:mb-4">
+                <div className="columns-2 md:columns-2 xl:columns-3 gap-2">
+                  <div className="mb-1 sm:mb-0 ">
+                    <CardL Discount={false} vendor={true} />
+                  </div>
+                  <div className="mb-1 ">
+                    <CardL Discount={false} vendor={true} />
+                  </div>
+                  <div className="mb-1 ">
+                    <CardL Discount={false} vendor={true} />
+                  </div>
+                  <div className="mb-1 ">
+                    <CardL Discount={false} vendor={true} />
+                  </div>
+                  <div className="mb-1 ">
+                    <CardL Discount={false} vendor={true} />
+                  </div>
+                  <div className="mb-1 ">
+                    <CardL Discount={false} vendor={true} />
+                  </div>
+                  <div className="mb-1 ">
+                    <CardL Discount={false} vendor={true} />
+                  </div>
+                  <div className="mb-1 break-inside">
+                    <CardL Discount={false} vendor={true} />
+                  </div>
+                  <div className="mb-1 ">
+                    <CardL Discount={false} vendor={true} />
+                  </div>
                 </div>
 
-                <div className="items-center justify-center  py-2 mx-auto  ">
+                <div className="flex items-center justify-center py-2 mx-auto">
                   <div className="flex select-none space-x-1 text-gray-700">
                     <Link
                       href="#"
@@ -605,19 +607,19 @@ const Index = () => {
                       href="#"
                       className="rounded-md bg-gray-200 px-3 sm:px-4 py-2 transition duration-300 hover:bg-gray-400"
                     >
-                      <span className="text-xs">1 </span>
+                      <span className="text-xs">1</span>
                     </Link>
                     <Link
                       href="#"
                       className="rounded-md bg-gray-200 px-3 sm:px-4 py-2 transition duration-300 hover:bg-gray-400"
                     >
-                      <span className="text-xs">2 </span>
+                      <span className="text-xs">2</span>
                     </Link>
                     <Link
                       href="#"
                       className="rounded-md bg-gray-200 px-3 sm:px-4 py-2 transition duration-300 hover:bg-gray-400"
                     >
-                      <span className="text-xs">3 </span>
+                      <span className="text-xs">3</span>
                     </Link>
                     <span className="rounded-md px-3 sm:px-4 py-2">
                       {" "}
@@ -625,9 +627,9 @@ const Index = () => {
                     </span>
                     <Link
                       href="#"
-                      className="rounded-md bg-gray-200 px-3 sm:px-4 py-2 transition duration-300 hover:bg-gray-400 "
+                      className="rounded-md bg-gray-200 px-3 sm:px-4 py-2 transition duration-300 hover:bg-gray-400"
                     >
-                      <span className="text-xs">10 </span>
+                      <span className="text-xs">10</span>
                     </Link>
                     <Link
                       href="#"

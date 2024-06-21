@@ -40,7 +40,7 @@ const NavBar = ({ shopName }) => {
                 style={{ top: "4rem", transformOrigin: "top left" }} // Fixed position with top and transformOrigin
               >
                 <div>
-                  <div className="sm:p-4 p-2  text-gray-600 dark:text-gray-300">
+                  <div className="sm:p-4 p-2  text-gray-600 dark:text-gray-300 whitespace-nowrap">
                     <h3 className="text-gray-600 font-bold">
                       Delivered to You
                     </h3>
@@ -74,6 +74,9 @@ const NavBar = ({ shopName }) => {
                           </p>
                           <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
                             Sweets & Desserts
+                          </p>
+                          <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                            Cakes & Bakes
                           </p>
                           <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
                             Grocery
@@ -129,49 +132,60 @@ const NavBar = ({ shopName }) => {
                             Laptops
                           </p>
                           <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-                            Accessories
+                            Tablets
                           </p>
                           <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-                            Components
+                            Accessories
                           </p>
                         </div>
                       </div>
                       <div className="block sm:px-8 px-2 sm:py-2 py-0 text-sm text-gray-600 dark:text-gray-300">
                         <h3 className="text-gray-500 font-bold">
-                          Mobile & Accessories
+                          Mobiles & Accessories
                         </h3>
                         <div className="flex flex-col gap-2 py-2">
                           <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
                             Mobile Phones
                           </p>
+                          <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                            Gadgets
+                          </p>
 
                           <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
                             Accessories
-                          </p>
-                          <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-                            Maintainence
                           </p>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div className="p-4 text-gray-600 dark:text-gray-300">
+                  <div className="p-4 text-gray-600 whitespace-nowrap dark:text-gray-300 ">
                     <h3 className="text-gray-600 font-bold">
                       Bookings & Appointments
                     </h3>
                     <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4  sm:px-8 py-2 text-sm border-b text-gray-600 dark:text-gray-300">
                       <div className="block sm:px-8 px-2 sm:py-2 py-0 text-sm  text-gray-600 dark:text-gray-300">
-                        <h3 className="text-gray-500 font-bold">Bookings</h3>
+                        <h3 className="text-gray-500 font-bold">
+                          Service Bookings
+                        </h3>
                         <div className="flex flex-col gap-2  py-2">
                           <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
                             Electronics Maintainence
                           </p>
                           <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-                            Gardening
+                            Home Maintainence
                           </p>
                           <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-                            Cleaning
+                            Cleaning & Gardening
+                          </p>
+                          <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                            Plumbing
+                          </p>
+                          <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                            Physiotherapy
+                          </p>
+                          <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                            Beauty & Grooming
                           </p>
                         </div>
                       </div>

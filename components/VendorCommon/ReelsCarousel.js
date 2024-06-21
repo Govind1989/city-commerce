@@ -1,9 +1,10 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import CardL from "../Common/CardL.js";
+// import CardL from "../Common/CardL.js";
+import Reels from "../Common/Reels.js";
 
-const CardCarouselLarge = () => {
+const ReelsCarousel = () => {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -11,7 +12,7 @@ const CardCarouselLarge = () => {
     },
     tablet: {
       breakpoint: { max: 1023, min: 464 },
-      items: 2,
+      items: 3,
     },
     mobile: {
       breakpoint: { max: 767, min: 0 },
@@ -19,19 +20,19 @@ const CardCarouselLarge = () => {
     },
   };
   return (
-    <div className="container mx-auto mt-4">
-      <div className="px-1 ">
+    <div className="container mx-auto md:mt-4">
+      <div className=" ">
         <Carousel
           responsive={responsive}
           containerClass=""
           itemClass="px-[2px]"
         >
           {/* {products?.data?.map((product) => ( */}
-          <CardL Discount={true} />
-          <CardL Discount={true} />
-          <CardL Discount={true} />
-          <CardL Discount={true} />
-          <CardL Discount={true} />
+          <Reels />
+          <Reels />
+          <Reels />
+          <Reels />
+          <Reels />
           {/* ))} */}
         </Carousel>
       </div>
@@ -39,4 +40,4 @@ const CardCarouselLarge = () => {
   );
 };
 
-export default CardCarouselLarge;
+export default ReelsCarousel;

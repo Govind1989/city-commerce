@@ -169,95 +169,119 @@ const Index = () => {
                             Category
                           </h3>
 
-                          <div className="mt-2 flex flex-row  md:flex-col md:overflow-hidden overflow-scroll gap-2 md:gap-2  custom-scrollbar">
-                            <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
-                              <input
-                                type="checkbox"
-                                className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading active"
-                                name="woman"
-                                value="woman"
-                              />
-                              <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                                Woman
-                              </span>
-                            </label>
-                            <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
-                              <input
-                                type="checkbox"
-                                className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
-                                name="man"
-                                value="man"
-                              />
-                              <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                                Man
-                              </span>
-                            </label>
-                            <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
-                              <input
-                                type="checkbox"
-                                className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
-                                name="watch"
-                                value="watch"
-                              />
-                              <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                                Watch
-                              </span>
-                            </label>
-                            <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
-                              <input
-                                type="checkbox"
-                                className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
-                                name="kids"
-                                value="kids"
-                              />
-                              <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                                Kids
-                              </span>
-                            </label>
-                            <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
-                              <input
-                                type="checkbox"
-                                className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
-                                name="sports"
-                                value="sports"
-                              />
-                              <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                                Sports
-                              </span>
-                            </label>
-                            <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
-                              <input
-                                type="checkbox"
-                                className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
-                                name="sunglass"
-                                value="sunglass"
-                              />
-                              <span className="ms-2 sm:ms-4-mt-0.5 text-gray-600">
-                                Sunglass
-                              </span>
-                            </label>
-                            <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
-                              <input
-                                type="checkbox"
-                                className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
-                                name="bags"
-                                value="bags"
-                              />
-                              <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                                Bags
-                              </span>
-                            </label>
-                            <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
-                              <input
-                                type="checkbox"
-                                className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
-                                name="sneakers"
-                                value="sneakers"
-                              />
-                              <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                                Sneakers
-                              </span>
-                            </label>
+                          <div className="mt-2 flex flex-row  md:flex-col md:overflow-hidden overflow-scroll custom-scrollbar">
+                            <div className="w-full capitalize py-1 px-2 rounded-md text-sm font-medium whitespace-nowrap hover:shadow-md text-gray-800  transition-transform transform hover:scale-105  flex flex-col ">
+                              <label className="group flex flex-row whitespace-nowrap  text-heading text-sm cursor-pointer">
+                                <input
+                                  type="checkbox"
+                                  className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading active"
+                                  name="woman"
+                                  value="woman"
+                                />
+
+                                <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
+                                  Men
+                                </span>
+                              </label>
+                            </div>
+                            <div className="w-full capitalize py-1 px-2 rounded-md text-sm font-medium whitespace-nowrap hover:shadow-md text-gray-800  transition-transform transform hover:scale-105  flex flex-col ">
+                              <label className="group flex flex-row whitespace-nowrap  text-heading text-sm cursor-pointer">
+                                <input
+                                  type="checkbox"
+                                  className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading active"
+                                  name="woman"
+                                  value="woman"
+                                />
+
+                                <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
+                                  Women
+                                </span>
+                              </label>
+                            </div>
+                            <div className="w-full capitalize py-1 px-2 rounded-md text-sm font-medium whitespace-nowrap hover:shadow-md  text-gray-800  transition-transform transform hover:scale-105  flex flex-col ">
+                              <label className="group flex flex-row whitespace-nowrap  text-heading text-sm cursor-pointer">
+                                <input
+                                  type="checkbox"
+                                  className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading active"
+                                  name="woman"
+                                  value="woman"
+                                />
+
+                                <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
+                                  Kids
+                                </span>
+                              </label>
+                            </div>
+                            <div className="w-full capitalize py-1 px-2 rounded-md text-sm font-medium whitespace-nowrap hover:shadow-md text-gray-800  transition-transform transform hover:scale-105  flex flex-col ">
+                              <label className="group flex flex-row whitespace-nowrap  text-heading text-sm cursor-pointer">
+                                <input
+                                  type="checkbox"
+                                  className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading active"
+                                  name="woman"
+                                  value="woman"
+                                />
+
+                                <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
+                                  Watches
+                                </span>
+                              </label>
+                            </div>
+                            <div className="w-full capitalize py-1 px-2 rounded-md text-sm font-medium whitespace-nowrap hover:shadow-md text-gray-800  transition-transform transform hover:scale-105  flex flex-col ">
+                              <label className="group flex flex-row whitespace-nowrap  text-heading text-sm cursor-pointer">
+                                <input
+                                  type="checkbox"
+                                  className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading active"
+                                  name="woman"
+                                  value="woman"
+                                />
+
+                                <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
+                                  Sports
+                                </span>
+                              </label>
+                            </div>
+                            <div className="w-full capitalize py-1 px-2 rounded-md text-sm font-medium whitespace-nowrap hover:shadow-md text-gray-800  transition-transform transform hover:scale-105  flex flex-col ">
+                              <label className="group flex flex-row whitespace-nowrap  text-heading text-sm cursor-pointer">
+                                <input
+                                  type="checkbox"
+                                  className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading active"
+                                  name="woman"
+                                  value="woman"
+                                />
+
+                                <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
+                                  Footwears
+                                </span>
+                              </label>
+                            </div>
+                            <div className="w-full capitalize py-1 px-2 rounded-md text-sm font-medium whitespace-nowrap hover:shadow-md text-gray-800  transition-transform transform hover:scale-105  flex flex-col ">
+                              <label className="group flex flex-row whitespace-nowrap  text-heading text-sm cursor-pointer">
+                                <input
+                                  type="checkbox"
+                                  className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading active"
+                                  name="woman"
+                                  value="woman"
+                                />
+
+                                <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
+                                  Bags
+                                </span>
+                              </label>
+                            </div>
+                            <div className="w-full capitalize py-1 px-2 rounded-md text-sm font-medium whitespace-nowrap hover:shadow-md text-gray-800  transition-transform transform hover:scale-105  flex flex-col ">
+                              <label className="group flex flex-row whitespace-nowrap  text-heading text-sm cursor-pointer">
+                                <input
+                                  type="checkbox"
+                                  className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading active"
+                                  name="woman"
+                                  value="woman"
+                                />
+
+                                <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
+                                  Accessories
+                                </span>
+                              </label>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -268,72 +292,90 @@ const Index = () => {
                           </h3>
 
                           <div className="mt-2 flex flex-row  md:flex-col md:overflow-hidden overflow-scroll gap-2 md:gap-2  custom-scrollbar">
-                            <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
-                              <input
-                                type="checkbox"
-                                className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading active"
-                                name="woman"
-                                value="woman"
-                              />
-                              <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                                Nike
-                              </span>
-                            </label>
-                            <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
-                              <input
-                                type="checkbox"
-                                className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
-                                name="man"
-                                value="man"
-                              />
-                              <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                                Adidas
-                              </span>
-                            </label>
-                            <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
-                              <input
-                                type="checkbox"
-                                className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
-                                name="watch"
-                                value="watch"
-                              />
-                              <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                                H&M
-                              </span>
-                            </label>
-                            <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
-                              <input
-                                type="checkbox"
-                                className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
-                                name="kids"
-                                value="kids"
-                              />
-                              <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                                Easy
-                              </span>
-                            </label>
-                            <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
-                              <input
-                                type="checkbox"
-                                className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
-                                name="sports"
-                                value="sports"
-                              />
-                              <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                                Under Armor
-                              </span>
-                            </label>
-                            <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
-                              <input
-                                type="checkbox"
-                                className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
-                                name="sunglass"
-                                value="sunglass"
-                              />
-                              <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                                Denim
-                              </span>
-                            </label>
+                            <div className="w-full capitalize py-1 px-2 rounded-md text-sm font-medium whitespace-nowrap hover:shadow-md text-gray-800  transition-transform transform hover:scale-105  flex flex-col ">
+                              <label className="group flex flex-row whitespace-nowrap  text-heading text-sm cursor-pointer">
+                                <input
+                                  type="checkbox"
+                                  className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading active"
+                                  name="woman"
+                                  value="woman"
+                                />
+
+                                <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
+                                  Nike
+                                </span>
+                              </label>
+                            </div>
+                            <div className="w-full capitalize py-1 px-2 rounded-md text-sm font-medium whitespace-nowrap hover:shadow-md text-gray-800  transition-transform transform hover:scale-105  flex flex-col ">
+                              <label className="group flex flex-row whitespace-nowrap  text-heading text-sm cursor-pointer">
+                                <input
+                                  type="checkbox"
+                                  className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading active"
+                                  name="woman"
+                                  value="woman"
+                                />
+
+                                <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
+                                  Adidas
+                                </span>
+                              </label>
+                            </div>
+                            <div className="w-full capitalize py-1 px-2 rounded-md text-sm font-medium whitespace-nowrap hover:shadow-md text-gray-800  transition-transform transform hover:scale-105  flex flex-col ">
+                              <label className="group flex flex-row whitespace-nowrap  text-heading text-sm cursor-pointer">
+                                <input
+                                  type="checkbox"
+                                  className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading active"
+                                  name="woman"
+                                  value="woman"
+                                />
+
+                                <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
+                                  H&M
+                                </span>
+                              </label>
+                            </div>
+                            <div className="w-full capitalize py-1 px-2 rounded-md text-sm font-medium whitespace-nowrap hover:shadow-md text-gray-800  transition-transform transform hover:scale-105  flex flex-col ">
+                              <label className="group flex flex-row whitespace-nowrap  text-heading text-sm cursor-pointer">
+                                <input
+                                  type="checkbox"
+                                  className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading active"
+                                  name="woman"
+                                  value="woman"
+                                />
+
+                                <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
+                                  Denim
+                                </span>
+                              </label>
+                            </div>
+                            <div className="w-full capitalize py-1 px-2 rounded-md text-sm font-medium whitespace-nowrap hover:shadow-md text-gray-800  transition-transform transform hover:scale-105  flex flex-col ">
+                              <label className="group flex flex-row whitespace-nowrap  text-heading text-sm cursor-pointer">
+                                <input
+                                  type="checkbox"
+                                  className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading active"
+                                  name="woman"
+                                  value="woman"
+                                />
+
+                                <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
+                                  Easy
+                                </span>
+                              </label>
+                            </div>
+                            <div className="w-full capitalize py-1 px-2 rounded-md text-sm font-medium whitespace-nowrap hover:shadow-md text-gray-800  transition-transform transform hover:scale-105  flex flex-col ">
+                              <label className="group flex flex-row whitespace-nowrap  text-heading text-sm cursor-pointer">
+                                <input
+                                  type="checkbox"
+                                  className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading active"
+                                  name="woman"
+                                  value="woman"
+                                />
+
+                                <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
+                                  Under Armour
+                                </span>
+                              </label>
+                            </div>
                           </div>
                         </div>
                       </div>

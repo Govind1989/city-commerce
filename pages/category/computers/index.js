@@ -44,29 +44,57 @@ const Index = () => {
         <div className="container mx-auto  px-8  ">
           <div className="-mx-6 flex flex-wrap">
             <div className="w-full px-2 sm:px-4 lg:w-8/12">
-              <div className="relative mb-4 sm:mb-8 h-[370px] md:h-[462px]">
-                <img
-                  src="https://p.w3layouts.com/demos_new/30-01-2017/electronic_store-demo_Free/192355906/web/images/b1.jpg"
-                  alt="Electronics-banner"
-                  className="h-full w-full object-cover object-center"
-                />
-                <div className="absolute left-0 top-0 flex h-full w-full items-center px-8 md:px-12">
-                  <div className=" text-gray-200 max-w-[420px] w-[200px] sm:w-full">
-                    <h3>
-                      <p className="mb-5 block text-2xl font-bold  hover:text-primary sm:text-4xl">
-                        Ultimate Home Appliance Sale
+              <div className="w-full md:flex gap-4">
+                <div className="w-full md:w-1/2 flex-1 relative mb-4 sm:mb-8 h-[370px] md:h-[462px]">
+                  <img
+                    src="https://p.w3layouts.com/demos_new/30-01-2017/electronic_store-demo_Free/192355906/web/images/b1.jpg"
+                    alt="computers-banner"
+                    className="h-full w-full object-cover object-center"
+                  />
+                  <div className="absolute left-0 top-0 flex h-full w-full items-center px-8 md:px-12">
+                    <div className=" text-gray-200 max-w-[420px] w-[200px] sm:w-full">
+                      <h3>
+                        <p className="mb-5 block text-2xl font-bold  hover:text-primary sm:text-4xl">
+                          Get Workstation Upgraded
+                        </p>
+                      </h3>
+                      <p className="mb-9 text-base text-body-color">
+                        Upgrade your workspace with our latest desktop pc.
+                        Quality and efficiency guaranteed.
                       </p>
-                    </h3>
-                    <p className="mb-9 text-base text-body-color">
-                      Upgrade your home with our latest appliances. Quality and
-                      efficiency guaranteed.
-                    </p>
-                    <Link
-                      href="javascript:void(0)"
-                      className="inline-flex items-center justify-center rounded-md bg-primary px-0 py-[13px] text-center text-base font-medium text-gray-200 "
-                    >
-                      #Home Appliances
-                    </Link>
+                      <Link
+                        href="javascript:void(0)"
+                        className="inline-flex items-center justify-center rounded-md bg-primary px-0 py-[13px] text-center text-base font-medium text-gray-200 "
+                      >
+                        #Desktop PCs
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+                <div className="w-full md:w-1/2 flex-1 relative mb-4 sm:mb-8 h-[370px] md:h-[462px]">
+                  <img
+                    src="https://p.w3layouts.com/demos_new/30-01-2017/electronic_store-demo_Free/192355906/web/images/b1.jpg"
+                    alt="computers-banner"
+                    className="h-full w-full object-cover object-center"
+                  />
+                  <div className="absolute left-0 top-0 flex h-full w-full items-center px-8 md:px-12">
+                    <div className=" text-gray-200 max-w-[420px] w-[200px] sm:w-full">
+                      <h3>
+                        <p className="mb-5 block text-2xl font-bold  hover:text-primary sm:text-4xl">
+                          Ultimated Laptops Sale
+                        </p>
+                      </h3>
+                      <p className="mb-9 text-base text-body-color">
+                        Upgrade your workspace with our latest laptops. Quality
+                        and efficiency guaranteed.
+                      </p>
+                      <Link
+                        href="javascript:void(0)"
+                        className="inline-flex items-center justify-center rounded-md bg-primary px-0 py-[13px] text-center text-base font-medium text-gray-200 "
+                      >
+                        #Laptops
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -77,21 +105,21 @@ const Index = () => {
                   <div className="relative mb-4 h-[223px] bg-gray-300 ">
                     <img
                       src="https://p.w3layouts.com/demos_new/template_demo/11-06-2021/electronics-mart-liberty-demo_Free/1081434887/web/images/banner3.png"
-                      alt="Office Appliance"
+                      alt="computers-banner"
                       className="h-full w-full object-cover object-center"
                     />
                     <div className="absolute left-0 top-0 flex h-full w-full items-center justify-start p-6 sm:p-9">
                       <div className="max-w-[180px] text-right">
                         <h3>
                           <p className="mb-3 block text-xl font-bold text-dark hover:text-primary xl:text-2xl">
-                            Modern Office Essentials
+                            Modern Screens & Tablets
                           </p>
                         </h3>
                         <Link
                           href="javascript:void(0)"
                           className="text-base font-medium text-dark hover:text-primary"
                         >
-                          #Office Appliances
+                          #Gadgets & Gizmos
                         </Link>
                       </div>
                     </div>
@@ -101,21 +129,21 @@ const Index = () => {
                   <div className="relative mb-8 h-[223px] bg-gray-300">
                     <img
                       src="https://p.w3layouts.com/demos_new/template_demo/11-06-2021/electronics-mart-liberty-demo_Free/1081434887/web/images/banner4.png"
-                      alt="Gadgets"
+                      alt="computers-banner"
                       className="h-full w-full object-cover object-center"
                     />
                     <div className="absolute left-0 top-0 flex h-full w-full items-center justify-start p-6 sm:p-9">
                       <div className="max-w-[180px] text-right">
                         <h3>
                           <p className="mb-3 block text-xl font-bold text-dark hover:text-primary xl:text-2xl">
-                            Latest Gadgets Collection
+                            All Essentials Accessories
                           </p>
                         </h3>
                         <Link
                           href="javascript:void(0)"
                           className="text-base font-medium text-dark hover:text-primary"
                         >
-                          #Gadgets & More
+                          #Accessories & More
                         </Link>
                       </div>
                     </div>
@@ -129,7 +157,7 @@ const Index = () => {
             <div className="container mx-auto flex flex-col xl:flex-row justify-between">
               <div className="w-full xl:w-1/3">
                 <h1 className="text-2xl font-bold text-gray-800">
-                  Electronics
+                  Computers & Accessories
                 </h1>
                 <p className="mt-2 text-gray-600">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -161,7 +189,7 @@ const Index = () => {
                           value="woman"
                         />
                         <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                          Home Appliances
+                          Desktop PCs
                         </span>
                       </label>
                       <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
@@ -172,7 +200,7 @@ const Index = () => {
                           value="man"
                         />
                         <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                          Office Appliances
+                          Laptops
                         </span>
                       </label>
                       <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
@@ -183,7 +211,7 @@ const Index = () => {
                           value="watch"
                         />
                         <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                          Washing Machine
+                          Tablets
                         </span>
                       </label>
                       <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
@@ -194,7 +222,7 @@ const Index = () => {
                           value="kids"
                         />
                         <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                          A/C & Coolers
+                          Monitors
                         </span>
                       </label>
                       <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
@@ -205,7 +233,7 @@ const Index = () => {
                           value="sports"
                         />
                         <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                          Accessories & Parts
+                          HeadPhones
                         </span>
                       </label>
                       <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
@@ -216,40 +244,7 @@ const Index = () => {
                           value="sports"
                         />
                         <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                          Sound & Speakers
-                        </span>
-                      </label>
-                      <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
-                        <input
-                          type="checkbox"
-                          className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
-                          name="sports"
-                          value="sports"
-                        />
-                        <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                          Kitchen Appliances
-                        </span>
-                      </label>
-                      <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
-                        <input
-                          type="checkbox"
-                          className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
-                          name="sports"
-                          value="sports"
-                        />
-                        <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                          Television
-                        </span>
-                      </label>
-                      <label className="group flex items-center text-heading text-sm cursor-pointer">
-                        <input
-                          type="checkbox"
-                          className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
-                          name="sports"
-                          value="sports"
-                        />
-                        <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                          Freezer
+                          Accessories
                         </span>
                       </label>
                     </div>
@@ -270,7 +265,7 @@ const Index = () => {
                           value="woman"
                         />
                         <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                          Electronics Bazar
+                          Computer Bazar
                         </span>
                       </label>
                       <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
@@ -281,7 +276,7 @@ const Index = () => {
                           value="man"
                         />
                         <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                          Akon Electonics
+                          Swastik IT Solutions
                         </span>
                       </label>
                       <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
@@ -292,7 +287,7 @@ const Index = () => {
                           value="watch"
                         />
                         <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                          Digital Electronics
+                          Digital World
                         </span>
                       </label>
                       <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
@@ -303,7 +298,7 @@ const Index = () => {
                           value="kids"
                         />
                         <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                          Home Electronics
+                          Home Computers
                         </span>
                       </label>
                     </div>
@@ -324,7 +319,7 @@ const Index = () => {
                           value="adidas"
                         />
                         <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                          LG
+                          HP
                         </span>
                       </label>
                       <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
@@ -346,7 +341,7 @@ const Index = () => {
                           value="handm"
                         />
                         <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                          Baltra
+                          Acer
                         </span>
                       </label>
                       <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
@@ -357,7 +352,7 @@ const Index = () => {
                           value="easy"
                         />
                         <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                          CG
+                          Dell
                         </span>
                       </label>
                     </div>
@@ -386,83 +381,6 @@ const Index = () => {
                     </div>
                   </div>
                 </div>
-
-                {/* <div className="pt-1">
-                  <div className="block   pb-2 ">
-                    <h3 className="text-heading sm:block  md:text-base   font-bold text-gray-400 text-sm">
-                      Color
-                    </h3>
-
-                    <div className="mt-1 flex flex-col  md:overflow-hidden overflow-scroll gap-2 md:gap-2  custom-scrollbar">
-                      <div className="color_selector flex gap-3 items-center">
-                        <div className="single_size_opt">
-                          <input
-                            type="radio"
-                            name="color"
-                            className="size_inp"
-                            id="color-red"
-                            hidden
-                          />
-                          <label
-                            htmlFor="color-red"
-                            className="w-6 h-6 bg-red-500 border-2 border-transparent rounded-full cursor-pointer inline-block"
-                            data-bs-toggle="tooltip"
-                            title="Red"
-                            aria-label="Red"
-                          ></label>
-                        </div>
-                        <div className="single_size_opt ms-2">
-                          <input
-                            type="radio"
-                            name="color"
-                            className="size_inp"
-                            id="color-white"
-                            hidden
-                          />
-                          <label
-                            htmlFor="color-white"
-                            className="w-6 h-6 bg-white border-2 border-transparent rounded-full cursor-pointer inline-block"
-                            data-bs-toggle="tooltip"
-                            title="White"
-                            aria-label="White"
-                          ></label>
-                        </div>
-                        <div className="single_size_opt ms-2">
-                          <input
-                            type="radio"
-                            name="color"
-                            className="size_inp"
-                            id="color-black"
-                            hidden
-                          />
-                          <label
-                            htmlFor="color-black"
-                            className="w-6 h-6 bg-black border-2 border-transparent rounded-full cursor-pointer inline-block"
-                            data-bs-toggle="tooltip"
-                            title="Black"
-                            aria-label="Black"
-                          ></label>
-                        </div>
-                        <div className="single_size_opt ms-2">
-                          <input
-                            type="radio"
-                            name="color"
-                            className="size_inp"
-                            id="color-purple"
-                            hidden
-                          />
-                          <label
-                            htmlFor="color-purple"
-                            className="w-6 h-6 bg-purple-500 border-2 border-transparent rounded-full cursor-pointer inline-block"
-                            data-bs-toggle="tooltip"
-                            title="Purple"
-                            aria-label="Purple"
-                          ></label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
               </div>
             </div>
 
@@ -489,7 +407,7 @@ const Index = () => {
                       type="text"
                       id="email-adress-icon"
                       className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 px-2 py-1"
-                      placeholder='"Television 24 Inch", "Washing Machines", "Sound System" . . .'
+                      placeholder='"Desktop PC", "Acer Laptops", "Samsung Tablets","Monitors 24 Inch" . . .'
                     />
                   </div>
                   <button
