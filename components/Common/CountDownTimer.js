@@ -1,24 +1,56 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 
-const CountDownTimer = () => {
+const CountDownTimer = ({ Duration }) => {
   const calculateTimeLeft = () => {
     const now = new Date();
-    const endTime = new Date();
-    endTime.setHours(24, 0, 0, 0); // Set endTime to midnight of the next day
-    const difference = endTime - now;
+    let endTime = new Date();
+    let difference;
     let timeLeft = {};
+    let daysLeft = 0;
+
+    switch (Duration) {
+      case "Daily":
+        endTime.setHours(24, 0, 0, 0); // Set endTime to midnight of the next day
+        difference = endTime - now;
+        break;
+
+      case "Weekly":
+        const currentDay = now.getDay(); // 0 is Sunday, 1 is Monday, ..., 6 is Saturday
+        const daysUntilEndOfWeek = 7 - currentDay;
+        endTime.setDate(now.getDate() + daysUntilEndOfWeek);
+        endTime.setHours(24, 0, 0, 0); // Set endTime to midnight of the end of the week
+        difference = endTime - now;
+        daysLeft = daysUntilEndOfWeek;
+        break;
+
+      case "Monthly":
+        const currentMonth = now.getMonth();
+        const nextMonth = currentMonth === 11 ? 0 : currentMonth + 1;
+        const endOfMonth = new Date(now.getFullYear(), nextMonth, 0);
+        endTime = new Date(
+          endOfMonth.getFullYear(),
+          endOfMonth.getMonth(),
+          endOfMonth.getDate() + 1
+        );
+        endTime.setHours(24, 0, 0, 0); // Set endTime to midnight of the end of the month
+        difference = endTime - now;
+        daysLeft = endOfMonth.getDate() - now.getDate();
+        break;
+
+      default:
+        difference = 0;
+    }
 
     if (difference > 0) {
       timeLeft = {
+        days: Duration !== "Daily" ? daysLeft : undefined,
         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
         minutes: Math.floor((difference / 1000 / 60) % 60),
-        // seconds: Math.floor((difference / 1000) % 60),
       };
     } else {
       timeLeft = {
         hours: 0,
         minutes: 0,
-        // seconds: 0,
       };
     }
 
@@ -44,7 +76,7 @@ const CountDownTimer = () => {
   const timerComponents = [];
 
   Object.keys(timeLeft).forEach((interval) => {
-    if (!timeLeft[interval] && timeLeft[interval] !== 0) {
+    if (timeLeft[interval] === undefined) {
       return;
     }
 

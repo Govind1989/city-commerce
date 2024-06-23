@@ -20,12 +20,7 @@ const Index = () => {
   const [isSortMenu, setIsSortMenu] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const curatedCategories = [
-    "Most Booked",
-    "New Registers",
-    "Highly Rated",
-    "With Campaigns",
-  ];
+  const curatedCategories = ["Most Booked", "New Registers", "Highly Rated"];
 
   const handleCuratedCategoryChange = (e, curatedCategory, index) => {
     e.preventDefault();

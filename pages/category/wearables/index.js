@@ -724,7 +724,7 @@ const Index = () => {
                     </div>
                     <div className="flex gap-2 items-center justify-center">
                       {/* <span> classNamEnds in: </span> */}
-                      <CountDownTimer />
+                      <CountDownTimer Duration="Daily" />
                     </div>
                   </div>
                   <ul

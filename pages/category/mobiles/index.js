@@ -14,6 +14,7 @@ import CardL from "@/components/Common/CardL";
 import CardCarouselCurated from "@/components/VendorCommon/CardCarouselCurated";
 import VendorCard from "@/components/Common/VendorCard";
 import ReelsCarousel from "@/components/VendorCommon/ReelsCarousel";
+import CountDownTimer from "@/components/Common/CountDownTimer";
 const Index = () => {
   const [price, setPrice] = useState(500);
   const [isSortMenu, setIsSortMenu] = useState(false);
@@ -475,31 +476,31 @@ const Index = () => {
               <div className="w-full py-0 relative pb-0 sm:mb-4">
                 <div className="columns-2 md:columns-2 xl:columns-3 gap-2">
                   <div className="mb-1 sm:mb-0 ">
-                    <CardL Discount={false} vendor={true} />
+                    <CardL Discount={false} vendor={true} section="products" />
                   </div>
                   <div className="mb-1 ">
-                    <CardL Discount={false} vendor={true} />
+                    <CardL Discount={false} vendor={true} section="products" />
                   </div>
                   <div className="mb-1 ">
-                    <CardL Discount={false} vendor={true} />
+                    <CardL Discount={false} vendor={true} section="products" />
                   </div>
                   <div className="mb-1 ">
-                    <CardL Discount={false} vendor={true} />
+                    <CardL Discount={false} vendor={true} section="products" />
                   </div>
                   <div className="mb-1 ">
-                    <CardL Discount={false} vendor={true} />
+                    <CardL Discount={false} vendor={true} section="products" />
                   </div>
                   <div className="mb-1 ">
-                    <CardL Discount={false} vendor={true} />
+                    <CardL Discount={false} vendor={true} section="products" />
                   </div>
                   <div className="mb-1 ">
-                    <CardL Discount={false} vendor={true} />
-                  </div>
-                  <div className="mb-1 break-inside">
-                    <CardL Discount={false} vendor={true} />
+                    <CardL Discount={false} vendor={true} section="products" />
                   </div>
                   <div className="mb-1 ">
-                    <CardL Discount={false} vendor={true} />
+                    <CardL Discount={false} vendor={true} section="products" />
+                  </div>
+                  <div className="mb-1 ">
+                    <CardL Discount={false} vendor={true} section="products" />
                   </div>
                 </div>
 
@@ -547,6 +548,80 @@ const Index = () => {
                     </Link>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          {/* FlashDeal */}
+          <div className="container mx-auto flex items-center flex-wrap sm:pt-4 ">
+            <div id="store" className="w-full  top-0  sm:py-1">
+              <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 sm:px-2 py-3">
+                <div className="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl">
+                  Deals of the Month
+                </div>
+                <div className="flex gap-2 items-center justify-center">
+                  <CountDownTimer Duration="Monthly" />
+                </div>
+              </div>
+              <ul
+                className="px-2 flex  gap-2 sm:gap-8 justify-start overflow-x-scroll custom-scrollbar pb-2"
+                id="myproTab"
+              >
+                <li className="inline-block align-top text-[14px] text-gray-800 uppercase p-[0] cursor-pointer font-medium transition-all duration-[0.3s] ease delay-[0s] leading-[20px] tracking-[0.7px] ">
+                  <Link
+                    className="nav-link relative font-medium p-[0] max-[480px]:text-[13px] max-[480px]:leading-[28px]"
+                    href="#all"
+                  >
+                    All
+                  </Link>
+                </li>
+                <li className="inline-block align-top text-[14px] text-gray-400 uppercase p-[0] cursor-pointer font-medium transition-all duration-[0.3s] ease delay-[0s] leading-[20px] tracking-[0.7px] ">
+                  <Link
+                    className="nav-link relative font-medium p-[0] max-[480px]:text-[13px] max-[480px]:leading-[28px]"
+                    href="#snack"
+                  >
+                    Mobile Phones
+                  </Link>
+                </li>
+                <li className="inline-block align-top text-[14px] text-gray-400 uppercase p-[0] cursor-pointer font-medium transition-all duration-[0.3s] ease delay-[0s] leading-[20px] tracking-[0.7px] ">
+                  <Link
+                    className="nav-link relative font-medium p-[0] max-[480px]:text-[13px] max-[480px]:leading-[28px]"
+                    href="#snack"
+                  >
+                    Gadgets & Gizmos
+                  </Link>
+                </li>
+                <li className="inline-block align-top text-[14px] text-gray-400 uppercase p-[0] cursor-pointer font-medium transition-all duration-[0.3s] ease delay-[0s] leading-[20px] tracking-[0.7px] ">
+                  <Link
+                    className="nav-link relative font-medium p-[0] max-[480px]:text-[13px] max-[480px]:leading-[28px]"
+                    href="#snack"
+                  >
+                    Essentails & Accessories
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className="w-screen sm:mt-4 flex gap-2 relative mb-4 sm:mb-4  overflow-x-scroll custom-hr-scroll">
+              <div className="flex-shrink-0 w-1/2 md:w-1/3 xl:w-1/4 ">
+                <CardL Discount={true} section="flashDeal" />
+              </div>
+              <div className="flex-shrink-0 w-1/2 md:w-1/3 xl:w-1/4">
+                <CardL Discount={true} section="flashDeal" />
+              </div>
+              <div className="flex-shrink-0 w-1/2 md:w-1/3 xl:w-1/4">
+                <CardL Discount={true} section="flashDeal" />
+              </div>
+              <div className="flex-shrink-0 w-1/2 md:w-1/3 xl:w-1/4">
+                <CardL Discount={true} section="flashDeal" />
+              </div>
+              <div className="flex-shrink-0 w-1/2 md:w-1/3 xl:w-1/4">
+                <CardL Discount={true} section="flashDeal" />
+              </div>
+              <div className="flex-shrink-0 w-1/2 md:w-1/3 xl:w-1/4">
+                <CardL Discount={true} section="flashDeal" />
+              </div>
+              <div className="flex-shrink-0 w-1/2 md:w-1/3 xl:w-1/4">
+                <CardL Discount={true} section="flashDeal" />
               </div>
             </div>
           </div>
