@@ -35,7 +35,7 @@ const VendorCard = ({ slug }) => {
         </div>
 
         <div className="mt-1 p-2">
-          <h2 className="text-gray-600">Elegant Apparel</h2>
+          <h2 className="text-gray-600">@ Elegant Apparel</h2>
 
           <p className="text-gray-400 mt-1 text-sm">Milan Chowk, Bhairahawa</p>
 

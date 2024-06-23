@@ -9,10 +9,11 @@ import {
   MdOutlineSkipPrevious,
   MdOutlineSort,
 } from "react-icons/md";
-import CardL from "@/components/Common/CardL";
-
+import CardService from "@/components/Common/CardService";
+// import CardS from "@/components/Common/CardMenu";
 import CardCarouselCurated from "@/components/VendorCommon/CardCarouselCurated";
 import VendorCard from "@/components/Common/VendorCard";
+import Reels from "@/components/Common/Reels";
 import ReelsCarousel from "@/components/VendorCommon/ReelsCarousel";
 const Index = () => {
   const [price, setPrice] = useState(500);
@@ -20,10 +21,10 @@ const Index = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const curatedCategories = [
-    "Most Selling",
-    "New Arrivals",
+    "Most Booked",
+    "New Registers",
     "Highly Rated",
-    "On Sale",
+    "With Campaigns",
   ];
 
   const handleCuratedCategoryChange = (e, curatedCategory, index) => {
@@ -41,14 +42,14 @@ const Index = () => {
   return (
     <>
       <NavBar />
-      <div className="bg-white py-8">
-        <div className="container mx-auto  px-8  ">
+      <div className="bg-white py-8 px-4">
+        <div className=" items-center pt-4 h-auto">
           <div className="grid grid-cols-6 gap-2">
             <div className="lg:col-span-2 col-span-6 py-0 md:order-first ">
               <div className="md:p-8  rounded-xl">
                 <div className="">
                   <h1 className="text-sm font-bold text-gray-400 ">
-                    #Mobiles & Accessories
+                    #Appointments
                   </h1>
                   <p className="text-gray-700">
                     Donec vitae odio quis nisl dapibus malesuada. Nullam ac
@@ -85,6 +86,12 @@ const Index = () => {
                   <div className="w-full md:w-1/2 p-2 flex-shrink items-center justify-center">
                     <div className="w-full capitalize py-2 px-2 justify-center rounded-md text-sm font-medium whitespace-nowrap shadow-md text-gray-800 transition-transform transform hover:scale-105 text-center flex flex-col items-center">
                       <label className="group flex flex-col whitespace-nowrap items-center text-heading text-sm cursor-pointer">
+                        {/* <input
+                            type="checkbox"
+                            className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading active"
+                            name="woman"
+                            value="woman"
+                          /> */}
                         <span className="ms-2 text-sm  -mt-0.5 text-gray-600">
                           150+
                         </span>
@@ -114,7 +121,6 @@ const Index = () => {
               <ReelsCarousel />
             </div>
           </div>
-
           {/* products */}
           <div className="flex sm:flex-row flex-col sm:pt-8  md:pb-4">
             <div className="flex-shrink-0 sm:w-56 w-full">
@@ -122,22 +128,22 @@ const Index = () => {
                 <div className="pt-1">
                   <div className="block border-b border-gray-300  pb-2 ">
                     <h3 className="text-heading sm:block  md:text-base  font-bold text-gray-400 text-sm">
-                      Category
+                      Service Types
                     </h3>
 
                     <div className="mt-2 flex flex-row  md:flex-col md:overflow-hidden overflow-scroll gap-2 md:gap-2  custom-scrollbar">
-                      <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
+                      <label className="group flex items-center whitespace-nowrap text-heading text-sm cursor-pointer">
                         <input
                           type="checkbox"
                           className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading active"
                           name="woman"
                           value="woman"
                         />
-                        <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                          Mobile Phones
+                        <span className="ms-2 sm:ms-4 -mt-0.5  text-gray-600">
+                          Hospitals
                         </span>
                       </label>
-                      <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
+                      <label className="group flex items-center whitespace-nowrap text-heading text-sm cursor-pointer">
                         <input
                           type="checkbox"
                           className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -145,10 +151,10 @@ const Index = () => {
                           value="man"
                         />
                         <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                          Smart Watches
+                          Pharmacies
                         </span>
                       </label>
-                      <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
+                      <label className="group flex items-center whitespace-nowrap text-heading text-sm cursor-pointer">
                         <input
                           type="checkbox"
                           className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -156,10 +162,10 @@ const Index = () => {
                           value="watch"
                         />
                         <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                          Mobile Chargers
+                          Dentists
                         </span>
                       </label>
-                      <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
+                      <label className="group flex items-center whitespace-nowrap text-heading text-sm cursor-pointer">
                         <input
                           type="checkbox"
                           className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -167,10 +173,10 @@ const Index = () => {
                           value="kids"
                         />
                         <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                          Screen Protector
+                          Beauty Parlours
                         </span>
                       </label>
-                      <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
+                      <label className="group flex items-center whitespace-nowrap text-heading text-sm cursor-pointer">
                         <input
                           type="checkbox"
                           className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -178,18 +184,7 @@ const Index = () => {
                           value="sports"
                         />
                         <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                          Mobile Protector Cover
-                        </span>
-                      </label>
-                      <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
-                        <input
-                          type="checkbox"
-                          className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
-                          name="sports"
-                          value="sports"
-                        />
-                        <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                          Earphones
+                          Men&apos;s Salons
                         </span>
                       </label>
                     </div>
@@ -198,11 +193,11 @@ const Index = () => {
                 <div className="pt-1">
                   <div className="block border-b border-gray-300  pb-2 ">
                     <h3 className="text-heading sm:block  md:text-base  font-bold text-gray-400 text-sm">
-                      Vendors
+                      Service Providers
                     </h3>
 
                     <div className="mt-2 flex flex-row  md:flex-col md:overflow-hidden overflow-scroll gap-2 md:gap-2  custom-scrollbar">
-                      <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
+                      <label className="group flex items-center whitespace-nowrap text-heading text-sm cursor-pointer">
                         <input
                           type="checkbox"
                           className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading active"
@@ -210,10 +205,10 @@ const Index = () => {
                           value="woman"
                         />
                         <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                          Mobile Bazar
+                          Furniture Bazar
                         </span>
                       </label>
-                      <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
+                      <label className="group flex items-center whitespace-nowrap text-heading text-sm cursor-pointer">
                         <input
                           type="checkbox"
                           className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -221,10 +216,10 @@ const Index = () => {
                           value="man"
                         />
                         <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                          Akon Mobile
+                          Akon Furniture
                         </span>
                       </label>
-                      <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
+                      <label className="group flex items-center whitespace-nowrap text-heading text-sm cursor-pointer">
                         <input
                           type="checkbox"
                           className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -232,10 +227,10 @@ const Index = () => {
                           value="watch"
                         />
                         <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                          Digital Mobiles
+                          Carvings Furniture
                         </span>
                       </label>
-                      <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
+                      <label className="group flex items-center whitespace-nowrap text-heading text-sm cursor-pointer">
                         <input
                           type="checkbox"
                           className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
@@ -243,111 +238,24 @@ const Index = () => {
                           value="kids"
                         />
                         <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                          Yash Mobiles
+                          WoodDeals Furnitures
+                        </span>
+                      </label>
+                      <label className="group flex items-center whitespace-nowrap text-heading text-sm cursor-pointer">
+                        <input
+                          type="checkbox"
+                          className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
+                          name="sports"
+                          value="sports"
+                        />
+                        <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
+                          Furniture Homes
                         </span>
                       </label>
                     </div>
                   </div>
                 </div>
-                <div className="pt-1">
-                  <div className="block border-b border-gray-300  pb-2 ">
-                    <h3 className="text-heading sm:block  md:text-base  font-bold text-gray-400 text-sm">
-                      Brands
-                    </h3>
 
-                    <div className="mt-2 flex flex-row sm:grid sm:grid-cols-2 md:flex-col md:overflow-hidden overflow-scroll gap-2 md:gap-2  custom-scrollbar">
-                      <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
-                        <input
-                          type="checkbox"
-                          className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
-                          name="adidas"
-                          value="adidas"
-                        />
-                        <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                          Apple
-                        </span>
-                      </label>
-                      <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
-                        <input
-                          type="checkbox"
-                          className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
-                          name="Nike"
-                          value="Nike"
-                        />
-                        <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                          Samsung
-                        </span>
-                      </label>
-                      <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
-                        <input
-                          type="checkbox"
-                          className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
-                          name="handm"
-                          value="handm"
-                        />
-                        <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                          One Plus
-                        </span>
-                      </label>
-                      <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
-                        <input
-                          type="checkbox"
-                          className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
-                          name="easy"
-                          value="easy"
-                        />
-                        <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                          LG
-                        </span>
-                      </label>
-                      <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
-                        <input
-                          type="checkbox"
-                          className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
-                          name="easy"
-                          value="easy"
-                        />
-                        <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                          Redmi
-                        </span>
-                      </label>
-                      <label className="group flex whitespace-nowrap items-center text-heading text-sm cursor-pointer">
-                        <input
-                          type="checkbox"
-                          className="form-checkbox w-5 h-5 border border-gray-300 rounded cursor-pointer transition duration-500 ease-in-out focus:ring-offset-0 hover:border-heading focus:outline-none focus:ring-0 focus-visible:outline-none checked:bg-heading checked:hover:bg-heading checked:focus:bg-heading"
-                          name="easy"
-                          value="easy"
-                        />
-                        <span className="ms-2 sm:ms-4 -mt-0.5 text-gray-600">
-                          Oppo
-                        </span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div className="pt-1">
-                  <div className="block border-b border-gray-300 pb-2 ">
-                    <h3 className="text-heading sm:block  md:text-base  font-bold text-gray-400 text-sm">
-                      Price
-                    </h3>
-
-                    <div className="mt-1 flex flex-col  md:overflow-hidden overflow-scroll gap-2 md:gap-2  custom-scrollbar">
-                      <input
-                        type="range"
-                        id="price-range"
-                        className="w-full text-gray-400 "
-                        min="0"
-                        max="1000"
-                        value={price}
-                        onChange={(e) => updatePrice(e.target.value)}
-                      />
-                      <div className="flex justify-between text-gray-500 text-sm -mt-2">
-                        <span id="minPrice">${price}</span>
-                        <span id="maxPrice">$1000</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
                 <div className="pt-1">
                   <div className="block   pb-2 ">
                     <h3 className="text-heading sm:block  md:text-base   font-bold text-gray-400 text-sm">
@@ -355,25 +263,22 @@ const Index = () => {
                     </h3>
                     <div class="flex justify-start text-xs font-semibold text-gray-600 gap-2 flex-wrap">
                       <span class="bg-gray-100 rounded-full px-3 py-1 ">
-                        #Men&apos;s Clothings
+                        #Cheap Hotels Near You
                       </span>
                       <span class="bg-gray-100 rounded-full px-3 py-1 ">
-                        #Formal Men&apos;s Wear
+                        #Annapurna Trekking
                       </span>
                       <span class="bg-gray-100 rounded-full px-3 py-1 ">
-                        #Sports Wear
+                        #Multinath Tours
                       </span>
                       <span class="bg-gray-100 rounded-full px-3 py-1 ">
-                        #Kid&apos;s Shoes
+                        #Annapurna Trekking
                       </span>
                       <span class="bg-gray-100 rounded-full px-3 py-1 ">
-                        #Bridal Dresses
+                        #Lumbini Tour
                       </span>
                       <span class="bg-gray-100 rounded-full px-3 py-1 ">
-                        #Ethnic Wear for Men
-                      </span>
-                      <span class="bg-gray-100 rounded-full px-3 py-1 ">
-                        #Ethnic Wear for Women
+                        #Wild Life Safari
                       </span>
                     </div>
                   </div>
@@ -381,8 +286,8 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="w-full  px-0 sm:px-4 sm:py-0">
-              <div className="flex py-4 justify-between">
+            <div className="w-full sm:px-4 px-0 sm:py-0">
+              <div className="flex  py-4 justify-between">
                 <form className="sm:px-6 flex w-full items-center">
                   <div className="relative w-full">
                     <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
@@ -404,7 +309,7 @@ const Index = () => {
                       type="text"
                       id="email-adress-icon"
                       className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 px-2 py-1"
-                      placeholder='"Samsung Mobiles", "Redmi Note 10 Pro", "Iphone 14" . . .'
+                      placeholder='"#Arogya Hospital Ticket", "#Beauty Parlour Appointment", "#Salons Appointment" . . .'
                     />
                   </div>
                   <button
@@ -475,31 +380,23 @@ const Index = () => {
               <div className="w-full py-0 relative pb-0 sm:mb-4">
                 <div className="columns-2 md:columns-2 xl:columns-3 gap-2">
                   <div className="mb-1 sm:mb-0 ">
-                    <CardL Discount={false} vendor={true} />
+                    <CardService Discount={true} vendor={true} />
                   </div>
                   <div className="mb-1 ">
-                    <CardL Discount={false} vendor={true} />
+                    <CardService Discount={false} vendor={true} />
                   </div>
                   <div className="mb-1 ">
-                    <CardL Discount={false} vendor={true} />
+                    <CardService Discount={true} vendor={true} />
                   </div>
                   <div className="mb-1 ">
-                    <CardL Discount={false} vendor={true} />
+                    <CardService Discount={true} vendor={true} />
                   </div>
                   <div className="mb-1 ">
-                    <CardL Discount={false} vendor={true} />
+                    <CardService Discount={false} vendor={true} />
                   </div>
+
                   <div className="mb-1 ">
-                    <CardL Discount={false} vendor={true} />
-                  </div>
-                  <div className="mb-1 ">
-                    <CardL Discount={false} vendor={true} />
-                  </div>
-                  <div className="mb-1 break-inside">
-                    <CardL Discount={false} vendor={true} />
-                  </div>
-                  <div className="mb-1 ">
-                    <CardL Discount={false} vendor={true} />
+                    <CardService Discount={true} vendor={true} />
                   </div>
                 </div>
 
@@ -550,95 +447,7 @@ const Index = () => {
               </div>
             </div>
           </div>
-          {/* banners */}
-          <div className="sm:flex flex-wrap pt-4 ">
-            <div className="w-full sm:w-3/12 sm:px-2 mb-4 sm:mb-0">
-              <div className="flex flex-col-reverse lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between px-8 py-6 bg-gray-200">
-                <div>
-                  <h3 className="text-lg leading-4 mb-2 text-[#FD3D57]">
-                    50% off
-                  </h3>
-                  <h4 className="text-[22px] leading-[26px] text-secondary mb-2">
-                    Huge Offer
-                  </h4>
-                  <div className="flex gap-1">
-                    <MdOutlineAddHome className="text-gray-600" />
-                    <p className="text-[15px] leading-4 text-xs text-[#464545] mb-5">
-                      Urban Furnishings
-                    </p>
-                  </div>
-                  <Link href="#" className="primary-btn min-w-[80px]">
-                    Shop Now
-                  </Link>
-                </div>
-                <div className="flex justify-center">
-                  <img
-                    src="https://themes.rslahmed.dev/rafcart-tailwind/assets/images/sofa-2.png"
-                    className="w-[100px] h-[150px] lg:h-[180px] object-contain flex-shrink-0 hover:scale-105 transition-all duration-300"
-                    alt="product"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div className="w-full sm:w-6/12 sm:px-2 mb-4">
-              <div className="flex flex-col-reverse lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between px-8 py-6 bg-gray-200">
-                <div>
-                  <h3 className="text-lg leading-4 mb-2 text-[#FD3D57]">
-                    {/* 50% off */}
-                  </h3>
-                  <h4 className="text-[22px] leading-[26px] text-secondary mb-2">
-                    Free Shipping
-                  </h4>
-                  <div className="flex gap-1">
-                    <MdOutlineAddHome className="text-gray-600" />
-                    <p className="text-[15px] leading-4 text-xs text-[#464545] mb-5">
-                      Urban Furnishings
-                    </p>
-                  </div>
-                  <Link href="#" className="primary-btn min-w-[80px]">
-                    Shop Now
-                  </Link>
-                </div>
-                <div className="flex justify-center">
-                  <img
-                    src="https://themes.rslahmed.dev/rafcart-tailwind/assets/images/sofa-2.png"
-                    className="w-[200px] h-[150px] lg:h-[180px] object-contain flex-shrink-0 hover:scale-105 transition-all duration-300"
-                    alt="product"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="w-full sm:w-3/12 sm:px-2 ">
-              <div className="flex flex-col-reverse lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between px-8 py-6 bg-gray-200">
-                <div>
-                  <h3 className="text-lg leading-4 mb-2 text-[#FD3D57]">
-                    30% off
-                  </h3>
-                  <h4 className="text-[22px] leading-[26px] text-secondary mb-2">
-                    Flash Sale
-                  </h4>
-                  <div className="flex gap-1">
-                    <MdOutlineAddHome className="text-gray-600" />
-                    <p className="text-[15px] leading-4 text-xs text-[#464545] mb-5">
-                      Urban Furnishings
-                    </p>
-                  </div>
-                  <Link href="#" className="primary-btn min-w-[80px]">
-                    Shop Now
-                  </Link>
-                </div>
-                <div className="flex justify-center">
-                  <img
-                    src="https://themes.rslahmed.dev/rafcart-tailwind/assets/images/sofa-2.png"
-                    className="w-[100px] h-[150px] lg:h-[180px] object-contain flex-shrink-0 hover:scale-105 transition-all duration-300"
-                    alt="product"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* Featured */}
+          {/* Curated */}
           <div className=" items-center pt-4 h-auto">
             <div id="store" className="w-full top-0 sm:px-4 sm:py-1">
               <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
@@ -669,7 +478,7 @@ const Index = () => {
                       <button
                         key={index}
                         onClick={(e) => handleCuratedCategoryChange(e, index)}
-                        className={`capitalize py-3 px-4 rounded-md whitespace-nowrap text-sm font-medium shadow-md transition-transform transform hover:scale-105 ${
+                        className={`capitalize py-3 px-4 rounded-md text-sm  font-medium whitespace-nowrap shadow-md transition-transform transform hover:scale-105 ${
                           activeIndex === index
                             ? "bg-gray-800 text-white"
                             : "bg-white text-gray-800"
@@ -683,7 +492,7 @@ const Index = () => {
                 <hr className="w-full h-1 mt-4 text-gray-400 block md:hidden" />
               </div>
               <div className="md:col-span-4 col-span-6 md:order-last">
-                <CardCarouselCurated />
+                <CardCarouselCurated category="services" />
               </div>
             </div>
           </div>
@@ -827,7 +636,7 @@ const Index = () => {
             <div id="store" className="w-full  top-0  sm:py-1">
               <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 sm:px-2 py-3">
                 <div className="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl">
-                  Our Vendors
+                  Service Providers
                 </div>
                 <div className=" ">
                   <button
@@ -866,12 +675,12 @@ const Index = () => {
                 className="px-2 flex  gap-6 sm:gap-8 whitespace-nowrap justify-start overflow-x-scroll custom-scrollbar pb-2"
                 id="myproTab"
               >
-                <li className="inline-block align-top text-[14px] text-gray-800 uppercase p-[0] cursor-pointer font-medium transition-all duration-[0.3s] ease delay-[0s] leading-[20px] tracking-[0.7px] ">
+                <li className="inline-block align-top  text-[14px] text-gray-800 uppercase p-[0] cursor-pointer font-medium transition-all duration-[0.3s] ease delay-[0s] leading-[20px] tracking-[0.7px] ">
                   <Link
                     className="nav-link relative font-medium p-[0] max-[480px]:text-[13px] max-[480px]:leading-[28px]"
                     href="#all"
                   >
-                    All Vendors
+                    Following
                   </Link>
                 </li>
 
@@ -880,7 +689,7 @@ const Index = () => {
                     className="nav-link relative font-medium p-[0] max-[480px]:text-[13px] max-[480px]:leading-[28px]"
                     href="#veg"
                   >
-                    Your Vendors
+                    Hotels
                   </Link>
                 </li>
 
@@ -889,15 +698,7 @@ const Index = () => {
                     className="nav-link relative font-medium p-[0] max-[480px]:text-[13px] max-[480px]:leading-[28px]"
                     href="#snack"
                   >
-                    With Campaigns
-                  </Link>
-                </li>
-                <li className="inline-block align-top text-[14px] text-gray-400 uppercase p-[0] cursor-pointer font-medium transition-all duration-[0.3s] ease delay-[0s] leading-[20px] tracking-[0.7px]  active">
-                  <Link
-                    className="nav-link relative font-medium p-[0] max-[480px]:text-[13px] max-[480px]:leading-[28px]"
-                    href="#fruit"
-                  >
-                    With Free Shippings
+                    Travel & Tours
                   </Link>
                 </li>
               </ul>

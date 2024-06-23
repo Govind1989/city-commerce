@@ -2,7 +2,7 @@ import NavBar from "@/components/Common/NavBar";
 import React, { useState } from "react";
 
 import Link from "next/link";
-import Stats from "@/components/VendorCommon/Stats";
+
 import {
   MdOutlineAddHome,
   MdOutlineSkipNext,
@@ -13,6 +13,7 @@ import CardL from "@/components/Common/CardL";
 import CardCarouselLarge from "@/components/VendorCommon/CardCarouselLarge";
 import CardCarouselCurated from "@/components/VendorCommon/CardCarouselCurated";
 import VendorCard from "@/components/Common/VendorCard";
+import ReelsCarousel from "@/components/VendorCommon/ReelsCarousel";
 const Index = () => {
   const [price, setPrice] = useState(500);
   const [isSortMenu, setIsSortMenu] = useState(false);
@@ -42,106 +43,78 @@ const Index = () => {
       <NavBar />
       <div className="bg-white py-8">
         <div className="container mx-auto  px-8  ">
-          <div className="-mx-6 flex flex-wrap">
-            <div className="w-full px-2 sm:px-4 lg:w-8/12">
-              <div className="relative mb-4 sm:mb-8 h-[370px] md:h-[462px]">
-                <img
-                  src="https://p.w3layouts.com/demos_new/30-01-2017/electronic_store-demo_Free/192355906/web/images/b1.jpg"
-                  alt="Electronics-banner"
-                  className="h-full w-full object-cover object-center"
-                />
-                <div className="absolute left-0 top-0 flex h-full w-full items-center px-8 md:px-12">
-                  <div className=" text-gray-200 max-w-[420px] w-[200px] sm:w-full">
-                    <h3>
-                      <p className="mb-5 block text-2xl font-bold  hover:text-primary sm:text-4xl">
-                        Ultimate Home Appliance Sale
-                      </p>
-                    </h3>
-                    <p className="mb-9 text-base text-body-color">
-                      Upgrade your home with our latest appliances. Quality and
-                      efficiency guaranteed.
-                    </p>
-                    <Link
-                      href="javascript:void(0)"
-                      className="inline-flex items-center justify-center rounded-md bg-primary px-0 py-[13px] text-center text-base font-medium text-gray-200 "
-                    >
-                      #Home Appliances
-                    </Link>
-                  </div>
+          <div className="grid grid-cols-6 gap-2">
+            <div className="lg:col-span-2 col-span-6 py-0 md:order-first ">
+              <div className="md:p-8  rounded-xl">
+                <div className="">
+                  <h1 className="text-sm font-bold text-gray-400 ">
+                    #Electronics
+                  </h1>
+                  <p className="text-gray-700">
+                    Donec vitae odio quis nisl dapibus malesuada. Nullam ac
+                    aliquet velit. Aliquam vulputate velit imperdiet dolor
+                    tempor tristique.
+                  </p>
                 </div>
-              </div>
-            </div>
-            <div className="w-full px-4 lg:w-4/12">
-              <div className="-mx-6 flex flex-wrap">
-                <div className="w-full px-4 md:w-1/2 lg:w-full">
-                  <div className="relative mb-4 h-[223px] bg-gray-300 ">
-                    <img
-                      src="https://p.w3layouts.com/demos_new/template_demo/11-06-2021/electronics-mart-liberty-demo_Free/1081434887/web/images/banner3.png"
-                      alt="Office Appliance"
-                      className="h-full w-full object-cover object-center"
-                    />
-                    <div className="absolute left-0 top-0 flex h-full w-full items-center justify-start p-6 sm:p-9">
-                      <div className="max-w-[180px] text-right">
-                        <h3>
-                          <p className="mb-3 block text-xl font-bold text-dark hover:text-primary xl:text-2xl">
-                            Modern Office Essentials
-                          </p>
-                        </h3>
-                        <Link
-                          href="javascript:void(0)"
-                          className="text-base font-medium text-dark hover:text-primary"
-                        >
-                          #Office Appliances
-                        </Link>
-                      </div>
+
+                <div className="hidden xl:flex  md:flex-wrap overflow-x-auto md:justify-center custom-hr-scroll">
+                  <div className="w-full md:w-1/2 p-2 flex-shrink items-center justify-center whitespace-nowrap">
+                    <div className="w-full capitalize py-2 px-2 justify-center rounded-md text-sm font-medium whitespace-nowrap shadow-md text-gray-800  transition-transform transform hover:scale-105 text-center flex flex-col items-center">
+                      <label className="group flex flex-col justify-center  items-center text-heading text-sm cursor-pointer">
+                        <span className="ms-2  -mt-0.5 text-gray-600">
+                          600+
+                        </span>
+                        <span className="ms-2  -mt-0.5 text-xs text-gray-400">
+                          Product Tags
+                        </span>
+                      </label>
                     </div>
                   </div>
-                </div>
-                <div className="w-full px-4 md:w-1/2 lg:w-full">
-                  <div className="relative mb-8 h-[223px] bg-gray-300">
-                    <img
-                      src="https://p.w3layouts.com/demos_new/template_demo/11-06-2021/electronics-mart-liberty-demo_Free/1081434887/web/images/banner4.png"
-                      alt="Gadgets"
-                      className="h-full w-full object-cover object-center"
-                    />
-                    <div className="absolute left-0 top-0 flex h-full w-full items-center justify-start p-6 sm:p-9">
-                      <div className="max-w-[180px] text-right">
-                        <h3>
-                          <p className="mb-3 block text-xl font-bold text-dark hover:text-primary xl:text-2xl">
-                            Latest Gadgets Collection
-                          </p>
-                        </h3>
-                        <Link
-                          href="javascript:void(0)"
-                          className="text-base font-medium text-dark hover:text-primary"
-                        >
-                          #Gadgets & More
-                        </Link>
-                      </div>
+                  <div className="w-full md:w-1/2 p-2 flex-shrink items-center justify-center">
+                    <div className="w-full capitalize py-2 px-2 justify-center rounded-md text-sm font-medium whitespace-nowrap shadow-md text-gray-800 transition-transform transform hover:scale-105 text-center flex flex-col items-center">
+                      <label className="group flex flex-col justify-center  items-center text-heading text-sm cursor-pointer">
+                        <span className="ms-2 text-sm  -mt-0.5 text-gray-600">
+                          400+
+                        </span>
+                        <span className="ms-2  -mt-0.5 text-xs text-gray-400">
+                          Brands
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                  <div className="w-full md:w-1/2 p-2 flex-shrink items-center justify-center">
+                    <div className="w-full capitalize py-2 px-2 justify-center rounded-md text-sm font-medium whitespace-nowrap shadow-md text-gray-800 transition-transform transform hover:scale-105 text-center flex flex-col items-center">
+                      <label className="group flex flex-col whitespace-nowrap items-center text-heading text-sm cursor-pointer">
+                        <span className="ms-2 text-sm  -mt-0.5 text-gray-600">
+                          150+
+                        </span>
+                        <span className="ms-2  -mt-0.5 text-xs text-gray-400">
+                          Vendors
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                  <div className="w-full md:w-1/2 p-2 flex-shrink items-center justify-center">
+                    <div className="w-full capitalize py-2 px-2 justify-center rounded-md text-sm font-medium whitespace-nowrap shadow-md text-gray-800 transition-transform transform hover:scale-105 text-center flex flex-col items-center">
+                      <label className="group flex flex-col justify-center  items-center text-heading text-sm cursor-pointer">
+                        <span className="ms-2 text-sm  -mt-0.5 text-gray-600">
+                          50+
+                        </span>
+                        <span className="ms-2  -mt-0.5 text-xs text-gray-400">
+                          Campaigns
+                        </span>
+                      </label>
                     </div>
                   </div>
                 </div>
               </div>
+              <hr className="w-full h-1 mt-2 md:mt-4 text-gray-400 block md:hidden" />
+            </div>
+            <div className="lg:col-span-4 col-span-6 md:order-last">
+              <ReelsCarousel />
             </div>
           </div>
 
-          <div className=" items-start justify-center space-y-4 py-2 sm:py-8 sm:px-4 sm:flex-row sm:space-y-0 md:justify-between lg:px-0">
-            <div className="container mx-auto flex flex-col xl:flex-row justify-between">
-              <div className="w-full xl:w-1/3">
-                <h1 className="text-2xl font-bold text-gray-800">
-                  Electronics
-                </h1>
-                <p className="mt-2 text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </div>
-
-              <Stats />
-            </div>
-          </div>
           {/* products */}
           <div className="flex sm:flex-row flex-col sm:pt-8  md:pb-4">
             <div className="flex-shrink-0 sm:w-56 w-full">
@@ -364,7 +337,7 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="pt-1">
-                  <div className="block  pb-2 ">
+                  <div className="block  border-b border-gray-300 pb-2 ">
                     <h3 className="text-heading sm:block  md:text-base  font-bold text-gray-400 text-sm">
                       Price
                     </h3>
@@ -383,6 +356,36 @@ const Index = () => {
                         <span id="minPrice">${price}</span>
                         <span id="maxPrice">$1000</span>
                       </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="pt-1">
+                  <div className="block   pb-2 ">
+                    <h3 className="text-heading sm:block  md:text-base   font-bold text-gray-400 text-sm">
+                      Related Hastags (#)
+                    </h3>
+                    <div class="flex justify-start text-xs font-semibold text-gray-600 gap-2 flex-wrap">
+                      <span class="bg-gray-100 rounded-full px-3 py-1 ">
+                        #Men&apos;s Clothings
+                      </span>
+                      <span class="bg-gray-100 rounded-full px-3 py-1 ">
+                        #Formal Men&apos;s Wear
+                      </span>
+                      <span class="bg-gray-100 rounded-full px-3 py-1 ">
+                        #Sports Wear
+                      </span>
+                      <span class="bg-gray-100 rounded-full px-3 py-1 ">
+                        #Kid&apos;s Shoes
+                      </span>
+                      <span class="bg-gray-100 rounded-full px-3 py-1 ">
+                        #Bridal Dresses
+                      </span>
+                      <span class="bg-gray-100 rounded-full px-3 py-1 ">
+                        #Ethnic Wear for Men
+                      </span>
+                      <span class="bg-gray-100 rounded-full px-3 py-1 ">
+                        #Ethnic Wear for Women
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -557,36 +560,38 @@ const Index = () => {
                   )}
                 </div>
               </div>
-              <div className="w-full py-0 flex flex-wrap  relative pb-0 sm:mb-4">
-                <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
-                  <CardL Discount={false} />
-                </div>
-                <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
-                  <CardL Discount={false} />
-                </div>
-                <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
-                  <CardL Discount={false} />
-                </div>
-                <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
-                  <CardL Discount={false} />
-                </div>
-                <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
-                  <CardL Discount={false} />
-                </div>
-                <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
-                  <CardL Discount={false} />
-                </div>
-                <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
-                  <CardL Discount={false} />
-                </div>
-                <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
-                  <CardL Discount={false} />
-                </div>
-                <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
-                  <CardL Discount={false} />
+              <div className="w-full py-0 relative pb-0 sm:mb-4">
+                <div className="columns-2 md:columns-2 xl:columns-3 gap-2">
+                  <div className="mb-1 sm:mb-0 ">
+                    <CardL Discount={false} vendor={true} />
+                  </div>
+                  <div className="mb-1 ">
+                    <CardL Discount={false} vendor={true} />
+                  </div>
+                  <div className="mb-1 ">
+                    <CardL Discount={false} vendor={true} />
+                  </div>
+                  <div className="mb-1 ">
+                    <CardL Discount={false} vendor={true} />
+                  </div>
+                  <div className="mb-1 ">
+                    <CardL Discount={false} vendor={true} />
+                  </div>
+                  <div className="mb-1 ">
+                    <CardL Discount={false} vendor={true} />
+                  </div>
+                  <div className="mb-1 ">
+                    <CardL Discount={false} vendor={true} />
+                  </div>
+                  <div className="mb-1 break-inside">
+                    <CardL Discount={false} vendor={true} />
+                  </div>
+                  <div className="mb-1 ">
+                    <CardL Discount={false} vendor={true} />
+                  </div>
                 </div>
 
-                <div className="items-center justify-center  py-2 mx-auto  ">
+                <div className="flex items-center justify-center py-2 mx-auto">
                   <div className="flex select-none space-x-1 text-gray-700">
                     <Link
                       href="#"
@@ -598,19 +603,19 @@ const Index = () => {
                       href="#"
                       className="rounded-md bg-gray-200 px-3 sm:px-4 py-2 transition duration-300 hover:bg-gray-400"
                     >
-                      <span className="text-xs">1 </span>
+                      <span className="text-xs">1</span>
                     </Link>
                     <Link
                       href="#"
                       className="rounded-md bg-gray-200 px-3 sm:px-4 py-2 transition duration-300 hover:bg-gray-400"
                     >
-                      <span className="text-xs">2 </span>
+                      <span className="text-xs">2</span>
                     </Link>
                     <Link
                       href="#"
                       className="rounded-md bg-gray-200 px-3 sm:px-4 py-2 transition duration-300 hover:bg-gray-400"
                     >
-                      <span className="text-xs">3 </span>
+                      <span className="text-xs">3</span>
                     </Link>
                     <span className="rounded-md px-3 sm:px-4 py-2">
                       {" "}
@@ -618,9 +623,9 @@ const Index = () => {
                     </span>
                     <Link
                       href="#"
-                      className="rounded-md bg-gray-200 px-3 sm:px-4 py-2 transition duration-300 hover:bg-gray-400 "
+                      className="rounded-md bg-gray-200 px-3 sm:px-4 py-2 transition duration-300 hover:bg-gray-400"
                     >
-                      <span className="text-xs">10 </span>
+                      <span className="text-xs">10</span>
                     </Link>
                     <Link
                       href="#"

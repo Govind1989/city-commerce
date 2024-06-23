@@ -21,11 +21,11 @@ const Reels = ({}) => {
   };
   return (
     <>
-      <div className="w-45 md:w-78  h-auto sm:py-6 flex flex-wrap  relative">
+      <div className=" h-auto sm:py-6 flex flex-wrap  relative">
         <div className="relative group">
           <img
             className="hover:grow hover:shadow-lg rounded-lg"
-            src="https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"
+            src="https://images.unsplash.com/photo-1542992015-8b34590ec327?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Z3JhbmQlMjBzYWxlfGVufDB8MXwwfHx8MA%3D%3D"
           />
           <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-start justify-end opacity-50 group-hover:opacity-100 transition-opacity duration-300 rounded-lg p-4">
             <Link href={`/elegant-apparel`} className="flex flex-col gap-1 ">

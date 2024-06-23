@@ -97,6 +97,9 @@ const NavBar = ({ shopName }) => {
                             Office Furnitures
                           </p>
                           <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                            Bathroom Furnitures
+                          </p>
+                          <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
                             Decor Items
                           </p>
                         </div>
@@ -170,7 +173,7 @@ const NavBar = ({ shopName }) => {
                         </h3>
                         <div className="flex flex-col gap-2  py-2">
                           <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-                            Electronics Maintainence
+                            Repair & Maintainence
                           </p>
                           <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
                             Home Maintainence
@@ -193,9 +196,9 @@ const NavBar = ({ shopName }) => {
                       <div className="block sm:px-8 px-2 sm:py-2 py-0 text-sm  text-gray-600 dark:text-gray-300">
                         <h3 className="text-gray-500 font-bold">Holidays</h3>
                         <div className="flex flex-col gap-2  py-2">
-                          <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                          {/* <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
                             Ticketing
-                          </p>
+                          </p> */}
                           <p className="cursor-pointer px-4 transition-colors duration-300 transform hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
                             Hotels
                           </p>

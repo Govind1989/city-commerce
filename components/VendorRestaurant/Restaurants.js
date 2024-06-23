@@ -22,7 +22,7 @@ import CampaignCard from "../VendorCommon/CampaignCard.js";
 import CardCarousel from "../VendorCommon/CardCarousel.js";
 
 import { MdDelete } from "react-icons/md";
-import MenuCard from "../Common/CardS.js";
+import MenuCard from "../Common/CardMenu.js";
 import NavBar from "../Common/NavBar.js";
 const Restaurants = ({ shopName }) => {
   const [item, setItem] = useState("Appetizer");

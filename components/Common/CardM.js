@@ -10,7 +10,8 @@ import {
 } from "react-icons/io5";
 import Link from "next/link";
 import { FaPlusSquare } from "react-icons/fa";
-const CardM = ({ Discount }) => {
+import { MdOutlineAddHome } from "react-icons/md";
+const CardM = ({ Discount, vendor }) => {
   const [addtoCart, setIAddToCart] = useState(false);
   const [addToWishlist, setAddToWishlist] = useState(false);
   const [rating, setRating] = useState(4);
@@ -36,10 +37,10 @@ const CardM = ({ Discount }) => {
     return stars;
   };
   return (
-    <>
+    <div className="break-inside mb-4">
       <div className="w-full  flex flex-wrap sm:px-4 relative mb-4 sm:mb-4">
         {/* <div className="w-full md:w-1/3 xl:w-1/4 md:p-6 flex px-4 relative"> */}
-        <Link href={`/products/product1`}>
+        <div className="inline-block">
           <img
             className="hover:grow hover:shadow-lg"
             src="https://images.unsplash.com/photo-1562135291-7728cc647783?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjJ8fHQlMjBzaGlydHxlbnwwfHwwfHx8MA%3D%3D"
@@ -50,8 +51,10 @@ const CardM = ({ Discount }) => {
             </div>
           )}
 
-          <div className="pt-3 flex items-center justify-between mr-3 sm:mr-3 ">
-            <p className="text-sm sm:text-lg">Product Name</p>
+          <div className="pt-1 flex items-center justify-between  ">
+            <Link href={`/products/product1`} className="text-sm sm:text-lg">
+              Product Name
+            </Link>
             <div className="flex sm:gap-2 gap-1">
               <div onClick={toggleWishState} className="cursor-pointer">
                 {addToWishlist ? (
@@ -81,9 +84,23 @@ const CardM = ({ Discount }) => {
             </p>
             <div className="flex gap-1 items-center">{renderStars()}</div>
           </div>
-        </Link>
+          {vendor && (
+            <div className="flex justify-between flex-col sm:flex-row ">
+              <div className="mt-1 flex gap-1 ">
+                <MdOutlineAddHome className="text-gray-600" />
+                <Link
+                  href={`/urban-furnishings`}
+                  className="text-gray-600 text-sm sm:text-md font-normal"
+                >
+                  Urban Furnishings
+                </Link>
+              </div>
+              <div className="flex gap-1 items-center">{renderStars()}</div>
+            </div>
+          )}
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -1,7 +1,7 @@
 import NavBar from "@/components/Common/NavBar";
 import React, { useState } from "react";
 import Link from "next/link";
-import Stats from "@/components/VendorCommon/Stats";
+
 import VendorCard from "@/components/Common/VendorCard.js";
 import Card from "../../../components/Common/CardM.js";
 import {
@@ -14,6 +14,8 @@ import {
 import CountDownTimer from "../../../components/Common/CountDownTimer.js";
 import CallToAction from "../../../components/Common/CallToAction.js";
 import CardCarouselCurated from "@/components/VendorCommon/CardCarouselCurated.js";
+import ReelsCarousel from "@/components/VendorCommon/ReelsCarousel.js";
+import CardL from "@/components/Common/CardL.js";
 
 const Index = () => {
   const [price, setPrice] = useState(500);
@@ -44,115 +46,75 @@ const Index = () => {
       <NavBar />
       <div className="bg-white py-8">
         <div className="container mx-auto  px-8  ">
-          <div className="-mx-6 flex flex-wrap">
-            <div className="w-full px-2 sm:px-4 lg:w-8/12">
-              <div className="relative mb-4 sm:mb-8 h-[370px] md:h-[462px]">
-                <img
-                  src="https://demo.tailgrids.com/templates/planet/build/src/assets/ecom-images/headers/header-04/image-01.jpg"
-                  alt="product"
-                  className="h-full w-full object-cover object-center"
-                />
-
-                <div className="absolute left-0 top-0 flex h-full w-full items-center px-8 md:px-12">
-                  <div className="max-w-[420px] w-[200px] sm:w-full">
-                    <h3>
-                      <Link
-                        href="javascript:void(0)"
-                        className="mb-5 block text-2xl font-bold text-dark hover:text-primary sm:text-4xl"
-                      >
-                        Mega Sale Up To 50% Off For All
-                      </Link>
-                    </h3>
-                    <p className="mb-9 text-base text-body-color">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Vestibulum ornare vestibulum mollis. Nam vitae augue
-                      purus. Integer ac accumsan nunc.
-                    </p>
-                    <Link
-                      href="javascript:void(0)"
-                      className="inline-flex items-center justify-center rounded-md bg-primary px-0 py-[13px] text-center text-base font-medium text-gray-800 hover:bg-blue-dark"
-                    >
-                      Grab The Offer
-                    </Link>
-                  </div>
+          <div className="grid grid-cols-6 gap-2">
+            <div className="lg:col-span-2 col-span-6 py-0 md:order-first ">
+              <div className="md:p-8  rounded-xl">
+                <div className="">
+                  <h1 className="text-sm font-bold text-gray-400 ">
+                    #Wearables
+                  </h1>
+                  <p className="text-gray-700">
+                    Donec vitae odio quis nisl dapibus malesuada. Nullam ac
+                    aliquet velit. Aliquam vulputate velit imperdiet dolor
+                    tempor tristique.
+                  </p>
                 </div>
-              </div>
-            </div>
-            <div className="w-full px-4 lg:w-4/12">
-              <div className="-mx-6 flex flex-wrap">
-                <div className="w-full px-4 md:w-1/2 lg:w-full">
-                  <div className="relative mb-4 h-[223px]">
-                    <img
-                      src="https://demo.tailgrids.com/templates/planet/build/src/assets/ecom-images/headers/header-04/image-02.jpg"
-                      alt="product"
-                      className="h-full w-full object-cover object-center"
-                    />
 
-                    <div className="absolute left-0 top-0 flex h-full w-full items-end justify-end p-6 sm:p-9">
-                      <div className="max-w-[180px] text-right">
-                        <h3>
-                          <Link
-                            href="javascript:void(0)"
-                            className="mb-3 block text-xl font-bold text-dark hover:text-primary xl:text-2xl"
-                          >
-                            Summer Travel Collection
-                          </Link>
-                        </h3>
-                        <Link
-                          href="javascript:void(0)"
-                          className="text-base font-medium text-dark hover:text-primary"
-                        >
-                          Discover Now
-                        </Link>
-                      </div>
+                <div className="hidden xl:flex  md:flex-wrap overflow-x-auto md:justify-center custom-hr-scroll">
+                  <div className="w-full md:w-1/2 p-2 flex-shrink items-center justify-center whitespace-nowrap">
+                    <div className="w-full capitalize py-2 px-2 justify-center rounded-md text-sm font-medium whitespace-nowrap shadow-md text-gray-800  transition-transform transform hover:scale-105 text-center flex flex-col items-center">
+                      <label className="group flex flex-col justify-center  items-center text-heading text-sm cursor-pointer">
+                        <span className="ms-2  -mt-0.5 text-gray-600">
+                          600+
+                        </span>
+                        <span className="ms-2  -mt-0.5 text-xs text-gray-400">
+                          Product Tags
+                        </span>
+                      </label>
                     </div>
                   </div>
-                </div>
-                <div className="w-full px-4 md:w-1/2 lg:w-full">
-                  <div className="relative mb-8 h-[223px]">
-                    <img
-                      src="https://demo.tailgrids.com/templates/planet/build/src/assets/ecom-images/headers/header-04/image-03.jpg"
-                      alt="product"
-                      className="h-full w-full object-cover object-center"
-                    />
-
-                    <div className="absolute left-0 top-0 flex h-full w-full items-end justify-end p-6 sm:p-9">
-                      <div className="max-w-[180px] text-right">
-                        <h3>
-                          <Link
-                            href="javascript:void(0)"
-                            className="mb-3 block text-xl font-bold text-dark hover:text-primary xl:text-2xl"
-                          >
-                            Get 30% Off On iPhone
-                          </Link>
-                        </h3>
-                        <Link
-                          href="javascript:void(0)"
-                          className="text-base font-medium text-dark hover:text-primary"
-                        >
-                          Shop Now
-                        </Link>
-                      </div>
+                  <div className="w-full md:w-1/2 p-2 flex-shrink items-center justify-center">
+                    <div className="w-full capitalize py-2 px-2 justify-center rounded-md text-sm font-medium whitespace-nowrap shadow-md text-gray-800 transition-transform transform hover:scale-105 text-center flex flex-col items-center">
+                      <label className="group flex flex-col justify-center  items-center text-heading text-sm cursor-pointer">
+                        <span className="ms-2 text-sm  -mt-0.5 text-gray-600">
+                          400+
+                        </span>
+                        <span className="ms-2  -mt-0.5 text-xs text-gray-400">
+                          Brands
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                  <div className="w-full md:w-1/2 p-2 flex-shrink items-center justify-center">
+                    <div className="w-full capitalize py-2 px-2 justify-center rounded-md text-sm font-medium whitespace-nowrap shadow-md text-gray-800 transition-transform transform hover:scale-105 text-center flex flex-col items-center">
+                      <label className="group flex flex-col whitespace-nowrap items-center text-heading text-sm cursor-pointer">
+                        <span className="ms-2 text-sm  -mt-0.5 text-gray-600">
+                          150+
+                        </span>
+                        <span className="ms-2  -mt-0.5 text-xs text-gray-400">
+                          Vendors
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                  <div className="w-full md:w-1/2 p-2 flex-shrink items-center justify-center">
+                    <div className="w-full capitalize py-2 px-2 justify-center rounded-md text-sm font-medium whitespace-nowrap shadow-md text-gray-800 transition-transform transform hover:scale-105 text-center flex flex-col items-center">
+                      <label className="group flex flex-col justify-center  items-center text-heading text-sm cursor-pointer">
+                        <span className="ms-2 text-sm  -mt-0.5 text-gray-600">
+                          50+
+                        </span>
+                        <span className="ms-2  -mt-0.5 text-xs text-gray-400">
+                          Campaigns
+                        </span>
+                      </label>
                     </div>
                   </div>
                 </div>
               </div>
+              <hr className="w-full h-1 mt-2 md:mt-4 text-gray-400 block md:hidden" />
             </div>
-          </div>
-
-          <div className=" items-start justify-center space-y-4 py-2 sm:py-8 sm:px-4 sm:flex-row sm:space-y-0 md:justify-between lg:px-0">
-            <div className="container mx-auto flex flex-col xl:flex-row justify-between">
-              <div className="w-full xl:w-1/3">
-                <h1 className="text-2xl font-bold text-gray-800">Wearables</h1>
-                <p className="mt-2 text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </div>
-
-              <Stats />
+            <div className="lg:col-span-4 col-span-6 md:order-last">
+              <ReelsCarousel />
             </div>
           </div>
 
@@ -166,7 +128,7 @@ const Index = () => {
                       <div className="pt-1">
                         <div className="block border-b border-gray-300  pb-2 ">
                           <h3 className="text-heading sm:block  md:text-base  font-bold text-gray-400 text-sm">
-                            Category
+                            Categories
                           </h3>
 
                           <div className="mt-2 flex flex-row  md:flex-col md:overflow-hidden overflow-scroll custom-scrollbar">
@@ -475,7 +437,7 @@ const Index = () => {
                         </div>
                       </div>
                       <div className="pt-1">
-                        <div className="block  pb-2 ">
+                        <div className="block border-b border-gray-300 pb-2 ">
                           <h3 className="text-heading sm:block  md:text-base   font-bold text-gray-400 text-sm">
                             Color
                           </h3>
@@ -550,11 +512,41 @@ const Index = () => {
                           </div>
                         </div>
                       </div>
+                      <div className="pt-1">
+                        <div className="block   pb-2 ">
+                          <h3 className="text-heading sm:block  md:text-base   font-bold text-gray-400 text-sm">
+                            Related Hastags (#)
+                          </h3>
+                          <div class="flex justify-start text-xs font-semibold text-gray-600 gap-2 flex-wrap">
+                            <span class="bg-gray-100 rounded-full px-3 py-1 ">
+                              #Men&apos;s Clothings
+                            </span>
+                            <span class="bg-gray-100 rounded-full px-3 py-1 ">
+                              #Formal Men&apos;s Wear
+                            </span>
+                            <span class="bg-gray-100 rounded-full px-3 py-1 ">
+                              #Sports Wear
+                            </span>
+                            <span class="bg-gray-100 rounded-full px-3 py-1 ">
+                              #Kid&apos;s Shoes
+                            </span>
+                            <span class="bg-gray-100 rounded-full px-3 py-1 ">
+                              #Bridal Dresses
+                            </span>
+                            <span class="bg-gray-100 rounded-full px-3 py-1 ">
+                              #Ethnic Wear for Men
+                            </span>
+                            <span class="bg-gray-100 rounded-full px-3 py-1 ">
+                              #Ethnic Wear for Women
+                            </span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
                   <div className="w-full py-2 sm:py-0 sm:px-4 px-0">
-                    <div className="flex  justify-between">
+                    <div className="flex py-4  justify-between">
                       <form className="sm:px-6 flex w-full items-center">
                         <div className="relative w-full">
                           <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
@@ -576,7 +568,7 @@ const Index = () => {
                             type="text"
                             id="email-adress-icon"
                             className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 px-2 py-1"
-                            placeholder='"Formal Wear for Men", "Ethnic Wear for Women", "Kids Wear" . . .'
+                            placeholder='"#Formal Wear for Men", "#Ethnic Wear for Women", "#Kids Wear" . . .'
                           />
                         </div>
                         <button
@@ -644,36 +636,38 @@ const Index = () => {
                         )}
                       </div>
                     </div>
-                    <div className="w-full py-3 flex flex-wrap  relative pb-0 sm:mb-4">
-                      <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
-                        <Card Discount={false} />
-                      </div>
-                      <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
-                        <Card Discount={false} />
-                      </div>
-                      <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
-                        <Card Discount={false} />
-                      </div>
-                      <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
-                        <Card Discount={false} />
-                      </div>
-                      <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
-                        <Card Discount={false} />
-                      </div>
-                      <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
-                        <Card Discount={false} />
-                      </div>
-                      <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
-                        <Card Discount={false} />
-                      </div>
-                      <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
-                        <Card Discount={false} />
-                      </div>
-                      <div className="w-1/2 md:w-1/3 xl:w-1/3 mb-4">
-                        <Card Discount={false} />
+                    <div className="w-full py-0  relative pb-0 sm:mb-4">
+                      <div className="columns-2 md:columns-2 xl:columns-3 gap-2">
+                        <div className="mb-1 sm:mb-0 ">
+                          <CardL Discount={false} vendor={true} />
+                        </div>
+                        <div className="mb-1 ">
+                          <CardL Discount={false} vendor={true} />
+                        </div>
+                        <div className="mb-1 ">
+                          <CardL Discount={false} vendor={true} />
+                        </div>
+                        <div className="mb-1 ">
+                          <CardL Discount={false} vendor={true} />
+                        </div>
+                        <div className="mb-1 ">
+                          <CardL Discount={false} vendor={true} />
+                        </div>
+                        <div className="mb-1 ">
+                          <CardL Discount={false} vendor={true} />
+                        </div>
+                        <div className="mb-1 ">
+                          <CardL Discount={false} vendor={true} />
+                        </div>
+                        <div className="mb-1 ">
+                          <CardL Discount={false} vendor={true} />
+                        </div>
+                        <div className="mb-1 ">
+                          <CardL Discount={false} vendor={true} />
+                        </div>
                       </div>
 
-                      <div className="items-center justify-center  py-2 mx-auto  ">
+                      <div className="flex items-center justify-center  py-2 mx-auto  ">
                         <div className="flex select-none space-x-1 text-gray-700">
                           <Link
                             href="#"
@@ -1004,6 +998,103 @@ const Index = () => {
                   </div>
                 </div>
               </div>
+              {/* sales Banner */}
+              <div className="container mx-auto pt-4 -mx-6 flex flex-wrap">
+                <div className="w-full px-2 sm:px-4 lg:w-8/12">
+                  <div className="relative mb-4 sm:mb-8 h-[370px] md:h-[462px]">
+                    <img
+                      src="https://demo.tailgrids.com/templates/planet/build/src/assets/ecom-images/headers/header-04/image-01.jpg"
+                      alt="product"
+                      className="h-full w-full object-cover object-center"
+                    />
+
+                    <div className="absolute left-0 top-0 flex h-full w-full items-center px-8 md:px-12">
+                      <div className="max-w-[420px] w-[200px] sm:w-full">
+                        <h3>
+                          <Link
+                            href="javascript:void(0)"
+                            className="mb-5 block text-2xl font-bold text-dark hover:text-primary sm:text-4xl"
+                          >
+                            Mega Sale Up To 50% Off For All
+                          </Link>
+                        </h3>
+                        <p className="mb-9 text-base text-body-color">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Vestibulum ornare vestibulum mollis. Nam vitae
+                          augue purus. Integer ac accumsan nunc.
+                        </p>
+                        <Link
+                          href="javascript:void(0)"
+                          className="inline-flex items-center justify-center rounded-md bg-primary px-0 py-[13px] text-center text-base font-medium text-gray-800 hover:bg-blue-dark"
+                        >
+                          Grab The Offer
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="w-full px-4 lg:w-4/12">
+                  <div className="-mx-6 flex flex-wrap">
+                    <div className="w-full px-4 md:w-1/2 lg:w-full">
+                      <div className="relative mb-4 h-[223px]">
+                        <img
+                          src="https://demo.tailgrids.com/templates/planet/build/src/assets/ecom-images/headers/header-04/image-02.jpg"
+                          alt="product"
+                          className="h-full w-full object-cover object-center"
+                        />
+
+                        <div className="absolute left-0 top-0 flex h-full w-full items-end justify-end p-6 sm:p-9">
+                          <div className="max-w-[180px] text-right">
+                            <h3>
+                              <Link
+                                href="javascript:void(0)"
+                                className="mb-3 block text-xl font-bold text-dark hover:text-primary xl:text-2xl"
+                              >
+                                Summer Travel Collection
+                              </Link>
+                            </h3>
+                            <Link
+                              href="javascript:void(0)"
+                              className="text-base font-medium text-dark hover:text-primary"
+                            >
+                              Discover Now
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="w-full px-4 md:w-1/2 lg:w-full">
+                      <div className="relative mb-8 h-[223px]">
+                        <img
+                          src="https://demo.tailgrids.com/templates/planet/build/src/assets/ecom-images/headers/header-04/image-03.jpg"
+                          alt="product"
+                          className="h-full w-full object-cover object-center"
+                        />
+
+                        <div className="absolute left-0 top-0 flex h-full w-full items-end justify-end p-6 sm:p-9">
+                          <div className="max-w-[180px] text-right">
+                            <h3>
+                              <Link
+                                href="javascript:void(0)"
+                                className="mb-3 block text-xl font-bold text-dark hover:text-primary xl:text-2xl"
+                              >
+                                Get 30% Off On iPhone
+                              </Link>
+                            </h3>
+                            <Link
+                              href="javascript:void(0)"
+                              className="text-base font-medium text-dark hover:text-primary"
+                            >
+                              Shop Now
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               {/* CTA */}
               <div className="container mx-auto flex items-center flex-wrap sm:pt-4 ">
                 <CallToAction />
@@ -1164,7 +1255,7 @@ const Index = () => {
                     <hr className="w-full h-1 mt-4 text-gray-400 block md:hidden" />
                   </div>
                   <div className="md:col-span-4 col-span-6 md:order-last">
-                    <CardCarouselCurated />
+                    <CardCarouselCurated category="wearables" />
                   </div>
                 </div>
               </div>

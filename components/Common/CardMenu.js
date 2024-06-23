@@ -4,7 +4,7 @@ import { FaPlusSquare } from "react-icons/fa";
 import { CiGlass } from "react-icons/ci";
 import { MdOutlineEmojiFoodBeverage } from "react-icons/md";
 import QuantityInput from "../VendorCommon/QuantityInput";
-const MenuCard = ({ product }) => {
+const CardMenu = ({ product }) => {
   return (
     <div className="grid grid-cols-12 gap-2 ">
       <div className="md:col-span-5 col-span-12 md:order-first">
@@ -67,4 +67,4 @@ const MenuCard = ({ product }) => {
   );
 };
 
-export default MenuCard;
+export default CardMenu;
