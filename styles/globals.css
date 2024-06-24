@@ -30,12 +30,20 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+    .gradient-text {
+      @apply bg-clip-text text-transparent bg-gradient-to-r from-[#eba309] via-[#f12711] to-[#f12711];
+      background-size: 200% 100%;
+    }
+  
 }
 
 
 .work-sans {
   font-family: 'Work Sans', sans-serif;
 }
+
+
+
 
 #menu-toggle:checked+#menu {
   display: block;

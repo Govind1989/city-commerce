@@ -517,26 +517,26 @@ const Index = () => {
                           <h3 className="text-heading sm:block  md:text-base   font-bold text-gray-400 text-sm">
                             Related Hastags (#)
                           </h3>
-                          <div class="flex justify-start text-xs font-semibold text-gray-600 gap-2 flex-wrap">
-                            <span class="bg-gray-100 rounded-full px-3 py-1 ">
+                          <div className="flex justify-start text-xs font-semibold text-gray-600 gap-2 flex-wrap">
+                            <span className="bg-gray-100 rounded-full px-3 py-1 ">
                               #Men&apos;s Clothings
                             </span>
-                            <span class="bg-gray-100 rounded-full px-3 py-1 ">
+                            <span className="bg-gray-100 rounded-full px-3 py-1 ">
                               #Formal Men&apos;s Wear
                             </span>
-                            <span class="bg-gray-100 rounded-full px-3 py-1 ">
+                            <span className="bg-gray-100 rounded-full px-3 py-1 ">
                               #Sports Wear
                             </span>
-                            <span class="bg-gray-100 rounded-full px-3 py-1 ">
+                            <span className="bg-gray-100 rounded-full px-3 py-1 ">
                               #Kid&apos;s Shoes
                             </span>
-                            <span class="bg-gray-100 rounded-full px-3 py-1 ">
+                            <span className="bg-gray-100 rounded-full px-3 py-1 ">
                               #Bridal Dresses
                             </span>
-                            <span class="bg-gray-100 rounded-full px-3 py-1 ">
+                            <span className="bg-gray-100 rounded-full px-3 py-1 ">
                               #Ethnic Wear for Men
                             </span>
-                            <span class="bg-gray-100 rounded-full px-3 py-1 ">
+                            <span className="bg-gray-100 rounded-full px-3 py-1 ">
                               #Ethnic Wear for Women
                             </span>
                           </div>
@@ -558,9 +558,9 @@ const Index = () => {
                               xmlns="http://www.w3.org/2000/svg"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                                clip-rule="evenodd"
+                                clipRule="evenodd"
                               ></path>
                             </svg>
                           </div>
@@ -584,9 +584,9 @@ const Index = () => {
                             xmlns="http://www.w3.org/2000/svg"
                           >
                             <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
                               d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                             ></path>
                           </svg>
@@ -1012,7 +1012,7 @@ const Index = () => {
                       <div className="max-w-[420px] w-[200px] sm:w-full">
                         <h3>
                           <Link
-                            href="javascript:void(0)"
+                            href="#"
                             className="mb-5 block text-2xl font-bold text-dark hover:text-primary sm:text-4xl"
                           >
                             Mega Sale Up To 50% Off For All
@@ -1024,7 +1024,7 @@ const Index = () => {
                           augue purus. Integer ac accumsan nunc.
                         </p>
                         <Link
-                          href="javascript:void(0)"
+                          href="#"
                           className="inline-flex items-center justify-center rounded-md bg-primary px-0 py-[13px] text-center text-base font-medium text-gray-800 hover:bg-blue-dark"
                         >
                           Grab The Offer
@@ -1047,14 +1047,14 @@ const Index = () => {
                           <div className="max-w-[180px] text-right">
                             <h3>
                               <Link
-                                href="javascript:void(0)"
+                                href="#"
                                 className="mb-3 block text-xl font-bold text-dark hover:text-primary xl:text-2xl"
                               >
                                 Summer Travel Collection
                               </Link>
                             </h3>
                             <Link
-                              href="javascript:void(0)"
+                              href="#"
                               className="text-base font-medium text-dark hover:text-primary"
                             >
                               Discover Now
@@ -1075,14 +1075,14 @@ const Index = () => {
                           <div className="max-w-[180px] text-right">
                             <h3>
                               <Link
-                                href="javascript:void(0)"
+                                href="#"
                                 className="mb-3 block text-xl font-bold text-dark hover:text-primary xl:text-2xl"
                               >
                                 Get 30% Off On iPhone
                               </Link>
                             </h3>
                             <Link
-                              href="javascript:void(0)"
+                              href="#"
                               className="text-base font-medium text-dark hover:text-primary"
                             >
                               Shop Now
