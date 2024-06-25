@@ -646,9 +646,9 @@ const Index = () => {
               </div>
             </div>
           </div>
-          L{/* banners */}
-          <div className="sm:flex flex-wrap pt-4 ">
-            <div className="w-full sm:w-3/12 sm:px-2 mb-4 sm:mb-0">
+          {/* banners */}
+          <div className="lg:flex flex-wrap pt-4 ">
+            <div className="w-full lg:w-3/12 lg:px-2 mb-4 ">
               <div className="flex flex-col-reverse lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between px-8 py-6 bg-gray-200">
                 <div>
                   <h3 className="text-lg leading-4 mb-2 text-[#FD3D57]">
@@ -677,7 +677,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="w-full sm:w-6/12 sm:px-2 mb-4">
+            <div className="w-full lg:w-6/12 lg:px-2 mb-4">
               <div className="flex flex-col-reverse lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between px-8 py-6 bg-gray-200">
                 <div>
                   <h3 className="text-lg leading-4 mb-2 text-[#FD3D57]">
@@ -705,7 +705,7 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full sm:w-3/12 sm:px-2 ">
+            <div className="w-full lg:w-3/12 lg:px-2 ">
               <div className="flex flex-col-reverse lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between px-8 py-6 bg-gray-200">
                 <div>
                   <h3 className="text-lg leading-4 mb-2 text-[#FD3D57]">
@@ -751,10 +751,10 @@ const Index = () => {
               <div className="md:col-span-2 col-span-6 py-0 md:order-first ">
                 <div className="md:p-8 md:bg-gray-100 rounded-xl">
                   <div className="hidden md:block mb-4">
-                    <h1 className="text-sm font-bold text-gray-400 ">
+                    <h1 className="text-sm font-bold text-gray-400 text-center lg:text-start ">
                       #Explore
                     </h1>
-                    <p className="text-gray-700">
+                    <p className="text-gray-700 lg:block hidden">
                       Donec vitae odio quis nisl dapibus malesuada. Nullam ac
                       aliquet velit. Aliquam vulputate velit imperdiet dolor
                       tempor tristique.

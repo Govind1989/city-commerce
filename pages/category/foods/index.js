@@ -507,8 +507,8 @@ const Index = () => {
             </div>
           </div>
           {/* banners */}
-          <div className="sm:flex flex-wrap pt-4 ">
-            <div className="w-full sm:w-3/12 sm:px-2 mb-4 sm:mb-0">
+          <div className="lg:flex flex-wrap pt-4 ">
+            <div className="w-full lg:w-3/12 lg:px-2 mb-4 ">
               <div className="flex flex-col-reverse lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between px-8 py-6 bg-gray-200">
                 <div>
                   <h3 className="text-lg leading-4 mb-2 text-[#FD3D57]">
@@ -537,7 +537,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="w-full sm:w-6/12 sm:px-2 mb-4">
+            <div className="w-full lg:w-6/12 lg:px-2 mb-4">
               <div className="flex flex-col-reverse lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between px-8 py-6 bg-gray-200">
                 <div>
                   <h3 className="text-lg leading-4 mb-2 text-[#FD3D57]">
@@ -565,7 +565,7 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full sm:w-3/12 sm:px-2 ">
+            <div className="w-full lg:w-3/12 lg:px-2 ">
               <div className="flex flex-col-reverse lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between px-8 py-6 bg-gray-200">
                 <div>
                   <h3 className="text-lg leading-4 mb-2 text-[#FD3D57]">
@@ -611,10 +611,10 @@ const Index = () => {
               <div className="md:col-span-2 col-span-6 py-0 md:order-first ">
                 <div className="md:p-8 md:bg-gray-100 rounded-xl">
                   <div className="hidden md:block mb-4">
-                    <h1 className="text-sm font-bold text-gray-400 ">
+                    <h1 className="text-sm font-bold text-gray-400 text-center lg:text-start ">
                       #Explore
                     </h1>
-                    <p className="text-gray-700">
+                    <p className="text-gray-700 lg:block hidden">
                       Donec vitae odio quis nisl dapibus malesuada. Nullam ac
                       aliquet velit. Aliquam vulputate velit imperdiet dolor
                       tempor tristique.
@@ -644,97 +644,33 @@ const Index = () => {
             </div>
           </div>
           {/* sale banners */}
-          <div className="-mx-2 flex flex-wrap mt-8 ">
-            <div className="w-full px-2 sm:px-4 lg:w-8/12">
-              <div className="w-full md:flex gap-4">
-                <div className="w-full md:w-1/2 flex-1 relative mb-4 md:mr-2 sm:mb-8 h-[370px] md:h-[462px]">
-                  <img
-                    src="https://themes.rslahmed.dev/rafcart-tailwind/assets/images/banner-1.jpg"
-                    alt="Furniture-one"
-                    className="h-full w-full object-cover object-center"
-                  />
-                  <div className="absolute left-0 top-0 flex h-full w-full items-center px-8 md:px-12">
-                    <div className="max-w-[420px] w-[200px] sm:w-full">
-                      <span className="mb-3 block text-base font-medium text-body-color">
-                        #Clearance Sale
-                      </span>
-                      <h3>
-                        <Link
-                          href="#"
-                          className="mb-5 block text-2xl font-bold text-dark hover:text-primary sm:text-4xl"
-                        >
-                          Elegant sofa&apos;s collection
-                        </Link>
-                      </h3>
-                      <p className="mb-9 text-base text-body-color">
-                        Home is where comfort is. Explore our exquisite
-                        collections
-                      </p>
-                      <button
-                        type="button"
-                        className="py-1 px-4 bg-gray-800 hover:bg-gray-200 text-white hover:text-gray-800  transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
-                      >
-                        Shop Now
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div className="w-full md:w-1/2 flex-1 relative mb-4 md:ml-2 sm:mb-8 h-[370px] md:h-[462px]">
-                  <img
-                    src="https://themes.rslahmed.dev/rafcart-tailwind/assets/images/banner-1.jpg"
-                    alt="Furniture-one"
-                    className="h-full w-full object-cover object-center"
-                  />
-                  <div className="absolute left-0 top-0 flex h-full w-full items-center px-8 md:px-12">
-                    <div className="max-w-[420px] w-[200px] sm:w-full">
-                      <span className="mb-3 block text-base font-medium text-body-color">
-                        #Grand Sale
-                      </span>
-                      <h3>
-                        <Link
-                          href="#"
-                          className="mb-5 block text-2xl font-bold text-dark hover:text-primary sm:text-4xl"
-                        >
-                          Elegant sofa&apos;s collection
-                        </Link>
-                      </h3>
-                      <p className="mb-9 text-base text-body-color">
-                        Home is where comfort is. Explore our exquisite
-                        collections
-                      </p>
-                      <button
-                        type="button"
-                        className="py-1 px-4 bg-gray-800 hover:bg-gray-200 text-white hover:text-gray-800  transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
-                      >
-                        Shop Now
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="w-full px-4 lg:w-4/12">
-              <div className="-mx-6 flex flex-wrap">
-                <div className="w-full px-4 md:w-1/2 lg:w-full">
-                  <div className="relative mb-4 h-[223px]">
+          <div className="-mx-2">
+            <div className="-mx-0 flex flex-wrap mt-8 ">
+              <div className="w-full px-0 xl:px-2 lg:w-8/12">
+                <div className="w-full md:flex gap-4">
+                  <div className="w-full md:w-1/2 flex-1 relative mb-4 md:mr-2 sm:mb-8 h-[370px] md:h-[462px]">
                     <img
-                      src="https://themes.rslahmed.dev/rafcart-tailwind/assets/images/category-3.jpg"
-                      alt="Furniture Two"
+                      src="https://themes.rslahmed.dev/rafcart-tailwind/assets/images/banner-1.jpg"
+                      alt="Furniture-one"
                       className="h-full w-full object-cover object-center"
                     />
-                    <div className="absolute left-0 top-0 flex h-full w-full items-end justify-end p-6 sm:p-9">
-                      <div className="max-w-[180px] text-right">
+                    <div className="absolute left-0 top-0 flex h-full w-full items-center px-8 md:px-12">
+                      <div className="max-w-[420px] w-[200px] sm:w-full">
                         <span className="mb-3 block text-base font-medium text-body-color">
-                          #Grand Sale
+                          #Clearance Sale
                         </span>
                         <h3>
                           <Link
                             href="#"
-                            className="mb-3 block text-xl font-bold text-dark hover:text-primary xl:text-2xl"
+                            className="mb-5 block text-2xl font-bold text-dark hover:text-primary sm:text-4xl"
                           >
-                            We design your space
+                            Elegant sofa&apos;s collection
                           </Link>
                         </h3>
+                        <p className="mb-9 text-base text-body-color">
+                          Home is where comfort is. Explore our exquisite
+                          collections
+                        </p>
                         <button
                           type="button"
                           className="py-1 px-4 bg-gray-800 hover:bg-gray-200 text-white hover:text-gray-800  transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
@@ -744,27 +680,29 @@ const Index = () => {
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="w-full px-4 md:w-1/2 lg:w-full">
-                  <div className="relative mb-8 h-[223px]">
+                  <div className="w-full md:w-1/2 flex-1 relative mb-4 md:ml-2 sm:mb-8 h-[370px] md:h-[462px]">
                     <img
-                      src="https://themes.rslahmed.dev/rafcart-tailwind/assets/images/category-1.jpg"
-                      alt="Furniture Three"
+                      src="https://themes.rslahmed.dev/rafcart-tailwind/assets/images/banner-1.jpg"
+                      alt="Furniture-one"
                       className="h-full w-full object-cover object-center"
                     />
-                    <div className="absolute left-0 top-0 flex h-full w-full items-end justify-end p-6 sm:p-9">
-                      <div className="max-w-[180px] text-right">
+                    <div className="absolute left-0 top-0 flex h-full w-full items-center px-8 md:px-12">
+                      <div className="max-w-[420px] w-[200px] sm:w-full">
                         <span className="mb-3 block text-base font-medium text-body-color">
                           #Grand Sale
                         </span>
                         <h3>
                           <Link
                             href="#"
-                            className="mb-3 block text-xl font-bold text-dark hover:text-primary xl:text-2xl"
+                            className="mb-5 block text-2xl font-bold text-dark hover:text-primary sm:text-4xl"
                           >
-                            Home is what we must br proud of
+                            Elegant sofa&apos;s collection
                           </Link>
                         </h3>
+                        <p className="mb-9 text-base text-body-color">
+                          Home is where comfort is. Explore our exquisite
+                          collections
+                        </p>
                         <button
                           type="button"
                           className="py-1 px-4 bg-gray-800 hover:bg-gray-200 text-white hover:text-gray-800  transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
@@ -776,37 +714,102 @@ const Index = () => {
                   </div>
                 </div>
               </div>
+              <div className="w-full px-2 md:px-2 lg:w-4/12">
+                <div className="-mx-6 flex flex-wrap">
+                  <div className="w-full px-4 md:w-1/2 lg:w-full">
+                    <div className="relative mb-4 h-[223px]">
+                      <img
+                        src="https://themes.rslahmed.dev/rafcart-tailwind/assets/images/category-3.jpg"
+                        alt="Furniture Two"
+                        className="h-full w-full object-cover object-center"
+                      />
+                      <div className="absolute left-0 top-0 flex h-full w-full items-end justify-end p-6 sm:p-9">
+                        <div className="max-w-[180px] text-right">
+                          <span className="mb-3 block text-base font-medium text-body-color">
+                            #Grand Sale
+                          </span>
+                          <h3>
+                            <Link
+                              href="#"
+                              className="mb-3 block text-xl font-bold text-dark hover:text-primary xl:text-2xl"
+                            >
+                              We design your space
+                            </Link>
+                          </h3>
+                          <button
+                            type="button"
+                            className="py-1 px-4 bg-gray-800 hover:bg-gray-200 text-white hover:text-gray-800  transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
+                          >
+                            Shop Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-full px-4 md:w-1/2 lg:w-full">
+                    <div className="relative mb-8 h-[223px]">
+                      <img
+                        src="https://themes.rslahmed.dev/rafcart-tailwind/assets/images/category-1.jpg"
+                        alt="Furniture Three"
+                        className="h-full w-full object-cover object-center"
+                      />
+                      <div className="absolute left-0 top-0 flex h-full w-full items-end justify-end p-6 sm:p-9">
+                        <div className="max-w-[180px] text-right">
+                          <span className="mb-3 block text-base font-medium text-body-color">
+                            #Grand Sale
+                          </span>
+                          <h3>
+                            <Link
+                              href="#"
+                              className="mb-3 block text-xl font-bold text-dark hover:text-primary xl:text-2xl"
+                            >
+                              Home is what we must br proud of
+                            </Link>
+                          </h3>
+                          <button
+                            type="button"
+                            className="py-1 px-4 bg-gray-800 hover:bg-gray-200 text-white hover:text-gray-800  transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
+                          >
+                            Shop Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="w-full -mt-2">
-            <div className="w-full relative mb-4 md:mr-2 sm:mb-8 h-[370px] md:h-[462px]">
-              <img
-                src="https://themes.rslahmed.dev/rafcart-tailwind/assets/images/banner-1.jpg"
-                alt="Furniture-one"
-                className="h-full w-full object-cover object-center"
-              />
-              <div className="absolute left-0 top-0 flex h-full w-full items-center px-8 md:px-12">
-                <div className="max-w-[420px] w-[200px] sm:w-full">
-                  <span className="mb-3 block text-base font-medium text-body-color">
-                    #Clearance Sale
-                  </span>
-                  <h3>
-                    <Link
-                      href="#"
-                      className="mb-5 block text-2xl font-bold text-dark hover:text-primary sm:text-4xl"
+            <div className="w-full  -mt-2">
+              <div className="w-full relative mb-4 sm:mb-8 h-[370px] md:h-[462px]">
+                <img
+                  src="https://themes.rslahmed.dev/rafcart-tailwind/assets/images/banner-1.jpg"
+                  alt="Furniture-one"
+                  className="h-full w-full object-cover object-center"
+                />
+                <div className="absolute left-0 top-0 flex h-full w-full items-center px-8 md:px-12">
+                  <div className="max-w-[420px] w-[200px] sm:w-full">
+                    <span className="mb-3 block text-base font-medium text-body-color">
+                      #Clearance Sale
+                    </span>
+                    <h3>
+                      <Link
+                        href="#"
+                        className="mb-5 block text-2xl font-bold text-dark hover:text-primary sm:text-4xl"
+                      >
+                        Elegant sofa&apos;s collection
+                      </Link>
+                    </h3>
+                    <p className="mb-9 text-base text-body-color">
+                      Home is where comfort is. Explore our exquisite
+                      collections
+                    </p>
+                    <button
+                      type="button"
+                      className="py-1 px-4 bg-gray-800 hover:bg-gray-200 text-white hover:text-gray-800  transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
                     >
-                      Elegant sofa&apos;s collection
-                    </Link>
-                  </h3>
-                  <p className="mb-9 text-base text-body-color">
-                    Home is where comfort is. Explore our exquisite collections
-                  </p>
-                  <button
-                    type="button"
-                    className="py-1 px-4 bg-gray-800 hover:bg-gray-200 text-white hover:text-gray-800  transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
-                  >
-                    Shop Now
-                  </button>
+                      Shop Now
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

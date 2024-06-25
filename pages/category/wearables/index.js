@@ -798,92 +798,149 @@ const Index = () => {
                 </div>
               </div>
               {/* banners */}
-              <div className="container mx-auto  pt-4 ">
-                <div className="sm:flex flex-wrap ">
-                  <div className="w-full sm:w-3/12 sm:px-2 mb-4 sm:mb-0">
-                    <div className="flex flex-col-reverse lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between px-8 py-6 bg-gray-200">
-                      <div>
-                        <h3 className="text-lg leading-4 mb-2 text-[#FD3D57]">
-                          50% off
-                        </h3>
-                        <h4 className="text-[22px] leading-[26px] text-secondary mb-2">
-                          Huge Offer
-                        </h4>
-                        <div className="flex gap-1">
-                          <MdOutlineAddHome className="text-gray-600" />
-                          <p className="text-[15px] leading-4 text-xs text-[#464545] mb-5">
-                            Elegant Apparel
-                          </p>
-                        </div>
-                        <Link href="#" className="primary-btn min-w-[80px]">
-                          Shop Now
-                        </Link>
-                      </div>
-                      <div className="flex justify-center">
-                        <img
-                          src="https://themes.rslahmed.dev/rafcart-tailwind/assets/images/sofa-2.png"
-                          className="w-[100px] h-[150px] lg:h-[180px] object-contain flex-shrink-0 hover:scale-105 transition-all duration-300"
-                          alt="product"
-                        />
-                      </div>
-                    </div>
-                  </div>
+              <div className="container mx-auto pt-4 -mx-6 flex flex-wrap">
+                <div className="w-full px-2 lg:px-4 lg:w-8/12">
+                  <div className="relative mb-4 sm:mb-8 h-[370px] md:h-[462px]">
+                    <img
+                      src="https://demo.tailgrids.com/templates/planet/build/src/assets/ecom-images/headers/header-04/image-01.jpg"
+                      alt="product"
+                      className="h-full w-full object-cover object-center"
+                    />
 
-                  <div className="w-full sm:w-6/12 sm:px-2 mb-4">
-                    <div className="flex flex-col-reverse lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between px-8 py-6 bg-gray-200">
-                      <div>
-                        <h3 className="text-lg leading-4 mb-2 text-[#FD3D57]">
-                          {/* 50% off */}
+                    <div className="absolute left-0 top-0 flex h-full w-full items-center px-8 md:px-12">
+                      <div className="max-w-[420px] w-[200px] sm:w-full">
+                        <h3>
+                          <Link
+                            href="#"
+                            className="mb-5 block text-2xl font-bold text-dark hover:text-primary sm:text-4xl"
+                          >
+                            Mega Sale Up To 50% Off For All
+                          </Link>
                         </h3>
-                        <h4 className="text-[22px] leading-[26px] text-secondary mb-2">
-                          Free Shipping
-                        </h4>
-                        <div className="flex gap-1">
-                          <MdOutlineAddHome className="text-gray-600" />
-                          <p className="text-[15px] leading-4 text-xs text-[#464545] mb-5">
-                            Elegant Apparel
-                          </p>
-                        </div>
-                        <Link href="#" className="primary-btn min-w-[80px]">
-                          Shop Now
+                        <p className="mb-9 text-base text-body-color">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Vestibulum ornare vestibulum mollis. Nam vitae
+                          augue purus. Integer ac accumsan nunc.
+                        </p>
+                        <Link
+                          href="#"
+                          className="inline-flex items-center justify-center rounded-md bg-primary px-0 py-[13px] text-center text-base font-medium text-gray-800 hover:bg-blue-dark"
+                        >
+                          Grab The Offer
                         </Link>
-                      </div>
-                      <div className="flex justify-center">
-                        <img
-                          src="https://themes.rslahmed.dev/rafcart-tailwind/assets/images/sofa-2.png"
-                          className="w-[200px] h-[150px] lg:h-[180px] object-contain flex-shrink-0 hover:scale-105 transition-all duration-300"
-                          alt="product"
-                        />
                       </div>
                     </div>
                   </div>
-                  <div className="w-full sm:w-3/12 sm:px-2 ">
-                    <div className="flex flex-col-reverse lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between px-8 py-6 bg-gray-200">
-                      <div>
-                        <h3 className="text-lg leading-4 mb-2 text-[#FD3D57]">
-                          30% off
-                        </h3>
-                        <h4 className="text-[22px] leading-[26px] text-secondary mb-2">
-                          Flash Sale
-                        </h4>
-                        <div className="flex gap-1">
-                          <MdOutlineAddHome className="text-gray-600" />
-                          <p className="text-[15px] leading-4 text-xs text-[#464545] mb-5">
-                            Elegant Apparel
-                          </p>
-                        </div>
-                        <Link href="#" className="primary-btn min-w-[80px]">
-                          Shop Now
-                        </Link>
-                      </div>
-                      <div className="flex justify-center">
+                </div>
+                <div className="w-full px-4 lg:w-4/12">
+                  <div className="-mx-6 flex flex-wrap">
+                    <div className="w-full px-4 md:w-1/2 lg:w-full">
+                      <div className="relative mb-4 h-[223px]">
                         <img
-                          src="https://themes.rslahmed.dev/rafcart-tailwind/assets/images/sofa-2.png"
-                          className="w-[100px] h-[150px] lg:h-[180px] object-contain flex-shrink-0 hover:scale-105 transition-all duration-300"
+                          src="https://demo.tailgrids.com/templates/planet/build/src/assets/ecom-images/headers/header-04/image-02.jpg"
                           alt="product"
+                          className="h-full w-full object-cover object-center"
                         />
+
+                        <div className="absolute left-0 top-0 flex h-full w-full items-end justify-end p-6 sm:p-9">
+                          <div className="max-w-[180px] text-right">
+                            <h3>
+                              <Link
+                                href="#"
+                                className="mb-3 block text-xl font-bold text-dark hover:text-primary xl:text-2xl"
+                              >
+                                Summer Travel Collection
+                              </Link>
+                            </h3>
+                            <Link
+                              href="#"
+                              className="text-base font-medium text-dark hover:text-primary"
+                            >
+                              Discover Now
+                            </Link>
+                          </div>
+                        </div>
                       </div>
                     </div>
+                    <div className="w-full px-4 md:w-1/2 lg:w-full">
+                      <div className="relative mb-8 h-[223px]">
+                        <img
+                          src="https://demo.tailgrids.com/templates/planet/build/src/assets/ecom-images/headers/header-04/image-03.jpg"
+                          alt="product"
+                          className="h-full w-full object-cover object-center"
+                        />
+
+                        <div className="absolute left-0 top-0 flex h-full w-full items-end justify-end p-6 sm:p-9">
+                          <div className="max-w-[180px] text-right">
+                            <h3>
+                              <Link
+                                href="#"
+                                className="mb-3 block text-xl font-bold text-dark hover:text-primary xl:text-2xl"
+                              >
+                                Get 30% Off On iPhone
+                              </Link>
+                            </h3>
+                            <Link
+                              href="#"
+                              className="text-base font-medium text-dark hover:text-primary"
+                            >
+                              Shop Now
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* Curated */}
+              <div className=" items-center pt-4 h-auto">
+                <div id="store" className="w-full top-0 sm:px-4 sm:py-1">
+                  <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
+                    <div
+                      className="uppercase  tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl"
+                      href="#"
+                    >
+                      Curated For You
+                    </div>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-6 gap-4">
+                  <div className="md:col-span-2 col-span-6 py-0 md:order-first ">
+                    <div className="md:p-8 md:bg-gray-100 rounded-xl">
+                      <div className="hidden md:block mb-4">
+                        <h1 className="text-sm font-bold text-gray-400 text-center lg:text-start ">
+                          #Explore
+                        </h1>
+                        <p className="text-gray-700 lg:block hidden">
+                          Donec vitae odio quis nisl dapibus malesuada. Nullam
+                          ac aliquet velit. Aliquam vulputate velit imperdiet
+                          dolor tempor tristique.
+                        </p>
+                      </div>
+                      <div className="flex flex-row md:flex-col md:overflow-hidden overflow-scroll gap-4 mx-5 custom-scrollbar">
+                        {curatedCategories.map((category, index) => (
+                          <button
+                            key={index}
+                            onClick={(e) =>
+                              handleCuratedCategoryChange(e, index)
+                            }
+                            className={`capitalize py-3 px-4 rounded-md text-sm  font-medium whitespace-nowrap shadow-md transition-transform transform hover:scale-105 ${
+                              activeIndex === index
+                                ? "bg-gray-800 text-white"
+                                : "bg-white text-gray-800"
+                            }`}
+                          >
+                            {category}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                    <hr className="w-full h-1 mt-4 text-gray-400 block md:hidden" />
+                  </div>
+                  <div className="md:col-span-4 col-span-6 md:order-last">
+                    <CardCarouselCurated category="furnitures" />
                   </div>
                 </div>
               </div>
@@ -999,101 +1056,6 @@ const Index = () => {
                 </div>
               </div>
               {/* sales Banner */}
-              <div className="container mx-auto pt-4 -mx-6 flex flex-wrap">
-                <div className="w-full px-2 sm:px-4 lg:w-8/12">
-                  <div className="relative mb-4 sm:mb-8 h-[370px] md:h-[462px]">
-                    <img
-                      src="https://demo.tailgrids.com/templates/planet/build/src/assets/ecom-images/headers/header-04/image-01.jpg"
-                      alt="product"
-                      className="h-full w-full object-cover object-center"
-                    />
-
-                    <div className="absolute left-0 top-0 flex h-full w-full items-center px-8 md:px-12">
-                      <div className="max-w-[420px] w-[200px] sm:w-full">
-                        <h3>
-                          <Link
-                            href="#"
-                            className="mb-5 block text-2xl font-bold text-dark hover:text-primary sm:text-4xl"
-                          >
-                            Mega Sale Up To 50% Off For All
-                          </Link>
-                        </h3>
-                        <p className="mb-9 text-base text-body-color">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Vestibulum ornare vestibulum mollis. Nam vitae
-                          augue purus. Integer ac accumsan nunc.
-                        </p>
-                        <Link
-                          href="#"
-                          className="inline-flex items-center justify-center rounded-md bg-primary px-0 py-[13px] text-center text-base font-medium text-gray-800 hover:bg-blue-dark"
-                        >
-                          Grab The Offer
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="w-full px-4 lg:w-4/12">
-                  <div className="-mx-6 flex flex-wrap">
-                    <div className="w-full px-4 md:w-1/2 lg:w-full">
-                      <div className="relative mb-4 h-[223px]">
-                        <img
-                          src="https://demo.tailgrids.com/templates/planet/build/src/assets/ecom-images/headers/header-04/image-02.jpg"
-                          alt="product"
-                          className="h-full w-full object-cover object-center"
-                        />
-
-                        <div className="absolute left-0 top-0 flex h-full w-full items-end justify-end p-6 sm:p-9">
-                          <div className="max-w-[180px] text-right">
-                            <h3>
-                              <Link
-                                href="#"
-                                className="mb-3 block text-xl font-bold text-dark hover:text-primary xl:text-2xl"
-                              >
-                                Summer Travel Collection
-                              </Link>
-                            </h3>
-                            <Link
-                              href="#"
-                              className="text-base font-medium text-dark hover:text-primary"
-                            >
-                              Discover Now
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="w-full px-4 md:w-1/2 lg:w-full">
-                      <div className="relative mb-8 h-[223px]">
-                        <img
-                          src="https://demo.tailgrids.com/templates/planet/build/src/assets/ecom-images/headers/header-04/image-03.jpg"
-                          alt="product"
-                          className="h-full w-full object-cover object-center"
-                        />
-
-                        <div className="absolute left-0 top-0 flex h-full w-full items-end justify-end p-6 sm:p-9">
-                          <div className="max-w-[180px] text-right">
-                            <h3>
-                              <Link
-                                href="#"
-                                className="mb-3 block text-xl font-bold text-dark hover:text-primary xl:text-2xl"
-                              >
-                                Get 30% Off On iPhone
-                              </Link>
-                            </h3>
-                            <Link
-                              href="#"
-                              className="text-base font-medium text-dark hover:text-primary"
-                            >
-                              Shop Now
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
               {/* CTA */}
               <div className="container mx-auto flex items-center flex-wrap sm:pt-4 ">

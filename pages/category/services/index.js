@@ -485,6 +485,94 @@ const Index = () => {
               </div>
             </div>
           </div>
+          {/* banners */}
+          <div className="lg:flex flex-wrap pt-4 ">
+            <div className="w-full lg:w-3/12 lg:px-2 mb-4 ">
+              <div className="flex flex-col-reverse lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between px-8 py-6 bg-gray-200">
+                <div>
+                  <h3 className="text-lg leading-4 mb-2 text-[#FD3D57]">
+                    50% off
+                  </h3>
+                  <h4 className="text-[22px] leading-[26px] text-secondary mb-2">
+                    Huge Offer
+                  </h4>
+                  <div className="flex gap-1">
+                    <MdOutlineAddHome className="text-gray-600" />
+                    <p className="text-[15px] leading-4 text-xs text-[#464545] mb-5">
+                      Urban Furnishings
+                    </p>
+                  </div>
+                  <Link href="#" className="primary-btn min-w-[80px]">
+                    Shop Now
+                  </Link>
+                </div>
+                <div className="flex justify-center">
+                  <img
+                    src="https://themes.rslahmed.dev/rafcart-tailwind/assets/images/sofa-2.png"
+                    className="w-[100px] h-[150px] lg:h-[180px] object-contain flex-shrink-0 hover:scale-105 transition-all duration-300"
+                    alt="product"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="w-full lg:w-6/12 lg:px-2 mb-4">
+              <div className="flex flex-col-reverse lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between px-8 py-6 bg-gray-200">
+                <div>
+                  <h3 className="text-lg leading-4 mb-2 text-[#FD3D57]">
+                    {/* 50% off */}
+                  </h3>
+                  <h4 className="text-[22px] leading-[26px] text-secondary mb-2">
+                    Free Shipping
+                  </h4>
+                  <div className="flex gap-1">
+                    <MdOutlineAddHome className="text-gray-600" />
+                    <p className="text-[15px] leading-4 text-xs text-[#464545] mb-5">
+                      Urban Furnishings
+                    </p>
+                  </div>
+                  <Link href="#" className="primary-btn min-w-[80px]">
+                    Shop Now
+                  </Link>
+                </div>
+                <div className="flex justify-center">
+                  <img
+                    src="https://themes.rslahmed.dev/rafcart-tailwind/assets/images/sofa-2.png"
+                    className="w-[200px] h-[150px] lg:h-[180px] object-contain flex-shrink-0 hover:scale-105 transition-all duration-300"
+                    alt="product"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="w-full lg:w-3/12 lg:px-2 ">
+              <div className="flex flex-col-reverse lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between px-8 py-6 bg-gray-200">
+                <div>
+                  <h3 className="text-lg leading-4 mb-2 text-[#FD3D57]">
+                    30% off
+                  </h3>
+                  <h4 className="text-[22px] leading-[26px] text-secondary mb-2">
+                    Flash Sale
+                  </h4>
+                  <div className="flex gap-1">
+                    <MdOutlineAddHome className="text-gray-600" />
+                    <p className="text-[15px] leading-4 text-xs text-[#464545] mb-5">
+                      Urban Furnishings
+                    </p>
+                  </div>
+                  <Link href="#" className="primary-btn min-w-[80px]">
+                    Shop Now
+                  </Link>
+                </div>
+                <div className="flex justify-center">
+                  <img
+                    src="https://themes.rslahmed.dev/rafcart-tailwind/assets/images/sofa-2.png"
+                    className="w-[100px] h-[150px] lg:h-[180px] object-contain flex-shrink-0 hover:scale-105 transition-all duration-300"
+                    alt="product"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
           {/* Curated */}
           <div className=" items-center pt-4 h-auto">
             <div id="store" className="w-full top-0 sm:px-4 sm:py-1">
@@ -502,10 +590,10 @@ const Index = () => {
               <div className="md:col-span-2 col-span-6 py-0 md:order-first ">
                 <div className="md:p-8 md:bg-gray-100 rounded-xl">
                   <div className="hidden md:block mb-4">
-                    <h1 className="text-sm font-bold text-gray-400 ">
+                    <h1 className="text-sm font-bold text-gray-400 text-center lg:text-start ">
                       #Explore
                     </h1>
-                    <p className="text-gray-700">
+                    <p className="text-gray-700 lg:block hidden">
                       Donec vitae odio quis nisl dapibus malesuada. Nullam ac
                       aliquet velit. Aliquam vulputate velit imperdiet dolor
                       tempor tristique.
@@ -530,7 +618,7 @@ const Index = () => {
                 <hr className="w-full h-1 mt-4 text-gray-400 block md:hidden" />
               </div>
               <div className="md:col-span-4 col-span-6 md:order-last">
-                <CardCarouselCurated category="services" />
+                <CardCarouselCurated category="furnitures" />
               </div>
             </div>
           </div>

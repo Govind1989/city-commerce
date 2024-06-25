@@ -713,8 +713,8 @@ const Index = () => {
             </div>
           </div>
           {/* banners */}
-          <div className="sm:flex flex-wrap pt-4 ">
-            <div className="w-full sm:w-3/12 sm:px-2 mb-4 sm:mb-0">
+          <div className="lg:flex flex-wrap pt-4 ">
+            <div className="w-full lg:w-3/12 lg:px-2 mb-4 ">
               <div className="flex flex-col-reverse lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between px-8 py-6 bg-gray-200">
                 <div>
                   <h3 className="text-lg leading-4 mb-2 text-[#FD3D57]">
@@ -743,7 +743,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="w-full sm:w-6/12 sm:px-2 mb-4">
+            <div className="w-full lg:w-6/12 lg:px-2 mb-4">
               <div className="flex flex-col-reverse lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between px-8 py-6 bg-gray-200">
                 <div>
                   <h3 className="text-lg leading-4 mb-2 text-[#FD3D57]">
@@ -771,7 +771,7 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full sm:w-3/12 sm:px-2 ">
+            <div className="w-full lg:w-3/12 lg:px-2 ">
               <div className="flex flex-col-reverse lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between px-8 py-6 bg-gray-200">
                 <div>
                   <h3 className="text-lg leading-4 mb-2 text-[#FD3D57]">
@@ -800,7 +800,7 @@ const Index = () => {
               </div>
             </div>
           </div>
-          {/* Featured */}
+          {/* Curated */}
           <div className=" items-center pt-4 h-auto">
             <div id="store" className="w-full top-0 sm:px-4 sm:py-1">
               <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
@@ -817,10 +817,10 @@ const Index = () => {
               <div className="md:col-span-2 col-span-6 py-0 md:order-first ">
                 <div className="md:p-8 md:bg-gray-100 rounded-xl">
                   <div className="hidden md:block mb-4">
-                    <h1 className="text-sm font-bold text-gray-400 ">
+                    <h1 className="text-sm font-bold text-gray-400 text-center lg:text-start ">
                       #Explore
                     </h1>
-                    <p className="text-gray-700">
+                    <p className="text-gray-700 lg:block hidden">
                       Donec vitae odio quis nisl dapibus malesuada. Nullam ac
                       aliquet velit. Aliquam vulputate velit imperdiet dolor
                       tempor tristique.
@@ -831,7 +831,7 @@ const Index = () => {
                       <button
                         key={index}
                         onClick={(e) => handleCuratedCategoryChange(e, index)}
-                        className={`capitalize py-3 px-4 rounded-md whitespace-nowrap text-sm font-medium shadow-md transition-transform transform hover:scale-105 ${
+                        className={`capitalize py-3 px-4 rounded-md text-sm  font-medium whitespace-nowrap shadow-md transition-transform transform hover:scale-105 ${
                           activeIndex === index
                             ? "bg-gray-800 text-white"
                             : "bg-white text-gray-800"
@@ -845,7 +845,7 @@ const Index = () => {
                 <hr className="w-full h-1 mt-4 text-gray-400 block md:hidden" />
               </div>
               <div className="md:col-span-4 col-span-6 md:order-last">
-                <CardCarouselCurated />
+                <CardCarouselCurated category="furnitures" />
               </div>
             </div>
           </div>
