@@ -8,7 +8,7 @@ import {
   responsive,
   foodOrderTypes,
   foodMenuItems,
-} from "../../data.js";
+} from "@/data.js";
 import { BiDish } from "react-icons/bi";
 import { IoStar, IoStarOutline, IoStarHalf } from "react-icons/io5";
 

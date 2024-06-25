@@ -37,13 +37,24 @@ const CountDownTimer = ({ Duration }) => {
         daysLeft = endOfMonth.getDate() - now.getDate();
         break;
 
+      case "HappyHourStart":
+        endTime.setHours(20, 0, 0, 0); // Set endTime to 8 PM today
+        if (endTime <= now) {
+          endTime.setDate(endTime.getDate() + 1); // If 8 PM has passed, set it to 8 PM tomorrow
+        }
+        difference = endTime - now;
+        break;
+
       default:
         difference = 0;
     }
 
     if (difference > 0) {
       timeLeft = {
-        days: Duration !== "Daily" ? daysLeft : undefined,
+        days:
+          Duration !== "Daily" && Duration !== "HappyHourStart"
+            ? daysLeft
+            : undefined,
         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
         minutes: Math.floor((difference / 1000 / 60) % 60),
       };
