@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import CampaignModal from "../Common/Modals/CampaignModal.js";
 import {
   foodCategory,
   shopDiscounts,
@@ -80,6 +81,7 @@ const Restaurants = ({ shopName }) => {
   return (
     <div>
       <NavBar shopName={shopName} />
+      <CampaignModal campaigns={shopCampaigns} />
       {/* carousel */}
       <div
         className="carousel relative container mx-auto"

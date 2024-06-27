@@ -19,6 +19,7 @@ import CardCarousel from "../VendorCommon/CardCarousel.js";
 import { SubCategories } from "./SubCategories.js";
 
 import NavBar from "../Common/NavBar.js";
+import CampaignModal from "../Common/Modals/CampaignModal.js";
 const ProductsClothing = ({ shopName }) => {
   const [item, setItem] = useState(1);
   const [active, setActive] = useState(0);
@@ -148,6 +149,7 @@ const ProductsClothing = ({ shopName }) => {
         </div>
       </nav> */}
       <NavBar shopName={shopName} />
+      <CampaignModal campaigns={shopCampaigns} />
       {/* carousel */}
       <div
         className="carousel relative container mx-auto"

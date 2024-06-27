@@ -17,6 +17,7 @@ import Card from "../Common/CardL.js";
 import CampaignCard from "../VendorCommon/CampaignCard.js";
 import CardCarouselLarge from "../VendorCommon/CardCarouselLarge.js";
 import NavBar from "../Common/NavBar.js";
+import CampaignModal from "../Common/Modals/CampaignModal.js";
 const Products = ({ shopName }) => {
   const [item, setItem] = useState(0);
   const [active, setActive] = useState(0);
@@ -43,6 +44,7 @@ const Products = ({ shopName }) => {
   return (
     <div>
       <NavBar shopName={shopName} />
+      <CampaignModal campaigns={shopCampaigns} />
       {/* carousel */}
       <div
         className="carousel relative container mx-auto"

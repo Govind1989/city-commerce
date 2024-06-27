@@ -19,6 +19,7 @@ import CardCarouselLarge from "../VendorCommon/CardCarouselLarge.js";
 import NavBar from "../Common/NavBar.js";
 import CardService from "../Common/CardService.js";
 import CardCarouselService from "../VendorCommon/CardCarouselService.js";
+import CampaignModal from "../Common/Modals/CampaignModal.js";
 const Appointments = ({ shopName }) => {
   const [item, setItem] = useState(0);
   const [active, setActive] = useState(0);
@@ -45,6 +46,7 @@ const Appointments = ({ shopName }) => {
   return (
     <div>
       <NavBar shopName={shopName} />
+      <CampaignModal campaigns={shopCampaigns} />
       {/* carousel */}
       <div
         className="carousel relative container mx-auto"
