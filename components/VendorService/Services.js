@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {
-  shopCategory,
+  shopServices,
   shopDiscounts,
   shopCampaigns,
   CampaignCardsContent,
@@ -17,7 +17,9 @@ import Card from "../Common/CardL.js";
 import CampaignCard from "../VendorCommon/CampaignCard.js";
 import CardCarouselLarge from "../VendorCommon/CardCarouselLarge.js";
 import NavBar from "../Common/NavBar.js";
-const Products = ({ shopName }) => {
+import CardService from "../Common/CardService.js";
+import CardCarouselService from "../VendorCommon/CardCarouselService.js";
+const Services = ({ shopName }) => {
   const [item, setItem] = useState(0);
   const [active, setActive] = useState(0);
   const [rating, setRating] = useState(4);
@@ -182,13 +184,13 @@ const Products = ({ shopName }) => {
       {/* products */}
       <div className="bg-white py-8 px-2 ">
         <div className="container mx-auto flex items-center flex-wrap pt-4 ">
-          <div id="store" className="w-full top-0  sm:py-1">
+          <div id="store" className="w-full top-0 sm:px-4 sm:py-1">
             <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
               <div
                 className="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl"
                 div="#"
               >
-                Products
+                Services
               </div>
               <div className="flex items-center" id="store-nav-content">
                 <Link
@@ -233,7 +235,7 @@ const Products = ({ shopName }) => {
               </div>
               <div className="mb-2">
                 <ul className="flex gap-8 overflow-x-scroll custom-scrollbar w-full whitespace-nowrap">
-                  {shopCategory.map((item, index) => {
+                  {shopServices.map((item, index) => {
                     return (
                       <li
                         onClick={(e) => {
@@ -258,42 +260,42 @@ const Products = ({ shopName }) => {
               </div>
             </nav>
           </div>
-          <div className="columns-2 md:columns-3 xl:columns-4 gap-2 ">
+          <div className="columns-2 md:columns-3 xl:columns-4 gap-2">
             <div className="w-full">
-              <Card Discount={false} />
+              <CardService Discount={false} />
             </div>
             <div className="w-full ">
-              <Card Discount={false} />
+              <CardService Discount={false} />
             </div>
             <div className="w-full">
-              <Card Discount={false} />
+              <CardService Discount={false} />
             </div>
             <div className="w-full">
-              <Card Discount={false} />
+              <CardService Discount={false} />
             </div>
             <div className="w-full">
-              <Card Discount={false} />
+              <CardService Discount={false} />
             </div>
             <div className="w-full">
-              <Card Discount={false} />
+              <CardService Discount={false} />
             </div>
             <div className="w-full">
-              <Card Discount={false} />
+              <CardService Discount={false} />
             </div>
             <div className="w-full">
-              <Card Discount={false} />
+              <CardService Discount={false} />
             </div>
             <div className="w-full">
-              <Card Discount={false} />
+              <CardService Discount={false} />
             </div>
             <div className="w-full">
-              <Card Discount={false} />
+              <CardService Discount={false} />
             </div>
             <div className="w-full">
-              <Card Discount={false} />
+              <CardService Discount={false} />
             </div>
             <div className="w-full">
-              <Card Discount={false} />
+              <CardService Discount={false} />
             </div>
           </div>
         </div>
@@ -350,7 +352,7 @@ const Products = ({ shopName }) => {
             </nav>
           </div>
 
-          <CardCarouselLarge />
+          <CardCarouselService />
         </div>
       </div>
 
@@ -457,7 +459,7 @@ const Products = ({ shopName }) => {
                 className="uppercase  tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl"
                 href="#"
               >
-                Discounts & Sales
+                Discounts and Sales
               </div>
               <div
                 className="items-center hidden md:flex"
@@ -525,7 +527,7 @@ const Products = ({ shopName }) => {
             </nav>
           </div>
 
-          <CardCarouselLarge />
+          <CardCarouselService />
         </div>
       </div>
 
@@ -645,4 +647,4 @@ const Products = ({ shopName }) => {
   );
 };
 
-export default Products;
+export default Services;

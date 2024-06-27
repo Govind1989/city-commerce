@@ -7,6 +7,9 @@ import Loader from "@/components/Loader.js";
 
 import NotFound from "@/components/NotFound.js";
 import ProductsClothing from "@/components/VendorClothing/Productsclothing.js";
+import Services from "@/components/VendorService/Services.js";
+import Appointments from "@/components/VendorAppointment/Appointments.js";
+import Holidays from "@/components/VendorHoliday/Holidays.js";
 const Vendor = () => {
   const router = useRouter();
   const { slug } = router.query;
@@ -41,6 +44,12 @@ const Vendor = () => {
         <Products shopName={shopName} />
       ) : shopCategory === "Clothing" ? (
         <ProductsClothing shopName={shopName} />
+      ) : shopCategory === "ServicesCommerce" ? (
+        <Services shopName={shopName} />
+      ) : shopCategory === "AppointmentsCommerce" ? (
+        <Appointments shopName={shopName} />
+      ) : shopCategory === "HolidaysCommerce" ? (
+        <Holidays shopName={shopName} />
       ) : (
         <NotFound slug={currentSlug} />
       )}

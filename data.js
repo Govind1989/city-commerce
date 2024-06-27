@@ -18,7 +18,7 @@ export const shopData = [
   {
     shopName: "Tech Haven",
     shopSlug: "tech-haven",
-    shopCategory: "Electronics",
+    shopCategory: "ProductsCommerce",
     shopAddress: "789 Gadget Rd, San Francisco, CA 94103",
     shopMapsLocation: "37.774929, -122.419418",
     productTags: [
@@ -54,10 +54,62 @@ export const shopData = [
   {
     shopName: "Sparkling Jewels",
     shopSlug: "sparkling-jewels",
-    shopCategory: "Jewellery",
+    shopCategory: "ProductsCommerce",
     shopAddress: "987 Glamour Ln, Miami, FL 33101",
     shopMapsLocation: "25.761680, -80.191790",
     productTags: ["jewellery", "accessories", "fashion", "gems", "luxury"],
+  },
+  {
+    shopName: "Tech Hub",
+    shopSlug: "tech-hub",
+    shopCategory: "ProductsCommerce",
+    shopAddress: "789 Tech Blvd, San Francisco, CA 94103",
+    shopMapsLocation: "37.774929, -122.419418",
+    productTags: ["computer", "accessories", "tech", "gadgets", "electronics"],
+  },
+  {
+    shopName: "Mobile World",
+    shopSlug: "mobile-world",
+    shopCategory: "ProductsCommerce",
+    shopAddress: "321 Mobile Ln, Chicago, IL 60601",
+    shopMapsLocation: "41.878113, -87.629799",
+    productTags: ["mobile", "accessories", "smartphone", "gadgets", "tech"],
+  },
+  {
+    shopName: "Home Service Pro",
+    shopSlug: "home-service-pro",
+    shopCategory: "ServicesCommerce",
+    shopAddress: "654 Service Rd, Houston, TX 77001",
+    shopMapsLocation: "29.760427, -95.369804",
+    productTags: [
+      "services",
+      "provider",
+      "professional",
+      "expert",
+      "solutions",
+    ],
+  },
+  {
+    shopName: "Appointment Plus",
+    shopSlug: "appointment-plus",
+    shopCategory: "AppointmentsCommerce",
+    shopAddress: "987 Appointment St, Miami, FL 33101",
+    shopMapsLocation: "25.761680, -80.191790",
+    productTags: [
+      "appointment",
+      "booking",
+      "schedule",
+      "services",
+      "professional",
+    ],
+  },
+  {
+    shopName: "Holiday Escapes",
+    shopSlug: "holiday-escapes",
+    shopCategory: "HolidaysCommerce",
+    shopAddress: "123 Holiday Ave, Las Vegas, NV 89101",
+    shopMapsLocation: "36.169941, -115.139832",
+    productTags: ["holidays", "hotels", "travel", "tours", "vacation"],
   },
 ];
 
@@ -82,6 +134,32 @@ export const shopCategory = [
   },
   {
     name: "Storage & Organization",
+  },
+];
+export const shopServices = [
+  {
+    name: "Repair & Maintenance",
+  },
+  {
+    name: "Vehicle Maintenance",
+  },
+  {
+    name: "Garden Maintenance",
+  },
+  {
+    name: "Handyman Services",
+  },
+  {
+    name: "Deep Cleaning",
+  },
+  {
+    name: "Plumbing",
+  },
+  {
+    name: "Physiotherapy",
+  },
+  {
+    name: "Beauty & Grooming",
   },
 ];
 export const clothingShopCategory = [
@@ -439,7 +517,7 @@ export const CampaignCardsContent = [
   {
     title: "Loyalty Discounts",
     description: "Get discount for every purchase with us.",
-    earning: "5% for next buy",
+    earning: "5% ",
   },
 
   {

@@ -371,42 +371,43 @@ const ProductsClothing = ({ shopName }) => {
               </div>
             </nav>
           </div>
-          {/* <div className="px-2"> */}
-          <div className="w-1/2 md:w-1/3 xl:w-1/4">
-            <CardM Discount={false} />
-          </div>
-          <div className="w-1/2 md:w-1/3 xl:w-1/4">
-            <CardM Discount={false} />
-          </div>
-          <div className="w-1/2 md:w-1/3 xl:w-1/4">
-            <CardM Discount={false} />
-          </div>
-          <div className="w-1/2 md:w-1/3 xl:w-1/4">
-            <CardM Discount={false} />
-          </div>
-          <div className="w-1/2 md:w-1/3 xl:w-1/4">
-            <CardM Discount={false} />
-          </div>
-          <div className="w-1/2 md:w-1/3 xl:w-1/4">
-            <CardM Discount={false} />
-          </div>
-          <div className="w-1/2 md:w-1/3 xl:w-1/4">
-            <CardM Discount={false} />
-          </div>
-          <div className="w-1/2 md:w-1/3 xl:w-1/4">
-            <CardM Discount={false} />
-          </div>
-          <div className="w-1/2 md:w-1/3 xl:w-1/4">
-            <CardM Discount={false} />
-          </div>
-          <div className="w-1/2 md:w-1/3 xl:w-1/4">
-            <CardM Discount={false} />
-          </div>
-          <div className="w-1/2 md:w-1/3 xl:w-1/4">
-            <CardM Discount={false} />
-          </div>
-          <div className="w-1/2 md:w-1/3 xl:w-1/4">
-            <CardM Discount={false} />
+          <div className="columns-2 md:columns-3 xl:columns-4 gap-2 mt-2 sm:mt-4">
+            <div className="w-full">
+              <CardM Discount={false} />
+            </div>
+            <div className="w-full ">
+              <CardM Discount={false} />
+            </div>
+            <div className="w-full">
+              <CardM Discount={false} />
+            </div>
+            <div className="w-full">
+              <CardM Discount={false} />
+            </div>
+            <div className="w-full">
+              <CardM Discount={false} />
+            </div>
+            <div className="w-full">
+              <CardM Discount={false} />
+            </div>
+            <div className="w-full">
+              <CardM Discount={false} />
+            </div>
+            <div className="w-full">
+              <CardM Discount={false} />
+            </div>
+            <div className="w-full">
+              <CardM Discount={false} />
+            </div>
+            <div className="w-full">
+              <CardM Discount={false} />
+            </div>
+            <div className="w-full">
+              <CardM Discount={false} />
+            </div>
+            <div className="w-full">
+              <CardM Discount={false} />
+            </div>
           </div>
           {/* </div> */}
         </div>
@@ -415,7 +416,7 @@ const ProductsClothing = ({ shopName }) => {
       {/* best sellers */}
       <div className="bg-white py-8 px-2">
         <div className="container mx-auto flex items-center flex-wrap pt-4 ">
-          <div id="store" className="w-full top-0 sm:px-4 py-1">
+          <div id="store" className="w-full top-0  py-1">
             <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
               <div
                 className="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl"
@@ -436,7 +437,7 @@ const ProductsClothing = ({ shopName }) => {
           <div className="container flex items-center justify-center flex-wrap pb-0">
             <nav className="w-full">
               <div className="">
-                <ul className="flex flex-wrap justify-evenly items-center w-full">
+                <ul className="flex gap-8 px-8 overflow-x-scroll custom-hr-scroll w-full whitespace-nowrap">
                   {FeaturedProductMenu.map((item, index) => {
                     return (
                       <li
@@ -471,10 +472,10 @@ const ProductsClothing = ({ shopName }) => {
       {/* Campaigns */}
       <div className="bg-white py-8 px-2">
         <div className="container mx-auto flex items-center flex-wrap pt-4 ">
-          <div id="store" className="w-full top-0 sm:px-4 py-1">
+          <div id="store" className="w-full top-0 sm:px-4 sm:py-1">
             <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
               <div
-                className="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl"
+                className="uppercase  tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl"
                 href="#"
               >
                 Campaigns
@@ -515,7 +516,7 @@ const ProductsClothing = ({ shopName }) => {
           <div className="container flex items-center justify-center flex-wrap pb-0">
             <nav className="w-full">
               <div className="">
-                <ul className="flex flex-wrap justify-evenly items-center w-full">
+                <ul className="px-8 w-full flex gap-8 overflow-x-scroll custom-hr-scroll items-center whitespace-nowrap">
                   {shopCampaigns.map((item, index) => {
                     return (
                       <li
@@ -542,12 +543,12 @@ const ProductsClothing = ({ shopName }) => {
             </nav>
           </div>
 
-          <div className="container mx-auto mt-4  ">
+          <div className="container mx-auto mt-0  ">
             <div className="px-4">
               <Carousel
                 responsive={responsive}
-                containerClass="-mx-[10px]"
-                itemClass="px-[10px]"
+                containerclassName="-mx-[4px]"
+                itemclassName="px-[4px]"
               >
                 {CampaignCardsContent.map((card, index) => (
                   <CampaignCard
@@ -565,13 +566,13 @@ const ProductsClothing = ({ shopName }) => {
       {/* sales and offers */}
       <div className="bg-white py-8 px-2">
         <div className="container mx-auto flex items-center flex-wrap pt-4 pb-4">
-          <div id="store" className="w-full top-0 sm:px-4 py-1">
+          <div id="store" className="w-full top-0 sm:py-1">
             <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
               <div
-                className="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl"
+                className="uppercase  tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl"
                 href="#"
               >
-                Discounts and Sales
+                Discounts & Sales
               </div>
               <div
                 className="items-center hidden md:flex"
@@ -608,37 +609,39 @@ const ProductsClothing = ({ shopName }) => {
               </div>
             </div>
           </div>
-        </div>
 
-        <div className="container flex items-center justify-center flex-wrap pb-0">
-          <nav className="w-full">
-            <div className="px-12 sm:pl-32 pr-0">
-              <ul className="flex flex-wrap justify-evenly items-center w-full">
-                {shopDiscounts.map((item, index) => {
-                  return (
-                    <li
-                      onClick={(e) => {
-                        handleClick(e, index);
-                      }}
-                      className={`cursor-pointer shadow-xs capitalize px-3 py-1 text-gray-400 rounded-md ${
-                        active === index ? " shadow-md bg-gray-200" : ""
-                      }`}
-                      key={index}
-                    >
-                      <span
-                        className={`${active === index ? "text-gray-800" : ""}`}
+          <div className="container flex items-center justify-center flex-wrap pb-0">
+            <nav className="w-full">
+              <div className="  pr-0">
+                <ul className="flex gap-8 px-8 overflow-x-scroll custom-scrollbar w-full whitespace-nowrap">
+                  {shopDiscounts.map((item, index) => {
+                    return (
+                      <li
+                        onClick={(e) => {
+                          handleClick(e, index);
+                        }}
+                        className={`cursor-pointer shadow-xs capitalize px-3 py-1 text-gray-400 rounded-md ${
+                          active === index ? " shadow-md bg-gray-200" : ""
+                        }`}
+                        key={index}
                       >
-                        {item.name}
-                      </span>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-          </nav>
-        </div>
+                        <span
+                          className={`${
+                            active === index ? "text-gray-800" : ""
+                          }`}
+                        >
+                          {item.name}
+                        </span>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            </nav>
+          </div>
 
-        <CardCarousel />
+          <CardCarousel />
+        </div>
       </div>
 
       {/* about */}

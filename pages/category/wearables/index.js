@@ -798,7 +798,7 @@ const Index = () => {
                 </div>
               </div>
               {/* banners */}
-              <div className="container mx-auto pt-4 -mx-6 flex flex-wrap">
+              <div className="container  pt-4 -mx-6 flex flex-wrap">
                 <div className="w-full px-2 lg:px-4 lg:w-8/12">
                   <div className="relative mb-4 sm:mb-8 h-[370px] md:h-[462px]">
                     <img
