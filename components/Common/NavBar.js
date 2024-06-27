@@ -1,17 +1,19 @@
 import React, { useState } from "react";
 import {
   MdCalendarMonth,
-  MdOutlineArrowBack,
   MdOutlineLanguage,
   MdOutlineMenu,
   MdOutlinePerson,
   MdOutlineShoppingBag,
 } from "react-icons/md";
 import Link from "next/link";
-import { categoryPages } from "@/data";
+
+import CartItems from "./CartItems";
+
 const NavBar = ({ shopName }) => {
   const [isLanguage, setIsLanguage] = useState(false);
   const [isMegaMenu, setIsMegaMenu] = useState(false);
+  const [isCart, setIsCart] = useState(false);
 
   const toggleLanguage = () => {
     setIsLanguage(!isLanguage);
@@ -19,6 +21,9 @@ const NavBar = ({ shopName }) => {
 
   const toggleMegaMenu = () => {
     setIsMegaMenu(!isMegaMenu);
+  };
+  const toggleCartMenu = () => {
+    setIsCart(!isCart);
   };
   // const handleClick = (e, index) => {
   //   setItem({ name: e.target.textContent.toLowerCase() });
@@ -36,7 +41,7 @@ const NavBar = ({ shopName }) => {
             {isMegaMenu && (
               <div
                 onClick={() => setIsMegaMenu(false)}
-                className="absolute left-6 sm:left-16 z-20 w-full py-0 mt-6 sm:mt-0 bg-white rounded-md shadow-xl dark:bg-gray-800 transition transform ease-out duration-100 scale-90 h-screen sm:h-auto custom-hr-scroll overflow-y-scroll"
+                className="absolute left-4 sm:left-10 z-20 w-full py-0 mt-6 sm:mt-0 bg-white rounded-md shadow-xl dark:bg-gray-800 transition transform ease-out duration-100 scale-90 h-screen sm:h-auto custom-hr-scroll overflow-y-scroll"
                 style={{ top: "4rem", transformOrigin: "top left" }} // Fixed position with top and transformOrigin
               >
                 <div>
@@ -299,6 +304,7 @@ const NavBar = ({ shopName }) => {
                 <button
                   className="pl-1 relative border-2 border-transparent text-gray-800 rounded-full hover:text-gray-400 focus:outline-none focus:text-gray-500 transition duration-150 ease-in-out"
                   aria-label="Calendar"
+                  onClick={toggleCartMenu}
                 >
                   <MdOutlineShoppingBag className="w-4 sm:w-6 h-auto" />
                   <span className="absolute inset-0 object-right-top -mt-4 -mr-7">
@@ -307,6 +313,78 @@ const NavBar = ({ shopName }) => {
                     </div>
                   </span>
                 </button>
+
+                {isCart && (
+                  <div
+                    className="absolute px-8 left-4 sm:left-10 z-20 w-full py-0 mt-6 sm:mt-0 bg-white rounded-md shadow-xl dark:bg-gray-800 transition transform ease-out duration-100 scale-90 h-screen sm:h-auto custom-hr-scroll overflow-y-scroll"
+                    style={{ top: "4rem", transformOrigin: "top left" }}
+                  >
+                    <div className="flex flex-col lg:flex-row gap-12 py-10">
+                      {/* CART ITEMS START */}
+                      <div className="flex-[2]">
+                        <div className="text-md font-bold">Cart Items</div>
+
+                        <CartItems />
+                        <CartItems />
+                        <CartItems />
+                      </div>
+
+                      <div className="flex-[1]">
+                        <div className="text-md font-bold">Summary</div>
+
+                        <div className="p-5 my-5 bg-black/[0.05] rounded-xl">
+                          <div className="flex justify-between">
+                            <div className="uppercase text-md md:text-md font-medium text-black">
+                              Subtotal
+                            </div>
+                            <div className="text-sm md:text-lg font-medium text-black">
+                              $36
+                            </div>
+                          </div>
+                          <div className="text-sm md:text-sm py-5 border-t mt-5">
+                            The subtotal reflects the total price of your order,
+                            including duties and taxes, before any applicable
+                            discounts. It does not include delivery costs and
+                            international transaction fees.
+                          </div>
+                        </div>
+
+                        {/* BUTTON START */}
+                        <button
+                          className="w-full py-4 rounded-full bg-black text-white text-lg font-medium transition-transform active:scale-95 mb-3 hover:opacity-75 flex items-center gap-2 justify-center"
+                          onClick=""
+                        >
+                          Checkout
+                          {/* {loading && <img src="/spinner.svg" />} */}
+                        </button>
+                        {/* BUTTON END */}
+                      </div>
+                    </div>
+
+                    {/* EmptyCart */}
+                    {/* <div className="flex-[2] flex flex-col items-center pb-[50px] md:-mt-14">
+          <Image
+            src="/empty-cart.jpg"
+            width={300}
+            height={300}
+            className="w-[300px] md:w-[400px]"
+            alt="empty-cart"
+          />
+          <span className="text-xl font-bold">Your cart is empty</span>
+          <span className="text-center mt-4">
+            Looks like you have not added anything in your cart.
+            <br />
+            Go ahead and explore our products curated for you.
+          </span>
+          <Link
+            href="/"
+            className="py-4 px-8 rounded-full bg-black text-white text-lg font-medium transition-transform active:scale-95 mb-3 hover:opacity-75 mt-8"
+          >
+            Continue Shopping
+          </Link>
+        </div> */}
+                  </div>
+                )}
                 <button
                   className="pl-1 relative border-2 border-transparent text-gray-800 rounded-full hover:text-gray-400 focus:outline-none focus:text-gray-500 transition duration-150 ease-in-out"
                   aria-label="profile"
@@ -351,42 +429,6 @@ const NavBar = ({ shopName }) => {
           </div>
         </div>
       </nav>
-      {/* <nav className="bg-white ">
-        <div className="w-full container mx-auto flex gap-2 flex-wrap items-center justify-evenly mt-0 px-6 py-0">
-          <div
-            className="md:flex md:items-center md:w-auto w-full order-3 md:order-1 "
-            id="menu"
-          >
-            <nav>
-              <ul className="md:flex items-center justify-between text-base text-gray-700 pt-1 md:pt-0 flex  flex-wrap pb-0">
-                {categoryPages.map((item, index) => {
-                  return (
-                    <li
-                      onClick={(e) => {
-                        handleClick(e, index);
-                      }}
-                      className={`cursor-pointer inline-block
-                      no-underline
-                      text-gray-400
-                      hover:text-black
-                      py-2
-                      px-4   ${active === index ? "underline" : ""}`}
-                      key={index}
-                    >
-                      <Link
-                        href={`/category/${item.name}`}
-                        className={`${active === index ? " text-black" : ""}`}
-                      >
-                        {item.name}
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </nav> */}
     </>
   );
 };

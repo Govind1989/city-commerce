@@ -180,7 +180,7 @@ input[type="range"]::-moz-range-thumb {
 /* scollbar */
 .custom-scrollbar::-webkit-scrollbar {
   width: auto;
-  height: 1px;
+  height: 1;
   margin-top:0px;
 }
 
@@ -191,6 +191,15 @@ input[type="range"]::-moz-range-thumb {
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background: transparent;
   border-radius: 0;
+}
+.custom-scrollbar.overflow-x-scroll {
+  scrollbar-width: thin;
+  /* Firefox */
+}
+
+.custom-scrollbar.overflow-x-scroll::-moz-scrollbar {
+  display: none;
+  /* Hide scrollbar in Firefox */
 }
 
 /* Quantity input */
