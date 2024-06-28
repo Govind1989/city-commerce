@@ -10,6 +10,7 @@ import {
 import Link from "next/link";
 
 import CartItems from "./CartItems";
+import CalendarItems from "./CalendarItems";
 
 const NavBar = ({ shopName }) => {
   const [isLanguage, setIsLanguage] = useState(false);
@@ -316,9 +317,9 @@ const NavBar = ({ shopName }) => {
                     className="absolute px-8 left-4 sm:left-10 z-20 w-full py-0 mt-6 sm:mt-0 bg-white rounded-md shadow-xl dark:bg-gray-800 transition transform ease-out duration-100 scale-90 h-screen sm:h-auto custom-hr-scroll overflow-y-scroll"
                     style={{ top: "4rem", transformOrigin: "top left" }}
                   >
-                    <div className="flex flex-col lg:flex-row gap-12 py-10">
+                    <div className="flex flex-col lg:flex-row gap-4 md:gap-12 py-10">
                       {/* CART ITEMS START */}
-                      <div className="flex-[2] h-screen overflow-scroll  pb-10">
+                      <div className="flex-[2] h-screen overflow-scroll  md:pb-10">
                         <div className="flex justify-between">
                           <div className="text-md font-bold uppercase">
                             Services Booked
@@ -331,9 +332,9 @@ const NavBar = ({ shopName }) => {
                           </button>
                         </div>
 
-                        <CartItems />
-                        <CartItems />
-                        <CartItems />
+                        <CalendarItems />
+                        <CalendarItems />
+                        <CalendarItems />
                       </div>
 
                       <div className="flex-[1]">
@@ -385,9 +386,9 @@ const NavBar = ({ shopName }) => {
                     className="absolute px-8 left-4 sm:left-10 z-20 w-full py-0 mt-6 sm:mt-0 bg-white rounded-md shadow-xl dark:bg-gray-800 transition transform ease-out duration-100 scale-90 h-screen sm:h-auto custom-hr-scroll overflow-y-scroll"
                     style={{ top: "4rem", transformOrigin: "top left" }}
                   >
-                    <div className="flex flex-col lg:flex-row gap-12 py-10">
+                    <div className="flex flex-col lg:flex-row gap-4 md:gap-12 py-10">
                       {/* CART ITEMS START */}
-                      <div className="flex-[2] h-screen overflow-scroll  pb-10">
+                      <div className="flex-[2] h-screen overflow-scroll  md:pb-10">
                         <div className="flex justify-between">
                           <div className="text-md font-bold uppercase">
                             Products On Bag
