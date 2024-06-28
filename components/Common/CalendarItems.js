@@ -13,7 +13,7 @@ const CalendarItems = () => {
   return (
     <div className="flex flex-col md:flex-row py-5 gap-3 md:gap-5 border-b ">
       {/* IMAGE START */}
-      <div className="shrink-0 aspect-square w-full md:w-[125px] ">
+      <div className="shrink-0 aspect-square w-full md:w-[160px] ">
         <img
           className="hover:grow hover:shadow-lg"
           src="https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"

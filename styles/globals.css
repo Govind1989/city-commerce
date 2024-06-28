@@ -198,25 +198,22 @@ input[type="range"]::-moz-range-thumb {
 }
 
 /* scollbar y */
-.custom-y-scrollbar::-webkit-scrollbar {
-  width: 1;
-  height: auto;
-  margin-top: 0px;
+.custom-y-scrollbar {
+  overflow-y: scroll;
 }
 
+.custom-y-scrollbar::-webkit-scrollbar {
+  width: 0.5px;
+}
 
 .custom-y-scrollbar::-webkit-scrollbar-track {
-  background: transparent;
+  background: #ffffff;
+  /* Light gray color for the track */
 }
 
 .custom-y-scrollbar::-webkit-scrollbar-thumb {
   background: transparent;
-  border-radius: 0;
-}
-
-.custom-y-scrollbar.overflow-y-scroll {
-  scrollbar-width: thin;
-  /* Firefox */
+  /* Transparent thumb */
 }
 
 /* Quantity input */

@@ -334,7 +334,6 @@ const NavBar = ({ shopName }) => {
 
                         <CalendarItems />
                         <CalendarItems />
-                        <CalendarItems />
                       </div>
 
                       <div className="flex-[1]">
@@ -346,14 +345,13 @@ const NavBar = ({ shopName }) => {
                               Subtotal
                             </div>
                             <div className="text-sm md:text-lg font-medium text-black">
-                              $36
+                              Rs.72
                             </div>
                           </div>
                           <div className="text-sm md:text-sm py-5 border-t mt-5">
                             The subtotal reflects the total price of your order,
                             including duties and taxes, before any applicable
-                            discounts. It does not include delivery costs and
-                            international transaction fees.
+                            discounts.
                           </div>
                         </div>
 
