@@ -93,13 +93,13 @@ body {
   
 
   scrollbar-width: thin;
-  scrollbar-color: #a5b0c1 transparent;
+  scrollbar-color: #e2e7ed transparent;
+  
 }
 
 .custom-hr-scroll::-webkit-scrollbar {
   width: 1px;
-  
-  
+ 
 }
 
 .custom-hr-scroll::-webkit-scrollbar-thumb {
@@ -107,9 +107,9 @@ body {
   /* scrollbar-color: black; */
 }
 
-/* .custom-hr-scroll::-webkit-scrollbar-track {
+.custom-hr-scroll::-webkit-scrollbar-track {
   background-color: transparent;
-} */
+}
 
 /* Custom styles for the range input */
 input[type="range"] {
@@ -197,9 +197,26 @@ input[type="range"]::-moz-range-thumb {
   /* Firefox */
 }
 
-.custom-scrollbar.overflow-x-scroll::-moz-scrollbar {
-  display: none;
-  /* Hide scrollbar in Firefox */
+/* scollbar y */
+.custom-y-scrollbar::-webkit-scrollbar {
+  width: 1;
+  height: auto;
+  margin-top: 0px;
+}
+
+
+.custom-y-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-y-scrollbar::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 0;
+}
+
+.custom-y-scrollbar.overflow-y-scroll {
+  scrollbar-width: thin;
+  /* Firefox */
 }
 
 /* Quantity input */

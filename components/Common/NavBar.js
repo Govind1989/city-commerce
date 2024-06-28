@@ -16,6 +16,11 @@ const NavBar = ({ shopName }) => {
   const [isMegaMenu, setIsMegaMenu] = useState(false);
   const [isCart, setIsCart] = useState(false);
   const [isCalendar, setIsCalendar] = useState(false);
+  const [openSection, setOpenSection] = useState(0);
+
+  const toggleSection = (section) => {
+    setOpenSection(openSection === section ? null : section);
+  };
   const toggleLanguage = () => {
     setIsLanguage(!isLanguage);
   };
@@ -313,10 +318,10 @@ const NavBar = ({ shopName }) => {
                   >
                     <div className="flex flex-col lg:flex-row gap-12 py-10">
                       {/* CART ITEMS START */}
-                      <div className="flex-[2]">
+                      <div className="flex-[2] h-screen overflow-scroll  pb-10">
                         <div className="flex justify-between">
                           <div className="text-md font-bold uppercase">
-                            Bag products
+                            Services Booked
                           </div>
                           <button
                             className="pl-3 inline-block no-underline hover:text-black"
@@ -381,10 +386,11 @@ const NavBar = ({ shopName }) => {
                     style={{ top: "4rem", transformOrigin: "top left" }}
                   >
                     <div className="flex flex-col lg:flex-row gap-12 py-10">
-                      <div className="flex-[2]">
+                      {/* CART ITEMS START */}
+                      <div className="flex-[2] h-screen overflow-scroll  pb-10">
                         <div className="flex justify-between">
                           <div className="text-md font-bold uppercase">
-                            Bag products
+                            Products On Bag
                           </div>
                           <button
                             className="pl-3 inline-block no-underline hover:text-black"
@@ -403,56 +409,232 @@ const NavBar = ({ shopName }) => {
                         <div className="text-md font-bold">Summary</div>
 
                         <div className="p-5 my-5 bg-black/[0.05] rounded-xl">
-                          <div className="flex justify-between">
-                            <div className="uppercase text-md md:text-md font-medium text-black">
+                          <div className="flex justify-between border-b py-2 ">
+                            <div className="uppercase text-sm md:text-sm font-medium text-gray-500">
                               Subtotal
                             </div>
-                            <div className="text-sm md:text-lg font-medium text-black">
-                              $36
+                            <div className="text-sm md:text-md font-medium text-gray-900">
+                              Rs.2500
+                            </div>
+                          </div>
+                          <div className="flex justify-between border-b py-2">
+                            <div className="uppercase text-sm md:text-sm font-medium text-gray-500">
+                              Delivery Charge
+                            </div>
+                            <div className="text-sm md:text-md font-medium text-gray-900">
+                              Rs.100
+                            </div>
+                          </div>
+                          <div className="flex justify-between py-2">
+                            <div className="uppercase text-md md:text-md font-medium text-gray-900">
+                              Total
+                            </div>
+                            <div className="text-sm md:text-lg font-medium text-gray-900">
+                              Rs.2600
                             </div>
                           </div>
                           <div className="text-sm md:text-sm py-5 border-t mt-5">
                             The subtotal reflects the total price of your order,
                             including duties and taxes, before any applicable
-                            discounts. It does not include delivery costs and
-                            international transaction fees.
+                            discounts.
                           </div>
                         </div>
 
-                        {/* BUTTON START */}
+                        <div
+                          id="accordion-flush"
+                          data-accordion="collapse"
+                          data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
+                          data-inactive-classes="text-gray-500 dark:text-gray-400"
+                        >
+                          <h2 id="accordion-flush-heading-1">
+                            <button
+                              type="button"
+                              className={`flex justify-between items-center py-5 w-full font-medium text-left border-b border-gray-200 dark:border-gray-700 ${
+                                openSection === 1
+                                  ? "text-gray-900 dark:text-white"
+                                  : "text-gray-500 dark:text-gray-400"
+                              }`}
+                              onClick={() => toggleSection(1)}
+                              aria-expanded={openSection === 1}
+                              aria-controls="accordion-flush-body-1"
+                            >
+                              <span>Scheduled Delivery</span>
+                              <svg
+                                data-accordion-icon
+                                className={`w-6 h-6 transform ${
+                                  openSection === 1 ? "rotate-180" : ""
+                                }`}
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fillRule="evenodd"
+                                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                  clipRule="evenodd"
+                                ></path>
+                              </svg>
+                            </button>
+                          </h2>
+                          <div
+                            id="accordion-flush-body-1"
+                            className={openSection === 1 ? "" : "hidden"}
+                            aria-labelledby="accordion-flush-heading-1"
+                          >
+                            <div className="py-2 border-b border-gray-200 dark:border-gray-700">
+                              <div className="px-2">
+                                <div className="">
+                                  <div className="flex flex-col md:flex-row  md:justify-between items-start mb-2">
+                                    <div className="flex w-full md:gap-2 justify-between md:justify-start">
+                                      <input
+                                        type="date"
+                                        id="calendar"
+                                        className="shadow-md p-2 rounded focus:outline-none focus:ring-1 focus:ring-gray-400"
+                                      />
+                                      <input
+                                        type="time"
+                                        id="time"
+                                        className="shadow-md p-2  rounded focus:outline-none focus:ring-1 focus:ring-gray-400"
+                                      />
+                                    </div>
+                                    <button className="shadow-md mt-2 text-xs p-2 bg-gray-400 text-white rounded-md uppercase">
+                                      Schedule
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <h2 id="accordion-flush-heading-1">
+                            <button
+                              type="button"
+                              className={`flex justify-between items-center py-5 w-full font-medium text-left border-b border-gray-200 dark:border-gray-700 ${
+                                openSection === 2
+                                  ? "text-gray-900 dark:text-white"
+                                  : "text-gray-500 dark:text-gray-400"
+                              }`}
+                              onClick={() => toggleSection(2)}
+                              aria-expanded={openSection === 2}
+                              aria-controls="accordion-flush-body-1"
+                            >
+                              <span>Subscriptions</span>
+                              <svg
+                                data-accordion-icon
+                                className={`w-6 h-6 transform ${
+                                  openSection === 2 ? "rotate-180" : ""
+                                }`}
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fillRule="evenodd"
+                                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                  clipRule="evenodd"
+                                ></path>
+                              </svg>
+                            </button>
+                          </h2>
+                          <div
+                            id="accordion-flush-body-1"
+                            className={openSection === 2 ? "" : "hidden"}
+                            aria-labelledby="accordion-flush-heading-1"
+                          >
+                            <div className="py-2 border-b border-gray-200 dark:border-gray-700">
+                              <div className="px-2">
+                                <div className="">
+                                  <div className="flex flex-col gap-2 items-start mb-2">
+                                    <div className="flex gap-3 flex-wrap ">
+                                      <label className="flex items-center">
+                                        <input
+                                          type="radio"
+                                          name="day"
+                                          value="sunday"
+                                          className="mr-1 sm:mr-2"
+                                        />
+                                        <span className="text-sm">Sun</span>
+                                      </label>
+                                      <label className="flex items-center">
+                                        <input
+                                          type="radio"
+                                          name="day"
+                                          value="monday"
+                                          className="mr-1 sm:mr-2"
+                                        />
+                                        <span className="text-sm">Mon</span>
+                                      </label>
+                                      <label className="flex items-center">
+                                        <input
+                                          type="radio"
+                                          name="day"
+                                          value="tuesday"
+                                          className="mr-1 sm:mr-2"
+                                        />
+                                        <span className="text-sm">Tues</span>
+                                      </label>
+                                      <label className="flex items-center">
+                                        <input
+                                          type="radio"
+                                          name="day"
+                                          value="wednesday"
+                                          className="mr-1 sm:mr-2"
+                                        />
+                                        <span className="text-sm">Wednes</span>
+                                      </label>
+                                      <label className="flex items-center">
+                                        <input
+                                          type="radio"
+                                          name="day"
+                                          value="thursday"
+                                          className="mr-1 sm:mr-2"
+                                        />
+                                        <span className="text-sm">Thurs</span>
+                                      </label>
+                                      <label className="flex items-center">
+                                        <input
+                                          type="radio"
+                                          name="day"
+                                          value="friday"
+                                          className="mr-1 sm:mr-2"
+                                        />
+                                        <span className="text-sm">Fri</span>
+                                      </label>
+                                      <label className="flex items-center">
+                                        <input
+                                          type="radio"
+                                          name="day"
+                                          value="saturday"
+                                          className="mr-1 sm:mr-2"
+                                        />
+                                        <span className="text-sm">Sat</span>
+                                      </label>
+                                    </div>
+                                    <div className="flex gap-4 items-center">
+                                      <span className="text-sm text-gray-600">
+                                        Delivery Time:
+                                      </span>
+                                      <input
+                                        type="time"
+                                        id="time"
+                                        className="shadow-md p-2  rounded focus:outline-none focus:ring-1 focus:ring-gray-400"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
                         <button
-                          className="w-full py-4 rounded-full bg-black text-white text-lg font-medium transition-transform active:scale-95 mb-3 hover:opacity-75 flex items-center gap-2 justify-center"
+                          className="w-full py-4 my-6 rounded-full bg-black text-white text-lg font-medium transition-transform active:scale-95 mb-3 hover:opacity-75 flex items-center gap-2 justify-center"
                           onClick=""
                         >
                           Checkout
                           {/* {loading && <img src="/spinner.svg" />} */}
                         </button>
-                        {/* BUTTON END */}
                       </div>
                     </div>
-
-                    {/* EmptyCart */}
-                    {/* <div className="flex-[2] flex flex-col items-center pb-[50px] md:-mt-14">
-          <Image
-            src="/empty-cart.jpg"
-            width={300}
-            height={300}
-            className="w-[300px] md:w-[400px]"
-            alt="empty-cart"
-          />
-          <span className="text-xl font-bold">Your cart is empty</span>
-          <span className="text-center mt-4">
-            Looks like you have not added anything in your cart.
-            <br />
-            Go ahead and explore our products curated for you.
-          </span>
-          <Link
-            href="/"
-            className="py-4 px-8 rounded-full bg-black text-white text-lg font-medium transition-transform active:scale-95 mb-3 hover:opacity-75 mt-8"
-          >
-            Continue Shopping
-          </Link>
-        </div> */}
                   </div>
                 )}
                 <button
