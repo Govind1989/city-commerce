@@ -98,9 +98,9 @@ const Categories = () => {
             >
               <div className="min-w-fit w-full shadow-md rounded-lg flex flex-col md:flex-row justify-between relative">
                 <img
-                  src="https://demo.tailgrids.com/templates/planet/build/src/assets/ecom-images/headers/header-04/image-02.jpg"
+                  src="https://plus.unsplash.com/premium_photo-1664202526336-9edbfc8e2886?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y2xvdGhpbmclMjBzdG9yZXxlbnwwfDB8MHx8fDA%3D"
                   alt="product"
-                  className="h-full w-full object-cover object-center"
+                  className="h-[34vh] w-full object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-gray-800 opacity-50 z-5"></div>
                 <div className="absolute bottom-16 right-0 z-10  px-8 rounded">
@@ -123,9 +123,9 @@ const Categories = () => {
 
               <div className="min-w-fit w-full shadow-md rounded-lg flex flex-col md:flex-row justify-between relative">
                 <img
-                  src="https://demo.tailgrids.com/templates/planet/build/src/assets/ecom-images/headers/header-04/image-02.jpg"
+                  src="https://plus.unsplash.com/premium_photo-1670601440146-3b33dfcd7e17?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG1lYWx8ZW58MHwwfDB8fHww"
                   alt="product"
-                  className="h-full w-full object-cover object-center"
+                  className="h-[34vh] w-full object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-gray-800 opacity-50 z-5"></div>
                 <div className="absolute bottom-16 right-0 z-10  px-8 rounded">
@@ -147,9 +147,9 @@ const Categories = () => {
               </div>
               <div className="min-w-fit w-full shadow-md rounded-lg flex flex-col md:flex-row justify-between relative">
                 <img
-                  src="https://demo.tailgrids.com/templates/planet/build/src/assets/ecom-images/headers/header-04/image-02.jpg"
+                  src="https://plus.unsplash.com/premium_photo-1670360414946-e33a828d1d52?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="product"
-                  className="h-full w-full object-cover object-center"
+                  className="h-[34vh] w-full object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-gray-800 opacity-50 z-5"></div>
                 <div className="absolute bottom-16 right-0 z-10  px-8 rounded">
@@ -171,9 +171,9 @@ const Categories = () => {
               </div>
               <div className="min-w-fit w-full shadow-md rounded-lg flex flex-col md:flex-row justify-between relative">
                 <img
-                  src="https://demo.tailgrids.com/templates/planet/build/src/assets/ecom-images/headers/header-04/image-02.jpg"
+                  src="https://images.unsplash.com/photo-1638949493140-edb10b7be2f3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fGFwcGxpYW5jZXN8ZW58MHwwfDB8fHww"
                   alt="product"
-                  className="h-full w-full object-cover object-center"
+                  className="h-[34vh] w-full object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-gray-800 opacity-50 z-5"></div>
                 <div className="absolute bottom-16 right-0 z-10 px-8 rounded">
@@ -195,9 +195,9 @@ const Categories = () => {
               </div>
               <div className="min-w-fit w-full shadow-md rounded-lg flex flex-col md:flex-row justify-between relative">
                 <img
-                  src="https://demo.tailgrids.com/templates/planet/build/src/assets/ecom-images/headers/header-04/image-02.jpg"
+                  src="https://images.unsplash.com/photo-1659634088279-fc01616bad37?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODZ8fGNvbXB1dGVyc3xlbnwwfDB8MHx8fDA%3D"
                   alt="product"
-                  className="h-full w-full object-cover object-center"
+                  className="h-[34vh] w-full object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-gray-800 opacity-50 z-5"></div>
                 <div className="absolute bottom-16 right-0 z-10 px-8 rounded">
@@ -219,9 +219,9 @@ const Categories = () => {
               </div>
               <div className="min-w-fit w-full shadow-md rounded-lg flex flex-col md:flex-row justify-between relative">
                 <img
-                  src="https://demo.tailgrids.com/templates/planet/build/src/assets/ecom-images/headers/header-04/image-02.jpg"
+                  src="https://plus.unsplash.com/premium_photo-1680985551009-05107cd2752c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG1vYmlsZSUyMHBob25lfGVufDB8MHwwfHx8MA%3D%3D"
                   alt="product"
-                  className="h-full w-full object-cover object-center"
+                  className="h-[34vh] w-full object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-gray-800 opacity-50 z-5"></div>
                 <div className="absolute bottom-16 right-0 z-10 px-8 rounded">
@@ -243,9 +243,9 @@ const Categories = () => {
               </div>
               <div className="min-w-fit w-full shadow-md rounded-lg flex flex-col md:flex-row justify-between relative">
                 <img
-                  src="https://demo.tailgrids.com/templates/planet/build/src/assets/ecom-images/headers/header-04/image-02.jpg"
+                  src="https://plus.unsplash.com/premium_photo-1683141410787-c4dbd2220487?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cGx1bWJpbmd8ZW58MHwwfDB8fHww"
                   alt="product"
-                  className="h-full w-full object-cover object-center"
+                  className="h-[34vh] w-full object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-gray-800 opacity-50 z-5"></div>
                 <div className="absolute bottom-16 right-0 z-10 px-8 rounded">
@@ -267,9 +267,9 @@ const Categories = () => {
               </div>
               <div className="min-w-fit w-full shadow-md rounded-lg flex flex-col md:flex-row justify-between relative">
                 <img
-                  src="https://demo.tailgrids.com/templates/planet/build/src/assets/ecom-images/headers/header-04/image-02.jpg"
+                  src="https://images.unsplash.com/photo-1679428767634-b3f574467067?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODN8fHRyYXZlbHN8ZW58MHwwfDB8fHww"
                   alt="product"
-                  className="h-full w-full object-cover object-center"
+                  className="h-[34vh] w-full object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-gray-800 opacity-50 z-5"></div>
                 <div className="absolute bottom-16 right-0 z-10 px-8 rounded">
@@ -291,9 +291,9 @@ const Categories = () => {
               </div>
               <div className="min-w-fit w-full shadow-md rounded-lg flex flex-col md:flex-row justify-between relative">
                 <img
-                  src="https://demo.tailgrids.com/templates/planet/build/src/assets/ecom-images/headers/header-04/image-02.jpg"
+                  src="https://plus.unsplash.com/premium_photo-1661769209111-339134072e8c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8QXBwb2ludG1lbnR8ZW58MHwwfDB8fHww"
                   alt="product"
-                  className="h-full w-full object-cover object-center"
+                  className="h-[34vh] w-full object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-gray-800 opacity-50 z-5"></div>
                 <div className="absolute bottom-16 right-0 z-10 px-8 rounded">

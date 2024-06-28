@@ -336,18 +336,133 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Vendor Advantages */}
+      <div className="py-2 px-8 ">
+        <div className="flex flex-col  px-6 sm:py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:gap-12 lg:items-center">
+          <div className="flex items-center justify-center w-full h-96 lg:w-1/2">
+            <img
+              className="object-cover w-full h-full mx-auto rounded-md lg:max-w-2xl"
+              src="https://redq.io/landing/_next/static/images/search-209bf1b5a595a219eb9419c45ec8ef82.png"
+              alt="glasses photo"
+            />
+          </div>
+
+          <div className="w-full lg:w-1/2 ">
+            <div className="w-full justify-end">
+              <h1 className="text-lg uppercase tracking-wide gradient-text dark:text-white lg:text-lg ">
+                Selling has never been this easy
+                <br />
+                <span className="uppercase text-lg font-bold tracking-wide gradient-text dark:text-white lg:text-3xl">
+                  Earn Revenue with constant growth
+                </span>
+              </h1>
+
+              <div className="mt-8 space-y-5">
+                <div>
+                  <p className="flex items-center -mx-2 text-gray-700 dark:text-gray-200">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-6 h-6 mx-2 text-gray-500"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+
+                    <span className="mx-2">
+                      Bigger customer base to sell your products/services.
+                    </span>
+                  </p>
+                  <p className="mx-10 text-sm text-gray-400">
+                    Gain loyalty from customers for regular sales.
+                  </p>
+                </div>
+
+                <div>
+                  <p className="flex items-center -mx-2 text-gray-700 dark:text-gray-200">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-6 h-6 mx-2 text-gray-500"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+
+                    <span className="mx-2">
+                      Marketing cost can be overwhelming.
+                    </span>
+                  </p>
+                  <p className="mx-10 text-sm text-gray-400">
+                    Grow your business with organic social media marketing.
+                  </p>
+                </div>
+
+                <div>
+                  <p className="flex items-center -mx-2 text-gray-700 dark:text-gray-200">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-6 h-6 mx-2 text-gray-500"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+
+                    <span className="mx-2">
+                      Engage with customers with our sales reels.
+                    </span>
+                  </p>
+                  <p className="mx-10 text-sm text-gray-400">
+                    Connect with customers on social media'&apos;s with easy
+                    post creation.
+                  </p>
+                </div>
+              </div>
+              <div className="lg:mt-0 lg:flex-shrink-0">
+                <div className="mt-4 md:mt-8 inline-flex rounded-md shadow">
+                  <button
+                    type="button"
+                    className="py-2 px-4  bg-gray-800 hover:bg-gray-200 text-white hover:text-gray-800 w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
+                  >
+                    Get started
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       {/* CTA */}
       <div className="bg-white py-2 px-8">
         <div className="w-full mx-auto px-4 sm:px-5 md:px-8  md:flex justify-between items-center">
           <div className="shrink-0 mx-auto md:ml-0 lg:flex lg:items-center pb-5 pt-1.5 md:pt-4 max-w-[350px] md:max-w-[340px] lg:max-w-[485px] xl:max-w-[540px] 2xl:max-w-[680px] 3xl:pl-10">
             <div className="py-8 text-center xl:py-10 2xl:py-14 md:text-left">
               <h2 className="text-[22px] md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-[42px] leading-9 lg:leading-[1.4em] xl:leading-[1.45em] text-brand-dark font-bold font-manrope -tracking-[0.2px] mb-3 lg:mb-4">
-                Make your online shop easier with our mobile app
+                Get more sales and revenue with our online marketplace.
               </h2>
               <p className="text-15px xl:text-base 2xl:text-[17px] leading-7 xl:leading-9 text-brand-dark text-opacity-70 pb-5 lg:pb-7 pr-0 xl:pr-8 2xl:pr-20">
-                BoroBazar makes online grocery shopping fast and easy. Get
-                groceries delivered and order the best of seasonal farm fresh
-                food.
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam.
               </p>
               <div className="flex justify-center md:justify-start -mx-1 md:-mx-1.5 pt-0.5 px-7 sm:px-0">
                 <Link
